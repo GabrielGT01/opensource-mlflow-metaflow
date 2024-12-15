@@ -1,0 +1,1 @@
+{"run_number": "1733440986296096", "step_name": "evaluate_fold", "task_id": "19", "flow_id": "training_aws", "user_name": "gabriel", "tags": [], "system_tags": ["user:gabriel", "metaflow_version:2.12.28", "runtime:dev", "python_version:3.12.7", "project_branch:user.gabriel", "project:weather_report_kaggle"], "ts_epoch": 1733441033369}

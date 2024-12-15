@@ -1,0 +1,41 @@
+[MFLOG|0|2024-12-08T01:06:59.047197Z|runtime|0846592e-7eaa-42cd-9f3c-cf9373145d9c]<flow Deployment step start> failed:
+[MFLOG|0|2024-12-08T01:06:59.058199Z|runtime|a355cf58-40d3-4fa8-aa05-a8d9df81f1e5]    Internal error
+[MFLOG|0|2024-12-08T01:06:59.059763Z|runtime|0c28fb10-21d7-49f7-8a96-c6d965386664]Traceback (most recent call last):
+[MFLOG|0|2024-12-08T01:06:59.059824Z|runtime|463a28c0-27b3-4b4f-b313-aca7e8221431]  File "/tmp/tmpb7iv44ds/metaflow/cli.py", line 1166, in main
+[MFLOG|0|2024-12-08T01:06:59.059876Z|runtime|3c530333-93ae-42c2-8168-a1cd29fce74d]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-12-08T01:06:59.059934Z|runtime|1400dcc5-c4db-474e-9434-6b4d161e01b8]  File "/tmp/tmpb7iv44ds/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-12-08T01:06:59.059984Z|runtime|19650dd3-adfb-497a-97a3-aedea5f7ec30]    return func(args, kwargs)
+[MFLOG|0|2024-12-08T01:06:59.195114Z|runtime|099b61a2-2de7-45fd-9bf9-db58f127d0e6]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T01:06:59.195309Z|runtime|8e449f5f-6dfb-4aae-b9e4-9974d228aa29]  File "/tmp/tmpb7iv44ds/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-12-08T01:06:59.195370Z|runtime|dc0db8db-a657-440b-bcbf-4bb2df010945]    return self.main(args, kwargs)
+[MFLOG|0|2024-12-08T01:06:59.195408Z|runtime|13ea15c1-4fcd-4ae0-8599-2986b3044942]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T01:06:59.195445Z|runtime|0e71d694-89ff-4e6b-94f9-705c5e3c7e44]  File "/tmp/tmpb7iv44ds/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-12-08T01:06:59.195481Z|runtime|637f00bf-639e-49c6-ba54-d878499c5ffe]    rv = self.invoke(ctx)
+[MFLOG|0|2024-12-08T01:06:59.195513Z|runtime|a8337fa1-a282-40aa-879d-c2220c4508a5]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T01:06:59.195549Z|runtime|cb56f585-7e57-4a1a-a7e5-6b8867fe63bd]  File "/tmp/tmpb7iv44ds/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-12-08T01:06:59.195582Z|runtime|273dccfa-3583-4b1d-9b65-5341d914fecf]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-12-08T01:06:59.195619Z|runtime|aa93b237-ab6d-4564-8bf7-652d9a5c4ee9]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T01:06:59.195648Z|runtime|c14776cf-8c03-42ea-9169-4ae8e88b4c1f]  File "/tmp/tmpb7iv44ds/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-12-08T01:06:59.195703Z|runtime|2015c999-5545-49fa-8cf8-dc2a7fb180ae]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-12-08T01:06:59.195738Z|runtime|a9f7e4af-a153-4828-8620-b6b8eaf1f2f3]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T01:06:59.195774Z|runtime|74adfe0f-58c4-4882-a408-c456323aeb6f]  File "/tmp/tmpb7iv44ds/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-12-08T01:06:59.195809Z|runtime|7ce0303a-fe51-4183-a1cc-f455ccb81eee]    return callback(args, kwargs)
+[MFLOG|0|2024-12-08T01:06:59.195847Z|runtime|290612b6-72c0-4c0c-92d9-fc6f10707ea0]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T01:06:59.195885Z|runtime|ab021750-c81a-4dfa-acd4-a5a39cf9a3ee]  File "/tmp/tmpb7iv44ds/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-12-08T01:06:59.195918Z|runtime|26a92d11-6580-42e2-8ba6-dddb577e2f9c]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-12-08T01:06:59.195951Z|runtime|435a4efa-b6c6-4658-bfac-6b4673f9cecd]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T01:06:59.195984Z|runtime|c904c6c1-1f5b-4f4d-a7bc-8d76bb0714cd]  File "/tmp/tmpb7iv44ds/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-12-08T01:06:59.196017Z|runtime|60d3e49b-1f49-485c-8918-573598e160cf]    task.run_step(
+[MFLOG|0|2024-12-08T01:06:59.196049Z|runtime|37e49546-c73e-43f3-b43e-db7667106dc6]  File "/tmp/tmpb7iv44ds/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2024-12-08T01:06:59.196083Z|runtime|8a05b773-dfac-491a-88fe-45f770b660f1]    self._exec_step_function(step_func)
+[MFLOG|0|2024-12-08T01:06:59.196114Z|runtime|ee2b56f2-a6ef-47f1-a3e6-4d1774a761c4]  File "/tmp/tmpb7iv44ds/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-12-08T01:06:59.196149Z|runtime|8850770a-3707-4beb-8a4d-f213dfa3e422]    step_function()
+[MFLOG|0|2024-12-08T01:06:59.196183Z|runtime|bb300bf7-09bb-4f5c-aae8-a422cd185d37]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/deployment.py", line 104, in start
+[MFLOG|0|2024-12-08T01:06:59.196218Z|runtime|34c7323b-69ad-4787-a878-d27a3ef1dfe9]    self.latest_model = self._get_latest_model_from_registry()
+[MFLOG|0|2024-12-08T01:06:59.196253Z|runtime|b12e09b7-e497-4cd9-9595-b77b69997732]                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T01:06:59.196283Z|runtime|c84c9a9c-4a04-4e3d-9921-fc37581a21a4]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/deployment.py", line 175, in _get_latest_model_from_registry
+[MFLOG|0|2024-12-08T01:06:59.196314Z|runtime|37445531-2713-42e5-a8f0-4d02f83548cd]    latest_model.version = "2.17.2"
+[MFLOG|0|2024-12-08T01:06:59.196347Z|runtime|924f7342-c6f4-45be-b996-99204b52dd4b]    ^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T01:06:59.196376Z|runtime|c121030f-7fd3-4d51-b9b8-5eb5a9fd65fc]AttributeError: property 'version' of 'ModelVersion' object has no setter
+[MFLOG|0|2024-12-08T01:06:59.196413Z|runtime|46ae2f77-60fd-4d64-ab91-902cb505f46a]
+[MFLOG|0|2024-12-08T01:06:59.196989Z|runtime|5115b331-25eb-4c11-9025-5336cfb972f7]Task failed.

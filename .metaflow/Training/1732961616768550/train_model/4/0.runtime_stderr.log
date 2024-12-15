@@ -1,0 +1,40 @@
+[MFLOG|0|2024-11-30T10:13:52.311622Z|runtime|d109cafa-4a58-4bfb-861e-7ea94ac5be58]<flow Training step train_model> failed:
+[MFLOG|0|2024-11-30T10:13:52.325534Z|runtime|f7529676-a72c-4ef1-a5c0-b9efd3ce300c]    Internal error
+[MFLOG|0|2024-11-30T10:13:52.328275Z|runtime|c028b1f3-3ba8-49d6-912f-2ce5da1a9103]Traceback (most recent call last):
+[MFLOG|0|2024-11-30T10:13:52.328426Z|runtime|32c85541-031f-42f9-80be-cd1ba44a6cf8]  File "/tmp/tmpug0kvhw4/metaflow/cli.py", line 1166, in main
+[MFLOG|0|2024-11-30T10:13:52.328488Z|runtime|92d02da5-57ff-4e8e-9613-66df9af6b9f9]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-11-30T10:13:52.328538Z|runtime|bf4be551-bbf7-4c58-a6b9-1928cfff344c]  File "/tmp/tmpug0kvhw4/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-11-30T10:13:52.328587Z|runtime|c65ebb95-6e2f-4fa8-9af8-4b834acf81ad]    return func(args, kwargs)
+[MFLOG|0|2024-11-30T10:13:52.328627Z|runtime|0f1a921f-f59d-4574-af41-9a46af99965b]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-30T10:13:52.328670Z|runtime|dfb3b8af-47fb-40f7-9a1d-44050f749522]  File "/tmp/tmpug0kvhw4/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-11-30T10:13:52.328710Z|runtime|30c2d00f-5d8b-47a6-a221-ee847ebc3f3e]    return self.main(args, kwargs)
+[MFLOG|0|2024-11-30T10:13:52.734173Z|runtime|db969e2c-6f31-4083-b057-1c8be2303bb0]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-30T10:13:52.734555Z|runtime|9e6ce256-e44f-4ac5-9992-4a684312a629]  File "/tmp/tmpug0kvhw4/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-11-30T10:13:52.734658Z|runtime|f3a4c08d-0dcd-47e3-8453-18b243d08317]    rv = self.invoke(ctx)
+[MFLOG|0|2024-11-30T10:13:52.734742Z|runtime|4dbc5644-3f39-43f8-97f4-dd3e4216eb29]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-30T10:13:52.734825Z|runtime|1f11bbd7-4dda-4af6-adf2-63a96a75c7c0]  File "/tmp/tmpug0kvhw4/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-11-30T10:13:52.734899Z|runtime|fa2ebd1f-1c58-443f-bfce-670a2809c059]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-11-30T10:13:52.734981Z|runtime|9277d36c-4338-40dd-b66b-135eb09378af]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-30T10:13:52.735053Z|runtime|b23bd6cc-b1b7-4e38-b2ad-89aba0801935]  File "/tmp/tmpug0kvhw4/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-11-30T10:13:52.735124Z|runtime|d30af026-b7ff-41b2-8dfd-ac240bca2d71]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-11-30T10:13:52.735232Z|runtime|c4f12b65-77e1-44dc-a2a5-a84dc47d52a3]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-30T10:13:52.735384Z|runtime|e28c623f-8ee9-4217-9cf5-acfae2650f7f]  File "/tmp/tmpug0kvhw4/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-11-30T10:13:52.735480Z|runtime|0d16d58e-4061-4f30-a6fa-fb46a713d690]    return callback(args, kwargs)
+[MFLOG|0|2024-11-30T10:13:52.735559Z|runtime|5619e9d4-7be6-43a9-8b9e-dd4b6bfa6e82]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-30T10:13:52.735629Z|runtime|940371bb-10e4-4665-8a1f-89cd0a29ba7d]  File "/tmp/tmpug0kvhw4/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-11-30T10:13:52.735747Z|runtime|49ee4a13-4c74-4f5e-b8d7-50fab0d687fb]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-11-30T10:13:52.735826Z|runtime|1e8a4cf7-9f01-4614-a837-25c1c095951b]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-30T10:13:52.735895Z|runtime|1fa81f14-67d9-4408-afdf-7c778e75b186]  File "/tmp/tmpug0kvhw4/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-11-30T10:13:52.735971Z|runtime|2e18d061-6abb-4bca-a0a2-a42935b38185]    task.run_step(
+[MFLOG|0|2024-11-30T10:13:52.736049Z|runtime|f2cf16d1-a1af-441f-bc53-26fc5c35dbf7]  File "/tmp/tmpug0kvhw4/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2024-11-30T10:13:52.736118Z|runtime|e9e66c26-11e1-4313-b62b-fb31df8fcfc9]    self._exec_step_function(step_func)
+[MFLOG|0|2024-11-30T10:13:52.736184Z|runtime|16f565f6-3443-4bf2-bcb6-35c83c8c7aa9]  File "/tmp/tmpug0kvhw4/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-11-30T10:13:52.736305Z|runtime|2b676840-7cf4-424f-9ce5-8fcad34e7d66]    step_function()
+[MFLOG|0|2024-11-30T10:13:52.736379Z|runtime|bb6340dd-0d40-41b4-a64d-dedc8547c977]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/training.py", line 292, in train_model
+[MFLOG|0|2024-11-30T10:13:52.736502Z|runtime|0d6b878d-709d-457f-b556-bc093549b4a4]    with mlflow.start_run(run_id=self.mlflow_run_id):
+[MFLOG|0|2024-11-30T10:13:52.736569Z|runtime|2d2e1465-fe6a-4e68-8996-b830682df624]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-30T10:13:52.736638Z|runtime|4e45efb6-4ef4-48d6-98e9-c273de139ee1]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/tracking/fluent.py", line 352, in start_run
+[MFLOG|0|2024-11-30T10:13:52.736711Z|runtime|f8d0ffab-6b15-485e-a359-6461f18587c7]    raise MlflowException(
+[MFLOG|0|2024-11-30T10:13:52.736786Z|runtime|21927b29-8072-454c-86af-17eb88f5c1d9]mlflow.exceptions.MlflowException: Cannot start run with ID e4b5ed3ce03044828105617eab24ccd0 because it is in the deleted state.
+[MFLOG|0|2024-11-30T10:13:52.736855Z|runtime|2bd3665d-83e1-4276-9cc7-9777435b6b29]
+[MFLOG|0|2024-11-30T10:13:52.738203Z|runtime|49a7669e-8c3a-4acb-9957-85cac9559d5b]Task failed.

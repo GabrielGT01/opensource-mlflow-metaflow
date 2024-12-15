@@ -1,0 +1,6 @@
+[MFLOG|0|2024-12-15T18:19:30.776012Z|runtime|86d3aad4-98ee-4d66-859c-6246dfdb62d2]2024/12/15 19:19:30 INFO mlflow.tracking.fluent: Autologging successfully enabled for sklearn.
+[MFLOG|0|2024-12-15T18:19:30.823197Z|runtime|768d77ad-5611-487f-b346-3e7f23e29cf2]2024/12/15 19:19:30 INFO mlflow.tracking.fluent: Autologging successfully enabled for xgboost.
+[MFLOG|0|2024-12-15T18:19:31.675848Z|runtime|3b9d7f28-aee2-4a7a-804e-2e0988e5e27e]2024/12/15 19:19:31 INFO mlflow.tracking._tracking_service.client: 🏃 View run cross-validation-fold-2 at: http://127.0.0.1:5000/#/experiments/0/runs/57321fb6fd274bdaa9f9cdb8c9394566.
+[MFLOG|0|2024-12-15T18:19:31.728229Z|runtime|f0ba354d-54a6-4d87-b70f-b653a7f43fb6]2024/12/15 19:19:31 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://127.0.0.1:5000/#/experiments/0.
+[MFLOG|0|2024-12-15T18:19:31.728518Z|runtime|960c11ff-6501-4483-838b-3429ec3fa8ed]2024/12/15 19:19:31 INFO mlflow.tracking._tracking_service.client: 🏃 View run 1734286736357673 at: http://127.0.0.1:5000/#/experiments/0/runs/a994591466fd425da60ae31ebd53dd0c.
+[MFLOG|0|2024-12-15T18:19:40.128482Z|runtime|7d0150aa-4061-4fce-a967-4fb092186752]2024/12/15 19:19:31 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://127.0.0.1:5000/#/experiments/0.

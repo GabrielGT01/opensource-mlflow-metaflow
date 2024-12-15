@@ -1,0 +1,3 @@
+[MFLOG|0|2024-12-07T12:39:04.738291Z|runtime|d07f1211-3cb4-4b03-9552-871445dada1b]2024-12-07 13:39:04,737 [INFO] Model artifacts downloaded to file:///var/folders/pk/nk0t185511z8g6hmxr_bhkfw0000gn/T/tmp30pdifhg/model 
+[MFLOG|0|2024-12-07T12:39:04.768287Z|runtime|14974816-1312-48fd-be4e-7c2d339505c2]2024-12-07 13:39:04,768 [INFO] Deployment target URI: sagemaker:/us-east-1/arn:aws:iam::025066244860:role/mlschool-Role-vFyR6bXdwOqO
+[MFLOG|0|2024-12-07T12:39:04.917885Z|runtime|a0d41934-480b-492f-93dc-585070e6b238]2024-12-07 13:39:04,917 [INFO] Found credentials in shared credentials file: ~/.aws/credentials

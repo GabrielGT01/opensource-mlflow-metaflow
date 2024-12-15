@@ -1,0 +1,1 @@
+{"flow_id": "Training", "run_number": "1732048548671375", "step_name": "train_model", "task_id": "4", "field_name": "attempt_ok", "type": "internal_attempt_status", "value": "True", "tags": ["attempt_id:0"], "user_name": "gabriel", "ts_epoch": 1732048566515}

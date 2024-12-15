@@ -1,0 +1,1 @@
+{"run_number": "1731666424595059", "step_name": "train_model", "task_id": "4", "flow_id": "Training", "user_name": "gabriel", "tags": [], "system_tags": ["metaflow_version:2.12.28", "user:gabriel", "project_branch:user.gabriel", "python_version:3.12.7", "project:weather_report_kaggle", "runtime:dev"], "ts_epoch": 1731666436503}

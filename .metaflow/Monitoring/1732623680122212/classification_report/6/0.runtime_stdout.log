@@ -1,0 +1,29 @@
+[MFLOG|0|2024-11-26T12:22:38.326506Z|runtime|26f07d23-6ae2-40b4-8fae-302e3caeb178]2024-11-26 13:22:38,325 [ERROR] Error generating report.
+[MFLOG|0|2024-11-26T12:22:40.304749Z|runtime|ecbe6e88-7ca6-4d49-a5df-3f3a869e1242]Traceback (most recent call last):
+[MFLOG|0|2024-11-26T12:22:40.304897Z|runtime|34276d77-c074-4ef2-bbef-b6a34e1d7b92]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/monitoring.py", line 328, in classification_report
+[MFLOG|0|2024-11-26T12:22:40.304958Z|runtime|5b08eb6c-4235-4088-8f28-4e37d6893f20]    self.html = report.get_html()
+[MFLOG|0|2024-11-26T12:22:40.305016Z|runtime|be4e3e60-41e9-46dd-863f-dc6ae875103c]                ^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-26T12:22:40.305074Z|runtime|2e3517ce-e81a-4e77-88bd-b7511dff6715]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/26cb46e8b996ec7/lib/python3.12/site-packages/evidently/suite/base_suite.py", line 247, in get_html
+[MFLOG|0|2024-11-26T12:22:40.305128Z|runtime|25a2a8bf-e8fe-4258-bc3b-0ef474299fe7]    dashboard_id, dashboard_info, graphs = self._build_dashboard_info()
+[MFLOG|0|2024-11-26T12:22:40.305167Z|runtime|a14215cd-0ae3-473c-863a-2bc43de28039]                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-26T12:22:40.305202Z|runtime|c92d0638-3069-46c5-a051-e19b7cf8c010]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/26cb46e8b996ec7/lib/python3.12/site-packages/evidently/report/report.py", line 231, in _build_dashboard_info
+[MFLOG|0|2024-11-26T12:22:40.305234Z|runtime|3a211ae0-a568-4374-9a7f-32d7fda9b151]    html_info = renderer.render_html(metric)
+[MFLOG|0|2024-11-26T12:22:40.305270Z|runtime|c06729f5-a2a6-433f-ae3d-963e2255fa14]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-26T12:22:40.305306Z|runtime|d0353c37-a992-4e64-90c1-b04c93fccf49]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/26cb46e8b996ec7/lib/python3.12/site-packages/evidently/metrics/classification_performance/classification_quality_metric.py", line 81, in render_html
+[MFLOG|0|2024-11-26T12:22:40.305348Z|runtime|44b93351-81e8-4007-8516-2d5ea8d9ee5c]    metric_result = obj.get_result()
+[MFLOG|0|2024-11-26T12:22:40.305378Z|runtime|7f4b27e3-464e-42d0-910e-617fb7793764]                    ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-26T12:22:40.305414Z|runtime|a1c52a7f-31b6-4483-bafd-1b3389b810ce]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/26cb46e8b996ec7/lib/python3.12/site-packages/evidently/base_metric.py", line 259, in get_result
+[MFLOG|0|2024-11-26T12:22:40.305444Z|runtime|90944866-8707-41e7-8d7f-5f37d0950a25]    raise result.exception
+[MFLOG|0|2024-11-26T12:22:40.305482Z|runtime|2dd672de-3768-45bb-a3aa-50673340040d]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/26cb46e8b996ec7/lib/python3.12/site-packages/evidently/calculation_engine/engine.py", line 53, in execute_metrics
+[MFLOG|0|2024-11-26T12:22:40.305512Z|runtime|73e1f867-ee2e-4898-9a5b-177ec98d76bf]    calculations[metric] = calculation.calculate(context, converted_data)
+[MFLOG|0|2024-11-26T12:22:40.305541Z|runtime|fcbf75c3-9a22-40da-97a1-effcbe665d0f]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-26T12:22:40.305571Z|runtime|8a4f79a5-1d51-46f6-8ae2-d2952fcd8bfa]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/26cb46e8b996ec7/lib/python3.12/site-packages/evidently/calculation_engine/python_engine.py", line 100, in calculate
+[MFLOG|0|2024-11-26T12:22:40.305600Z|runtime|ce3e5d11-8163-46cc-b3bf-fa31cfb7c227]    return self.metric.calculate(data)
+[MFLOG|0|2024-11-26T12:22:40.305629Z|runtime|5b471960-7aff-4d0c-a5a5-0bf476d90140]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-26T12:22:40.305658Z|runtime|154b5e40-e675-4aff-b92c-e886a8c49a6a]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/26cb46e8b996ec7/lib/python3.12/site-packages/evidently/metrics/classification_performance/classification_quality_metric.py", line 53, in calculate
+[MFLOG|0|2024-11-26T12:22:40.305697Z|runtime|55bfd1f9-3a4f-4d03-a1b9-a697a9d2ac06]    current = calculate_metrics(
+[MFLOG|0|2024-11-26T12:22:40.305726Z|runtime|65a9c8a6-bc98-4b6f-8203-a1e239052f9b]              ^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-26T12:22:40.305755Z|runtime|2524472b-feea-4559-9eb1-83978f6f67cb]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/26cb46e8b996ec7/lib/python3.12/site-packages/evidently/calculations/classification_performance.py", line 365, in calculate_metrics
+[MFLOG|0|2024-11-26T12:22:40.305784Z|runtime|ef2aea0d-39e0-405a-af36-0395d69ced3b]    conf_by_pos_label = confusion_by_classes[pos_label]
+[MFLOG|0|2024-11-26T12:22:40.305850Z|runtime|fa6644ad-c2ed-4841-9772-a47f0c7c0f17]                        ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+[MFLOG|0|2024-11-26T12:22:40.305944Z|runtime|42c1aefe-a499-4210-9379-301f1c912777]KeyError: 1

@@ -1,0 +1,5 @@
+[MFLOG|0|2024-12-12T15:10:23.961924Z|runtime|032cc4bb-1a20-4d4d-a82d-1d9afa1d415a]2024-12-12 16:10:23,961 [INFO] Found 1 CSV file(s) in the directory: kaggle_data/
+[MFLOG|0|2024-12-12T15:10:23.968368Z|runtime|68e690c9-ee17-400e-908a-f43bf402ffda]2024-12-12 16:10:23,968 [INFO] Loaded 2500 records from file: kaggle_data/weather_forecast_data.csv
+[MFLOG|0|2024-12-12T15:10:23.970531Z|runtime|fffd5adb-3cc5-445e-acf3-545cb171bc71]2024-12-12 16:10:23,970 [INFO] Loaded dataset with 2500 samples
+[MFLOG|0|2024-12-12T15:10:23.982620Z|runtime|e2c3ade6-a52a-432e-9e85-ace4a60cb517]2024-12-12 16:10:23,982 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+[MFLOG|0|2024-12-12T15:10:26.964448Z|runtime|5858a78d-38f9-4c46-8e03-374b2ec5557d]2024-12-12 16:10:26,964 [INFO] Loaded 225 samples from the production dataset.

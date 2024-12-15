@@ -1,0 +1,9 @@
+[MFLOG|0|2024-12-11T01:31:07.869951Z|runtime|c36ea7cc-f983-46b2-aab2-76c1d412f23b]2024-12-11 02:31:07,868 [INFO] Model artifacts downloaded to file:///var/folders/pk/nk0t185511z8g6hmxr_bhkfw0000gn/T/tmpml80qttq/model 
+[MFLOG|0|2024-12-11T01:31:07.898564Z|runtime|f4f1b11f-d904-4256-86c0-3edadf929e97]2024-12-11 02:31:07,898 [INFO] Deployment target URI: sagemaker:/us-east-1
+[MFLOG|0|2024-12-11T01:31:08.029983Z|runtime|2b86fb5e-f718-457a-b1d6-a69e644c5470]2024-12-11 02:31:08,029 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+[MFLOG|0|2024-12-11T01:31:09.318317Z|runtime|535c59a1-3774-4e5d-9243-6fbec1416df5]2024-12-11 02:31:09,317 [WARNING] No ProductionVariants found in deployment.
+[MFLOG|0|2024-12-11T01:31:09.318767Z|runtime|1ebe39d4-9c09-44b9-b3c0-187d0fa03bf8]2024-12-11 02:31:09,318 [INFO] Updating endpoint "dailyweather01" with model "1"...
+[MFLOG|0|2024-12-11T01:31:10.538167Z|runtime|2c5b771f-aed7-4d0b-8bc2-425487e7e932]2024-12-11 02:31:10,537 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+[MFLOG|0|2024-12-11T01:31:12.284618Z|runtime|030596a6-fd6b-4e42-a4ed-a4bc86a7f9e5]2024-12-11 02:31:12,284 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+[MFLOG|0|2024-12-11T01:31:13.330690Z|runtime|8846398f-95d6-43c1-a990-533f5bec1a9b]2024-12-11 02:31:13,330 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+[MFLOG|0|2024-12-11T01:31:14.522092Z|runtime|4866ebc2-cc77-49fe-ac71-f1d81da2a01f]2024-12-11 02:31:14,521 [INFO] Found credentials in shared credentials file: ~/.aws/credentials

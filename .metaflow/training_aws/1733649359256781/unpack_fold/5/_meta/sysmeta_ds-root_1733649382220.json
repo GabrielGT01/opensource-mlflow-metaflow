@@ -1,0 +1,1 @@
+{"flow_id": "training_aws", "run_number": "1733649359256781", "step_name": "unpack_fold", "task_id": "5", "field_name": "ds-root", "type": "ds-root", "value": "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/.metaflow", "tags": ["attempt_id:0"], "user_name": "gabriel", "ts_epoch": 1733649382220}

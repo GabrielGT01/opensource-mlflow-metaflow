@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/6aba18430b024ce791e43e8aafd96379/artifacts
+deleted_time: 1732403847400
+end_time: 1732053803357
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 6aba18430b024ce791e43e8aafd96379
+run_name: '1732053737997069'
+run_uuid: 6aba18430b024ce791e43e8aafd96379
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732053740990
+status: 3
+tags: []
+user_id: gabriel

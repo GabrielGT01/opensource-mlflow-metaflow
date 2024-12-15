@@ -1,0 +1,36 @@
+artifact_path: model
+flavors:
+  python_function:
+    artifacts:
+      features_transformer:
+        path: artifacts/features.joblib
+        uri: /var/folders/pk/nk0t185511z8g6hmxr_bhkfw0000gn/T/tmpbs3an8v2/features.joblib
+      model:
+        path: artifacts/raining.joblib
+        uri: /var/folders/pk/nk0t185511z8g6hmxr_bhkfw0000gn/T/tmpbs3an8v2/raining.joblib
+      target_transformer:
+        path: artifacts/target.joblib
+        uri: /var/folders/pk/nk0t185511z8g6hmxr_bhkfw0000gn/T/tmpbs3an8v2/target.joblib
+    cloudpickle_version: 3.1.0
+    code: code
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pyfunc.model
+    python_model: python_model.pkl
+    python_version: 3.12.0
+    streamable: false
+mlflow_version: 2.17.1
+model_size_bytes: 88299
+model_uuid: bc191bd980ba446088aa846296561a32
+run_id: 3787ab7264a24feb8d5bbd902fcbe14a
+signature:
+  inputs: '[{"type": "double", "name": "Temperature", "required": true}, {"type":
+    "double", "name": "Humidity", "required": true}, {"type": "double", "name": "Wind_Speed",
+    "required": true}, {"type": "double", "name": "Cloud_Cover", "required": true},
+    {"type": "double", "name": "Pressure", "required": true}]'
+  outputs: '[{"type": "string", "name": "prediction", "required": true}, {"type":
+    "double", "name": "confidence", "required": true}]'
+  params: '[{"name": "data_capture", "type": "boolean", "default": false, "shape":
+    null}]'
+utc_time_created: '2024-11-19 12:18:06.112501'

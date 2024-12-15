@@ -1,0 +1,1 @@
+{"flow_id": "training_aws", "run_number": "1733438064292334", "step_name": "register_model", "task_id": "21", "field_name": "python_version", "type": "python_version", "value": "3.12.0", "tags": ["attempt_id:0"], "user_name": "gabriel", "ts_epoch": 1733438139832}

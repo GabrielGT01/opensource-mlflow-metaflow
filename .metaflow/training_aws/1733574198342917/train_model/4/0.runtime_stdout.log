@@ -1,0 +1,8 @@
+[MFLOG|0|2024-12-07T12:23:35.591057Z|runtime|8088d850-a300-46b2-bf12-6caa704eb236]
+[MFLOG|0|2024-12-07T12:23:35.594276Z|runtime|68f43ad1-91fe-4efe-a96e-1cb1e5d4a32e]Top Most Important Features:
+[MFLOG|0|2024-12-07T12:23:35.594402Z|runtime|fc2011a4-97ae-4bcf-9517-d7bb9665a498]       feature  importance
+[MFLOG|0|2024-12-07T12:23:46.335952Z|runtime|a2deda08-a727-4fbc-b7db-4c8c2498d294]1     Humidity    0.420812
+[MFLOG|0|2024-12-07T12:23:46.336063Z|runtime|5a71d307-d3c3-4135-939d-6cf57f9b27db]3  Cloud_Cover    0.392579
+[MFLOG|0|2024-12-07T12:23:46.336149Z|runtime|401cafd2-b603-462e-9915-4fe04e9c5dac]0  Temperature    0.186570
+[MFLOG|0|2024-12-07T12:23:46.336240Z|runtime|b768f0f2-fe69-401e-8694-c694e120abd1]2   Wind_Speed    0.000039
+[MFLOG|0|2024-12-07T12:23:46.336369Z|runtime|3bba5a9c-5d69-47ed-a37d-53706ce34041]4     Pressure    0.000000

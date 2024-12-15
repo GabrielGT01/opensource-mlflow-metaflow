@@ -1,0 +1,44 @@
+[MFLOG|0|2024-12-10T23:26:20.410176Z|runtime|5a793f6e-cd30-499a-b429-b4048051eda5]Downloading artifacts:   0%|          | 0/12 [00:00<?, ?it/s]Downloading artifacts:   8%|▊         | 1/12 [00:00<00:00, 4928.68it/s]Downloading artifacts:  17%|█▋        | 2/12 [00:00<00:00, 3773.55it/s]Downloading artifacts:  25%|██▌       | 3/12 [00:00<00:00, 5067.62it/s]Downloading artifacts:  33%|███▎      | 4/12 [00:00<00:00, 6319.10it/s]Downloading artifacts:  42%|████▏     | 5/12 [00:00<00:00, 7473.81it/s]Downloading artifacts:  50%|█████     | 6/12 [00:00<00:00, 8556.89it/s]Downloading artifacts:  58%|█████▊    | 7/12 [00:00<00:00, 9576.04it/s]Downloading artifacts:  67%|██████▋   | 8/12 [00:00<00:00, 10512.04it/s]Downloading artifacts:  75%|███████▌  | 9/12 [00:00<00:00, 11376.95it/s]Downloading artifacts:  83%|████████▎ | 10/12 [00:00<00:00, 12182.12it/s]Downloading artifacts:  92%|█████████▏| 11/12 [00:00<00:00, 123.51it/s]  Downloading artifacts: 100%|██████████| 12/12 [00:00<00:00, 38.50it/s] Downloading artifacts: 100%|██████████| 12/12 [00:00<00:00, 38.50it/s]Downloading artifacts: 100%|██████████| 12/12 [00:00<00:00, 38.43it/s]
+[MFLOG|0|2024-12-10T23:26:21.729534Z|runtime|563c73b1-58c0-4546-8d13-e1d840a3d30d]<flow Deployment step deployment> failed:
+[MFLOG|0|2024-12-10T23:26:21.743690Z|runtime|23b9cb53-3f1c-4371-bbb9-e02f114b9523]    Internal error
+[MFLOG|0|2024-12-10T23:26:21.745200Z|runtime|6cb7d00c-2089-4fa2-bc88-959efbee7490]Traceback (most recent call last):
+[MFLOG|0|2024-12-10T23:26:21.745265Z|runtime|eb95a671-5883-4121-a237-21877534bfd6]  File "/tmp/tmp1lxsepj9/metaflow/cli.py", line 1166, in main
+[MFLOG|0|2024-12-10T23:26:21.745315Z|runtime|1cfcc6da-9dbd-4df8-bfdb-4e9647c7a732]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-12-10T23:26:21.745354Z|runtime|98427f1e-894e-4a3e-8404-b1d067c0911a]  File "/tmp/tmp1lxsepj9/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-12-10T23:26:21.745399Z|runtime|25769724-32fc-4b70-87ea-eaaf1f06f126]    return func(args, kwargs)
+[MFLOG|0|2024-12-10T23:26:21.955147Z|runtime|66367e72-6029-433a-abeb-1fc4c6392e9a]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-10T23:26:21.955319Z|runtime|eaba7488-1592-4ddd-9e54-76ded3b81788]  File "/tmp/tmp1lxsepj9/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-12-10T23:26:21.955370Z|runtime|e253921c-bee8-4c58-8d62-41949bcdf3e1]    return self.main(args, kwargs)
+[MFLOG|0|2024-12-10T23:26:21.955408Z|runtime|7c0f7324-260d-470a-bfda-7e290acece82]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-10T23:26:21.955445Z|runtime|d7253a6b-cc39-4af2-9696-1c87514ad7f3]  File "/tmp/tmp1lxsepj9/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-12-10T23:26:21.955484Z|runtime|3d98a8c6-8312-48cf-8ccc-bfe768b9296d]    rv = self.invoke(ctx)
+[MFLOG|0|2024-12-10T23:26:21.955520Z|runtime|7e5fefa9-f272-458c-8340-ad1b63d18061]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-10T23:26:21.955553Z|runtime|16469f0d-8abc-4445-a91c-09743c85f15f]  File "/tmp/tmp1lxsepj9/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-12-10T23:26:21.955583Z|runtime|7cf4f908-e72d-42b4-887e-29269a4cd184]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-12-10T23:26:21.955618Z|runtime|b4770298-0ccc-47de-823a-b9746e26a701]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-10T23:26:21.955654Z|runtime|9b8b5854-371f-425c-a80b-0c6aa22e2044]  File "/tmp/tmp1lxsepj9/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-12-10T23:26:21.955685Z|runtime|0cb42758-7325-4193-ab63-c3a2969e5feb]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-12-10T23:26:21.955717Z|runtime|0ed61bee-4010-4435-a9ba-7aad1ac64857]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-10T23:26:21.955747Z|runtime|5af3a4fb-8d1e-4c43-973c-eb654ceea0d7]  File "/tmp/tmp1lxsepj9/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-12-10T23:26:21.955776Z|runtime|0119dce5-3b79-4fca-a60f-3e53867e5050]    return callback(args, kwargs)
+[MFLOG|0|2024-12-10T23:26:21.955806Z|runtime|406bcf98-c425-4d78-8f4c-f0294d9a4cad]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-10T23:26:21.955840Z|runtime|48ae7e13-7b06-4052-a4d6-c12079a62e50]  File "/tmp/tmp1lxsepj9/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-12-10T23:26:21.955900Z|runtime|0109db8c-b784-4b70-91ac-d582bfe46497]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-12-10T23:26:21.955929Z|runtime|2b10bb07-7801-40c5-ad1d-2d0d7c004c0a]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-10T23:26:21.955965Z|runtime|9af8b441-2465-4a34-b3de-499e6e0093f9]  File "/tmp/tmp1lxsepj9/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-12-10T23:26:21.955996Z|runtime|caa8e814-11c6-4133-b0bb-1f57e251d194]    task.run_step(
+[MFLOG|0|2024-12-10T23:26:21.956027Z|runtime|b382f8e6-6a5e-4371-b737-09b083b5d6c8]  File "/tmp/tmp1lxsepj9/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2024-12-10T23:26:21.956056Z|runtime|6fa7d10a-9b66-4f32-809e-c65941fbdf90]    self._exec_step_function(step_func)
+[MFLOG|0|2024-12-10T23:26:21.956088Z|runtime|c1280ac8-3066-451a-9faf-6d199d5d7358]  File "/tmp/tmp1lxsepj9/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-12-10T23:26:21.956117Z|runtime|38717979-92b1-4cc7-9265-04f4fefab85a]    step_function()
+[MFLOG|0|2024-12-10T23:26:21.956145Z|runtime|9da91f95-105a-4931-96b0-ba65d1375a73]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/deployment.py", line 132, in deployment
+[MFLOG|0|2024-12-10T23:26:21.956179Z|runtime|780d124b-cf07-461d-89ac-29047d84a409]    self._deploy_to_sagemaker()
+[MFLOG|0|2024-12-10T23:26:21.956211Z|runtime|c313a75c-e507-4965-87cc-344573b5b2e2]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/deployment.py", line 250, in _deploy_to_sagemaker
+[MFLOG|0|2024-12-10T23:26:21.956243Z|runtime|04036628-2b70-49d0-8478-39e6f269fa15]    if self._is_sagemaker_model_running(deployment):
+[MFLOG|0|2024-12-10T23:26:21.956273Z|runtime|e530d8e7-9706-4fea-94fd-6fe24f33b123]       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-10T23:26:21.956302Z|runtime|1cade803-f839-4004-bdcb-c6629d747cb8]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/deployment.py", line 283, in _is_sagemaker_model_running
+[MFLOG|0|2024-12-10T23:26:21.956335Z|runtime|bb131dc7-026e-4e4e-8554-45b463440eff]    variant = deployment.get("ProductionVariants", [])[0]
+[MFLOG|0|2024-12-10T23:26:21.956367Z|runtime|5aa31dba-074f-4dd6-a710-3b4184851d7d]              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+[MFLOG|0|2024-12-10T23:26:21.956396Z|runtime|dd71d129-6b0f-4b73-a27e-5b95c331f305]IndexError: list index out of range
+[MFLOG|0|2024-12-10T23:26:21.956449Z|runtime|42749830-d256-4b35-bd3b-fe9a4f47b10a]
+[MFLOG|0|2024-12-10T23:26:21.956990Z|runtime|e6042e7b-279c-4557-b341-9c340bf3b7d4]Task failed.

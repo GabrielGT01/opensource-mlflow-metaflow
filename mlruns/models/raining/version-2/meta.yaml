@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1734292364961
+current_stage: None
+description: ''
+last_updated_timestamp: 1734292364961
+name: raining
+run_id: 36baca50b4414866af521e258f86a1f3
+run_link: ''
+source: mlflow-artifacts:/0/36baca50b4414866af521e258f86a1f3/artifacts/model
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/0/36baca50b4414866af521e258f86a1f3/artifacts/model
+user_id: null
+version: 2

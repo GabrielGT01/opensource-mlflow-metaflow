@@ -1,0 +1,29 @@
+[MFLOG|0|2024-11-15T10:23:41.236827Z|runtime|5d92447d-2893-4cd3-8e67-82217affb977]
+[MFLOG|0|2024-11-15T10:23:41.236988Z|runtime|c63cc4f5-5827-466f-860d-026d29d5b7d5]Model Performance Metrics:
+[MFLOG|0|2024-11-15T10:23:41.237043Z|runtime|15feac2d-685f-490d-8ca1-930bc4616d6c]Accuracy: 1.0000
+[MFLOG|0|2024-11-15T10:23:41.237091Z|runtime|c755a625-20f7-4f16-b876-9aed976bcdc5]Precision: 1.0000
+[MFLOG|0|2024-11-15T10:23:41.237134Z|runtime|1948a8c9-097d-4e90-abaa-9860d6e9c30c]Recall: 1.0000
+[MFLOG|0|2024-11-15T10:23:41.237185Z|runtime|661bc02c-b95b-46a6-bb85-6f22d925e2bf]F1 Score: 1.0000
+[MFLOG|0|2024-11-15T10:23:41.237231Z|runtime|5312b54c-991f-47cd-b054-f5fe4518f726]
+[MFLOG|0|2024-11-15T10:23:41.237273Z|runtime|0a008e89-c0bf-4645-abb5-e5b89dd61fe4]Confusion Matrix:
+[MFLOG|0|2024-11-15T10:23:41.237317Z|runtime|62a10abf-d0d1-4aad-8ad3-0fae8e012ce1][[328   0]
+[MFLOG|0|2024-11-15T10:23:41.239655Z|runtime|191f43a6-087c-4d33-a9fe-71c898f472cb] [  0  47]]
+[MFLOG|0|2024-11-15T10:23:41.239703Z|runtime|b68409c0-9924-4023-b399-64c04d9d96be]
+[MFLOG|0|2024-11-15T10:23:41.239739Z|runtime|c54ed2f6-fabf-4fcf-96a2-595fb0f5f626]Detailed Classification Report:
+[MFLOG|0|2024-11-15T10:23:41.239776Z|runtime|8c43fd58-e71d-4a15-aa5b-382f125052e8]              precision    recall  f1-score   support
+[MFLOG|0|2024-11-15T10:23:41.240039Z|runtime|06aed4cb-2f3b-4f69-8d00-96ff2be68b0a]
+[MFLOG|0|2024-11-15T10:23:41.240077Z|runtime|649dc620-ba7b-48cf-8541-ba7e1da9d736]         0.0       1.00      1.00      1.00       328
+[MFLOG|0|2024-11-15T10:23:41.240112Z|runtime|6ae739d8-3b04-470b-a723-7297bfd19498]         1.0       1.00      1.00      1.00        47
+[MFLOG|0|2024-11-15T10:23:41.240145Z|runtime|52081daa-2785-4b2b-8903-21ab32481ce1]
+[MFLOG|0|2024-11-15T10:23:41.240178Z|runtime|5a52b0ea-c9da-4fa0-a9af-bf34b849a1e9]    accuracy                           1.00       375
+[MFLOG|0|2024-11-15T10:23:41.240211Z|runtime|81502f8a-b805-4c2d-8d23-61660bdca0cf]   macro avg       1.00      1.00      1.00       375
+[MFLOG|0|2024-11-15T10:23:41.240251Z|runtime|1afc701a-d063-4af5-b9e1-728340632534]weighted avg       1.00      1.00      1.00       375
+[MFLOG|0|2024-11-15T10:23:41.240284Z|runtime|9c11185e-4a6a-4f84-89d3-a1f80fe5f7b8]
+[MFLOG|0|2024-11-15T10:23:41.240317Z|runtime|4b2d5f10-aa32-48c1-a2cf-ed5795d19314]
+[MFLOG|0|2024-11-15T10:23:41.243241Z|runtime|164d515f-7144-4c50-8188-42bd030ab9dc]Top Most Important Features:
+[MFLOG|0|2024-11-15T10:23:41.243371Z|runtime|12086d82-7ae3-4e13-b3e9-439b3c1309fc]       feature  importance
+[MFLOG|0|2024-11-15T10:23:41.601355Z|runtime|66c4abf5-0ab3-4080-946d-d2b2996d4a08]1     Humidity    0.420812
+[MFLOG|0|2024-11-15T10:23:41.601409Z|runtime|956b2b0b-00bf-4c6b-9c2b-fda4d8a559d8]3  Cloud_Cover    0.392579
+[MFLOG|0|2024-11-15T10:23:41.601447Z|runtime|d4482a8f-f9b6-435a-a484-6a6dc7f9cd96]0  Temperature    0.186570
+[MFLOG|0|2024-11-15T10:23:41.601482Z|runtime|10e293f7-8f1a-4079-b4ae-63409c47e7a5]2   Wind_Speed    0.000039
+[MFLOG|0|2024-11-15T10:23:41.601514Z|runtime|df7c843f-0795-45ff-a4c2-2fabed1d9bc6]4     Pressure    0.000000

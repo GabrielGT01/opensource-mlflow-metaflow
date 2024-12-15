@@ -1,0 +1,1 @@
+{"flow_id": "Endpoint", "run_number": "1734024709618609", "step_name": "start", "task_id": "1", "field_name": "conda_env_prefix", "type": "conda_env_prefix", "value": "metaflow/osx-arm64/925631f4a5e662b", "tags": ["attempt_id:0"], "user_name": "gabriel", "ts_epoch": 1734024710461}

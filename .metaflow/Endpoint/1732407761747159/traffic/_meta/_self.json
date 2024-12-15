@@ -1,0 +1,1 @@
+{"run_number": "1732407761747159", "step_name": "traffic", "flow_id": "Endpoint", "user_name": "gabriel", "tags": [], "system_tags": ["python_version:3.12.7", "project:weather_report_kaggle", "metaflow_version:2.12.28", "runtime:dev", "project_branch:user.gabriel", "user:gabriel"], "ts_epoch": 1732407763345}

@@ -1,0 +1,3 @@
+[MFLOG|0|2024-12-10T20:05:26.683648Z|runtime|873444da-640d-44a9-a873-14b63fc0bf45]2024-12-10 21:05:26,681 [INFO] Model artifacts downloaded to file:///var/folders/pk/nk0t185511z8g6hmxr_bhkfw0000gn/T/tmpzqeudjre/model 
+[MFLOG|0|2024-12-10T20:05:26.714498Z|runtime|36dda46e-5688-400b-a429-6668257b149f]2024-12-10 21:05:26,714 [INFO] Deployment target URI: sagemaker:/us-east-1
+[MFLOG|0|2024-12-10T20:05:26.852358Z|runtime|a7a2b166-9e97-4efc-9afc-9c90be4d1361]2024-12-10 21:05:26,852 [INFO] Found credentials in shared credentials file: ~/.aws/credentials

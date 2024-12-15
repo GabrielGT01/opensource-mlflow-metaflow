@@ -1,0 +1,6 @@
+[MFLOG|0|2024-11-14T23:32:11.996014Z|runtime|580a96bc-5fc0-4ccb-b8a1-b6941527d5bf]<flow Training step evaluate_model> failed:
+[MFLOG|0|2024-11-14T23:32:12.001744Z|runtime|caaacf17-134f-4f9d-92fe-fe18fe75e585]    Missing artifacts in merge:
+[MFLOG|0|2024-11-14T23:32:12.001832Z|runtime|f026d89a-a7e6-4405-a7da-9a8e816fcd4e]    Step evaluate_model specifies that [mlflow_run_id, mlflow_tracking_uri] should be merged but [mlflow_tracking_uri] are not present.
+[MFLOG|0|2024-11-14T23:32:12.178785Z|runtime|7990539b-9f97-4378-bb44-b8f38f47ed21]    To remedy this issue, make sure that the values specified in only come from at least one branch
+[MFLOG|0|2024-11-14T23:32:12.179014Z|runtime|fdd6af5d-a371-47e3-b412-40f25593f7e0]
+[MFLOG|0|2024-11-14T23:32:12.179515Z|runtime|aa52331d-3d8e-4ed2-9124-183b2eb75156]Task failed.

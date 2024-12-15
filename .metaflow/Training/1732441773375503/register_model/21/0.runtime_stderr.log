@@ -1,0 +1,5 @@
+[MFLOG|0|2024-11-24T09:50:40.050669Z|runtime|b69a48c5-1d74-431b-a36a-7ebd3d326b8d]Successfully registered model 'raining'.
+[MFLOG|0|2024-11-24T09:50:40.066227Z|runtime|75c3a532-ca10-4d0e-a318-36fdf088d06b]2024/11/24 10:50:40 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: raining, version 1
+[MFLOG|0|2024-11-24T09:50:40.085268Z|runtime|02360071-72fc-4044-b542-df7723326899]Created version '1' of model 'raining'.
+[MFLOG|0|2024-11-24T09:50:40.085407Z|runtime|16729158-be40-4974-bf40-2e305328f4cf]2024/11/24 10:50:40 INFO mlflow.tracking._tracking_service.client: 🏃 View run 1732441773375503 at: http://127.0.0.1:5000/#/experiments/0/runs/a7d6791cecdd42f383c46a73c5c4f8e8.
+[MFLOG|0|2024-11-24T09:50:40.298252Z|runtime|041621da-9c97-4e49-be91-12cf4241fed7]2024/11/24 10:50:40 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://127.0.0.1:5000/#/experiments/0.

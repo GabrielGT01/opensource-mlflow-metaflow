@@ -1,0 +1,42 @@
+[MFLOG|0|2024-11-19T22:01:38.292021Z|runtime|1e302e20-5879-45a8-a7fc-a54fb1ff5f32][KILLED BY ORCHESTRATOR]
+[MFLOG|0|2024-11-19T22:01:38.345033Z|runtime|64b0bab2-c5c0-4d1e-a93c-ef395f5a3f23]Traceback (most recent call last):
+[MFLOG|0|2024-11-19T22:01:38.345162Z|runtime|14f5aaa7-6015-477b-855b-b795e8d486af]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/training.py", line 10, in <module>
+[MFLOG|0|2024-11-19T22:01:38.345218Z|runtime|a9fb2e71-62df-4e1a-b9ec-5a1f50800711]    from sklearn.model_selection import train_test_split, StratifiedKFold
+[MFLOG|0|2024-11-19T22:01:38.345268Z|runtime|7c101e05-8264-40f2-858a-421bb5d5dac7]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/sklearn/__init__.py", line 84, in <module>
+[MFLOG|0|2024-11-19T22:01:38.345314Z|runtime|e7802178-0b93-4595-ab6f-06d84bd25dbb]    from .base import clone
+[MFLOG|0|2024-11-19T22:01:38.345349Z|runtime|4e98ef76-87ff-4ca1-94ad-a7d4e30cd693]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/sklearn/base.py", line 19, in <module>
+[MFLOG|0|2024-11-19T22:01:38.345389Z|runtime|55e4138c-8982-4b03-83b6-7f4adb4958cf]    from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+[MFLOG|0|2024-11-19T22:01:38.345421Z|runtime|52d2d9ef-642c-4c9f-a16b-6a41d5119abc]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/sklearn/utils/__init__.py", line 11, in <module>
+[MFLOG|0|2024-11-19T22:01:38.345456Z|runtime|88ae4915-76bf-4a70-8593-2cb1c0942925]    from ._chunking import gen_batches, gen_even_slices
+[MFLOG|0|2024-11-19T22:01:38.345487Z|runtime|13366f0e-ab94-4630-8260-8f8727bd5ef1]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/sklearn/utils/_chunking.py", line 8, in <module>
+[MFLOG|0|2024-11-19T22:01:38.345518Z|runtime|344904eb-c185-44f3-9f2c-db13039fca18]    from ._param_validation import Interval, validate_params
+[MFLOG|0|2024-11-19T22:01:38.345552Z|runtime|1ea477ad-8bf3-42ea-9d46-4799ae3a8407]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 14, in <module>
+[MFLOG|0|2024-11-19T22:01:38.345588Z|runtime|fdc41fea-3617-4154-8fab-51a6821875a4]    from .validation import _is_arraylike_not_scalar
+[MFLOG|0|2024-11-19T22:01:38.345618Z|runtime|40dccc38-4bb4-4a3a-80f7-357f7845f4f4]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/sklearn/utils/validation.py", line 26, in <module>
+[MFLOG|0|2024-11-19T22:01:38.345652Z|runtime|2dbb15e2-a343-4bdb-96f0-f2dbb96c742d]    from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+[MFLOG|0|2024-11-19T22:01:38.345685Z|runtime|4c12b845-3020-4c19-9128-4b9ac43070cd]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/sklearn/utils/_array_api.py", line 11, in <module>
+[MFLOG|0|2024-11-19T22:01:38.345715Z|runtime|df8e4732-0bc6-41e3-86f3-bb308380bcfd]    from .fixes import parse_version
+[MFLOG|0|2024-11-19T22:01:38.345751Z|runtime|a07b844d-b611-4b68-8d28-f5b006f6dfec]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/sklearn/utils/fixes.py", line 21, in <module>
+[MFLOG|0|2024-11-19T22:01:38.345781Z|runtime|af32c955-adde-4ac8-ac43-2d60798270fe]    import scipy.stats
+[MFLOG|0|2024-11-19T22:01:38.345813Z|runtime|10855be6-39ba-46de-b610-d6c997bef5a0]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/scipy/stats/__init__.py", line 610, in <module>
+[MFLOG|0|2024-11-19T22:01:38.345846Z|runtime|10a05942-d74a-4952-9081-b3cfd2128a6c]    from ._stats_py import *
+[MFLOG|0|2024-11-19T22:01:38.345875Z|runtime|7b772fda-a516-4100-a942-fb0902e574b5]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/scipy/stats/_stats_py.py", line 40, in <module>
+[MFLOG|0|2024-11-19T22:01:38.345908Z|runtime|74d76094-c485-4409-82e6-734383e60da5]    from scipy.optimize import milp, LinearConstraint
+[MFLOG|0|2024-11-19T22:01:38.345938Z|runtime|64d9a22d-081b-478f-9204-e7a56513beea]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/scipy/optimize/__init__.py", line 416, in <module>
+[MFLOG|0|2024-11-19T22:01:38.345967Z|runtime|ac33066b-a7cb-4e78-b429-ce3325648b84]    from ._root import *
+[MFLOG|0|2024-11-19T22:01:38.346000Z|runtime|db764acb-756b-4ea0-ab0c-211a6f311ba7]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/scipy/optimize/_root.py", line 15, in <module>
+[MFLOG|0|2024-11-19T22:01:38.346030Z|runtime|88e77e04-c36d-4ab1-8e74-a0b21541bd01]    from ._minpack_py import _root_hybr, leastsq
+[MFLOG|0|2024-11-19T22:01:38.346059Z|runtime|b53d4ea7-b856-4e7d-ada5-908f45802a44]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/scipy/optimize/_minpack_py.py", line 13, in <module>
+[MFLOG|0|2024-11-19T22:01:38.346088Z|runtime|c4424dd2-feb9-4477-b818-19cb69c9a269]    from ._lsq import least_squares
+[MFLOG|0|2024-11-19T22:01:38.346129Z|runtime|c43c7cd0-6cb3-4c0d-9c99-9765fcdfc55a]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/scipy/optimize/_lsq/__init__.py", line 3, in <module>
+[MFLOG|0|2024-11-19T22:01:38.346184Z|runtime|90b60abf-4e98-4b26-a0af-aa4c33ca63f8]    from .lsq_linear import lsq_linear
+[MFLOG|0|2024-11-19T22:01:38.346218Z|runtime|c65762c7-c28b-4e82-8995-0c0d77e02dd8]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/scipy/optimize/_lsq/lsq_linear.py", line 11, in <module>
+[MFLOG|0|2024-11-19T22:01:38.346249Z|runtime|7e54ddf4-0364-40ed-a0e0-facfd3f9916f]    from .bvls import bvls
+[MFLOG|0|2024-11-19T22:01:38.346280Z|runtime|b9061455-1bee-4ac1-b513-5c4ff43d5fb4]  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+[MFLOG|0|2024-11-19T22:01:38.346309Z|runtime|49c5b884-7444-4de0-af1f-0fdbd20dedfa]  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+[MFLOG|0|2024-11-19T22:01:38.346359Z|runtime|1fc0b2fc-d639-47de-8c48-dfb3be3ce8af]  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+[MFLOG|0|2024-11-19T22:01:38.346393Z|runtime|0bf184e0-fcdd-409d-b6d2-640b291bd17a]  File "<frozen importlib._bootstrap_external>", line 990, in exec_module
+[MFLOG|0|2024-11-19T22:01:38.346423Z|runtime|ef68cc1c-e301-4b41-bbbd-13dbc059a105]  File "<frozen importlib._bootstrap_external>", line 1086, in get_code
+[MFLOG|0|2024-11-19T22:01:38.346453Z|runtime|ca11bbb8-a907-4a42-9c04-b32d9bd7d8eb]  File "<frozen importlib._bootstrap_external>", line 1186, in get_data
+[MFLOG|0|2024-11-19T22:01:38.346481Z|runtime|50d6ba4e-dc8b-4190-8b30-15a04779ef7d]KeyboardInterrupt
+[MFLOG|0|2024-11-19T22:01:38.346926Z|runtime|cdd60998-ea0d-4e8d-908c-e584d9ac5796]Task failed.

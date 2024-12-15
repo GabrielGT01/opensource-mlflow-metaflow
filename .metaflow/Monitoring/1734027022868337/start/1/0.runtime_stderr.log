@@ -1,0 +1,46 @@
+[MFLOG|0|2024-12-12T18:10:25.904329Z|runtime|7de100bc-e702-44ad-8285-b9e7b3ba2824]<flow Monitoring step start> failed:
+[MFLOG|0|2024-12-12T18:10:25.917154Z|runtime|46bce1fa-2e85-41b3-b732-68d6e727d14d]    Internal error
+[MFLOG|0|2024-12-12T18:10:25.919330Z|runtime|9a5402df-fc38-4929-9513-85b788f8f7cd]Traceback (most recent call last):
+[MFLOG|0|2024-12-12T18:10:25.919445Z|runtime|50533e25-935b-4e5c-b331-4c2a9f788f3c]  File "/tmp/tmpjbn_qy81/metaflow/cli.py", line 1166, in main
+[MFLOG|0|2024-12-12T18:10:25.919532Z|runtime|ce8428fb-5a7a-45a7-9901-796836b467a8]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-12-12T18:10:25.919598Z|runtime|e8d3b5b3-2153-43d9-94ce-a7e1203fdea3]  File "/tmp/tmpjbn_qy81/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-12-12T18:10:25.919675Z|runtime|45041f83-5d54-462b-b39f-8c5949eae26f]    return func(args, kwargs)
+[MFLOG|0|2024-12-12T18:10:26.062613Z|runtime|231e0530-26b0-4f4b-b5de-bd87ec83c271]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T18:10:26.062845Z|runtime|839a3b32-fef1-43c4-b872-422a77019f52]  File "/tmp/tmpjbn_qy81/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-12-12T18:10:26.062896Z|runtime|67aba33c-1bb7-4e21-90c8-6b763063efd4]    return self.main(args, kwargs)
+[MFLOG|0|2024-12-12T18:10:26.062935Z|runtime|5e6b0f9b-c85b-460d-86a4-49d115933235]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T18:10:26.062968Z|runtime|5c02cd97-b5b2-43d5-945f-9b3a18570ed6]  File "/tmp/tmpjbn_qy81/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-12-12T18:10:26.063010Z|runtime|cbf8357b-4b7d-474b-adb9-c7f9ac90b801]    rv = self.invoke(ctx)
+[MFLOG|0|2024-12-12T18:10:26.063045Z|runtime|e1b5473a-f9d7-49b9-80d0-423ef0775acf]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T18:10:26.063076Z|runtime|37298470-f336-4e1d-8f3c-b5abd8802067]  File "/tmp/tmpjbn_qy81/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-12-12T18:10:26.063113Z|runtime|1734a156-5ef4-4e4e-9ec1-b70f597b8763]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-12-12T18:10:26.063145Z|runtime|b5c1929e-cb21-4032-82af-2caed7475506]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T18:10:26.063174Z|runtime|85e1ebdb-7249-4a29-bf33-76fcb66e00b5]  File "/tmp/tmpjbn_qy81/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-12-12T18:10:26.063207Z|runtime|f6669be2-b5d1-45ce-8a03-020b93cff1d2]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-12-12T18:10:26.063245Z|runtime|7d589ab9-8011-4ed5-bb68-6973e607494e]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T18:10:26.063277Z|runtime|c412e44c-a1de-44c2-89b2-4d1f8703b3f5]  File "/tmp/tmpjbn_qy81/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-12-12T18:10:26.063308Z|runtime|83d3dc40-d961-476e-a5c5-e2edc72025d8]    return callback(args, kwargs)
+[MFLOG|0|2024-12-12T18:10:26.063339Z|runtime|c3a5c81e-f7ba-4cbb-ab24-0492ba98a0e6]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T18:10:26.063369Z|runtime|f30405de-d0fb-4a40-89be-f5a61fdde423]  File "/tmp/tmpjbn_qy81/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-12-12T18:10:26.063399Z|runtime|0edcf83f-5a79-4bf5-aca4-ebf85deccdfb]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-12-12T18:10:26.063429Z|runtime|46370aa8-e380-4e33-99e6-f47e95d825ca]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T18:10:26.063458Z|runtime|1e0631a1-86e9-42ca-8f78-06e63ba4f709]  File "/tmp/tmpjbn_qy81/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-12-12T18:10:26.063499Z|runtime|8b7a0c0b-079a-4003-b957-0083131e0f76]    task.run_step(
+[MFLOG|0|2024-12-12T18:10:26.063533Z|runtime|d28313e1-5ab7-4bc9-b5fc-9235812d20e1]  File "/tmp/tmpjbn_qy81/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2024-12-12T18:10:26.063561Z|runtime|69608d72-64ce-4c72-b8ef-8db9632b77fb]    self._exec_step_function(step_func)
+[MFLOG|0|2024-12-12T18:10:26.063589Z|runtime|0dea1ab6-164b-4da6-bba7-bea5bf2cf55b]  File "/tmp/tmpjbn_qy81/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-12-12T18:10:26.063623Z|runtime|ba9213f3-417d-4eaf-89b9-78b9158cd364]    step_function()
+[MFLOG|0|2024-12-12T18:10:26.063652Z|runtime|3f6a9b44-b19c-4059-8021-565d726bcdb1]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/monitoring_aws.py", line 90, in start
+[MFLOG|0|2024-12-12T18:10:26.063682Z|runtime|4aa8f980-6730-4478-9a35-a3b81a2751ad]    self.current_data = self._load_production_datastore()
+[MFLOG|0|2024-12-12T18:10:26.063710Z|runtime|e2ba2a31-5f6c-431f-bfe3-de6233167c03]                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T18:10:26.063738Z|runtime|1501e2f1-7759-48b9-9cf4-ae78bc6f1b63]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/monitoring_aws.py", line 352, in _load_production_datastore
+[MFLOG|0|2024-12-12T18:10:26.063767Z|runtime|cdd2cf34-2c67-488a-9fd7-c6342da5af4f]    data = self._load_production_data_from_s3()
+[MFLOG|0|2024-12-12T18:10:26.063796Z|runtime|ca5eaf5f-ebdb-4c59-acc4-02093e10b64a]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T18:10:26.063823Z|runtime|000aea7c-5feb-488b-af91-a1eda2eb3d36]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/monitoring_aws.py", line 371, in _load_production_data_from_s3
+[MFLOG|0|2024-12-12T18:10:26.063857Z|runtime|2cd15f8d-adab-416f-b182-f12f2d11b55d]    data = load_labeled_data(
+[MFLOG|0|2024-12-12T18:10:26.063885Z|runtime|c5bf611d-4cf9-4dc9-9765-21c517f2eb2d]           ^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T18:10:26.063913Z|runtime|c3e1b1c3-8db0-4938-af9e-bd40dd2f8d4c]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/sagemaker.py", line 32, in load_labeled_data
+[MFLOG|0|2024-12-12T18:10:26.063941Z|runtime|cc1a4ede-06ae-4dac-b758-5ef98cb63d21]    raise KeyError("Column 'rain_status' is missing in the loaded data.")
+[MFLOG|0|2024-12-12T18:10:26.063969Z|runtime|e66f4846-29dd-4e1e-991b-52690de1d364]KeyError: "Column 'rain_status' is missing in the loaded data."
+[MFLOG|0|2024-12-12T18:10:26.064015Z|runtime|d566f516-b374-4cff-9639-563eb574e485]
+[MFLOG|0|2024-12-12T18:10:26.064529Z|runtime|8725fd09-93e0-48ec-9b0d-92d7abc557e6]Task failed.

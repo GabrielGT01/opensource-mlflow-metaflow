@@ -1,0 +1,27 @@
+[MFLOG|0|2024-11-30T10:15:52.905628Z|runtime|9afef05e-e714-41fa-a45d-14034c744f45][KILLED BY ORCHESTRATOR]
+[MFLOG|0|2024-11-30T10:15:52.961476Z|runtime|f06b5458-4538-49c0-8b88-4a98df91a709]Traceback (most recent call last):
+[MFLOG|0|2024-11-30T10:15:52.961700Z|runtime|aab1a6e2-5a38-4b89-96d0-c1241cb44cd2]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/training.py", line 10, in <module>
+[MFLOG|0|2024-11-30T10:15:52.961812Z|runtime|57c8ea5b-28e2-4ce0-b919-62464a975f43]    from sklearn.model_selection import train_test_split, StratifiedKFold
+[MFLOG|0|2024-11-30T10:15:52.961911Z|runtime|f6cb82a7-58e1-420b-a4bb-a4c4cc7fa95f]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/sklearn/__init__.py", line 84, in <module>
+[MFLOG|0|2024-11-30T10:15:52.962004Z|runtime|b900d819-1541-473d-abed-8e2fde2e850e]    from .base import clone
+[MFLOG|0|2024-11-30T10:15:52.962095Z|runtime|e8f6845f-7406-4375-a587-7b7b169df441]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/sklearn/base.py", line 19, in <module>
+[MFLOG|0|2024-11-30T10:15:52.962183Z|runtime|a51a761d-8393-44f5-ac23-d0279d380f19]    from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+[MFLOG|0|2024-11-30T10:15:52.962258Z|runtime|aa75d2b3-8101-413e-be03-e007e4c3cf29]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/sklearn/utils/__init__.py", line 9, in <module>
+[MFLOG|0|2024-11-30T10:15:52.962332Z|runtime|f69fe89a-0ced-4ade-b1ee-ec8f6ef2f256]    from . import _joblib, metadata_routing
+[MFLOG|0|2024-11-30T10:15:52.962413Z|runtime|6ce68d59-a834-4f21-8978-6f89ff9c3cce]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/sklearn/utils/_joblib.py", line 9, in <module>
+[MFLOG|0|2024-11-30T10:15:52.962495Z|runtime|f8438fdf-1898-4d09-8a7d-9d2b2d82281b]    import joblib
+[MFLOG|0|2024-11-30T10:15:52.962571Z|runtime|394222d0-452b-41d9-a221-b0980eb0f4f5]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/joblib/__init__.py", line 114, in <module>
+[MFLOG|0|2024-11-30T10:15:52.962650Z|runtime|6d3822e6-eada-45c4-b29e-8520f49bba19]    from .memory import Memory
+[MFLOG|0|2024-11-30T10:15:52.962721Z|runtime|2799fcf7-bf59-4bc8-a8f7-3ec233f485f3]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/joblib/memory.py", line 29, in <module>
+[MFLOG|0|2024-11-30T10:15:52.962793Z|runtime|faafceca-ec1b-4b85-871b-cb5d087472a2]    from ._store_backends import CacheWarning  # noqa
+[MFLOG|0|2024-11-30T10:15:52.962920Z|runtime|31b2f596-e2a6-4af6-84d0-f27e0d2123ed]    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-30T10:15:52.962991Z|runtime|63a2987d-c84b-4997-b24b-c7fe9336202c]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/joblib/_store_backends.py", line 8, in <module>
+[MFLOG|0|2024-11-30T10:15:52.963079Z|runtime|008652ea-0d1c-4085-ae70-099ed034e5c2]    import json
+[MFLOG|0|2024-11-30T10:15:52.963158Z|runtime|7a174987-fa16-4353-9488-9d1810325410]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/json/__init__.py", line 106, in <module>
+[MFLOG|0|2024-11-30T10:15:52.963236Z|runtime|abfdcf8b-ef43-4033-aa8b-07b138a4a598]    from .decoder import JSONDecoder, JSONDecodeError
+[MFLOG|0|2024-11-30T10:15:52.963305Z|runtime|6cade7f8-95b3-4f2f-8baa-373f57128b4d]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/json/decoder.py", line 5, in <module>
+[MFLOG|0|2024-11-30T10:15:52.963386Z|runtime|35bc156f-627e-4062-8086-a7e23d7df910]    from json import scanner
+[MFLOG|0|2024-11-30T10:15:52.963457Z|runtime|8641d032-1ceb-43cf-84ad-75f7cdb515b1]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/json/scanner.py", line 5, in <module>
+[MFLOG|0|2024-11-30T10:15:52.963526Z|runtime|06aedc7c-6581-4412-b64e-81c60d47e5b4]    from _json import make_scanner as c_make_scanner
+[MFLOG|0|2024-11-30T10:15:52.963602Z|runtime|e2d7cd8b-eb78-42a0-9cf7-64f667f4afba]KeyboardInterrupt
+[MFLOG|0|2024-11-30T10:15:52.964733Z|runtime|cecbf5fc-56c3-4a63-9d43-bbacbc1a11a0]Task failed.

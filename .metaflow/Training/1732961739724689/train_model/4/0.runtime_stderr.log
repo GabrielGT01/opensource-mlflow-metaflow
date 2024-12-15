@@ -1,0 +1,22 @@
+[MFLOG|0|2024-11-30T10:15:52.904962Z|runtime|f174ea9d-3dba-413f-bb7f-6cd52f447602][KILLED BY ORCHESTRATOR]
+[MFLOG|0|2024-11-30T10:15:52.965921Z|runtime|dbf1a9ee-cb58-4b0e-86cb-bf441d6e34d1]Traceback (most recent call last):
+[MFLOG|0|2024-11-30T10:15:52.966019Z|runtime|2483879f-b488-475c-8f8b-dd2206f24707]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/training.py", line 10, in <module>
+[MFLOG|0|2024-11-30T10:15:52.966096Z|runtime|d611c63a-97c5-43e7-ab67-7f5e3ee3b159]    from sklearn.model_selection import train_test_split, StratifiedKFold
+[MFLOG|0|2024-11-30T10:15:52.966191Z|runtime|6e883fa3-1cba-4d5b-b41f-95fa7915abc1]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/sklearn/__init__.py", line 84, in <module>
+[MFLOG|0|2024-11-30T10:15:52.966267Z|runtime|50a0113d-d596-4b5c-9274-8da13887f0a5]    from .base import clone
+[MFLOG|0|2024-11-30T10:15:52.966350Z|runtime|ba04fcc4-151e-4181-a4d5-bdeacc957682]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/sklearn/base.py", line 14, in <module>
+[MFLOG|0|2024-11-30T10:15:52.966424Z|runtime|82f584e3-10d9-47d3-90d7-f6345aa19438]    import numpy as np
+[MFLOG|0|2024-11-30T10:15:52.966503Z|runtime|4d809c2e-eaf2-4d58-bca3-4187e6dee176]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/numpy/__init__.py", line 114, in <module>
+[MFLOG|0|2024-11-30T10:15:52.966574Z|runtime|3a896a6d-d656-4664-a306-967611246071]    from numpy.__config__ import show as show_config
+[MFLOG|0|2024-11-30T10:15:52.966643Z|runtime|16a79b09-6d40-4a36-9bee-04f0706f1f26]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/numpy/__config__.py", line 4, in <module>
+[MFLOG|0|2024-11-30T10:15:52.966720Z|runtime|8b34c0ab-cdd1-47aa-a61a-8585754e34f2]    from numpy._core._multiarray_umath import (
+[MFLOG|0|2024-11-30T10:15:52.966788Z|runtime|9f43cb18-e7e0-4215-8081-bd251c26ddcf]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/numpy/_core/__init__.py", line 96, in <module>
+[MFLOG|0|2024-11-30T10:15:52.966864Z|runtime|9b740f8c-b12b-40b7-a4ef-d308230646f4]    from . import _add_newdocs
+[MFLOG|0|2024-11-30T10:15:52.966937Z|runtime|3ffe209a-cc95-4385-9408-c59ce4b99e9a]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/numpy/_core/_add_newdocs.py", line 4950, in <module>
+[MFLOG|0|2024-11-30T10:15:52.967008Z|runtime|64f199da-c595-4bed-9e7d-8bbcb4bbeebf]    add_newdoc('numpy._core.multiarray', '_get_madvise_hugepage',
+[MFLOG|0|2024-11-30T10:15:52.967079Z|runtime|b9592c7d-9edc-406d-b511-59c8fc5222c1]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/numpy/_core/function_base.py", line 554, in add_newdoc
+[MFLOG|0|2024-11-30T10:15:52.967148Z|runtime|9bca8bb9-1763-481a-8442-28633e0a03ba]    _add_docstring(new, doc.strip(), warn_on_python)
+[MFLOG|0|2024-11-30T10:15:52.967218Z|runtime|84b7d11d-7927-42f4-bbf3-0e13d6f6f59f]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/numpy/_core/function_base.py", line 500, in _add_docstring
+[MFLOG|0|2024-11-30T10:15:52.967289Z|runtime|89dd58a1-e107-4f83-8c39-2b3b7223e82f]    add_docstring(obj, doc)
+[MFLOG|0|2024-11-30T10:15:52.967363Z|runtime|e85f0541-015d-4eb1-8d0b-2b674beee33e]KeyboardInterrupt
+[MFLOG|0|2024-11-30T10:15:52.968012Z|runtime|2a045de5-31fa-4435-9bf7-55c3810a36c9]Task failed.

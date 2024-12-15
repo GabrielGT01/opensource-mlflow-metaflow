@@ -1,0 +1,3 @@
+[MFLOG|0|2024-12-12T19:08:57.112087Z|runtime|ca5ea276-14d3-469c-9526-f96f7573358b]2024-12-12 20:08:57,111 [INFO] Found 1 CSV file(s) in the directory: kaggle_data/
+[MFLOG|0|2024-12-12T19:08:57.117860Z|runtime|7e660f10-49d9-4974-b114-48090af8f101]2024-12-12 20:08:57,117 [INFO] Loaded 2500 records from file: kaggle_data/weather_forecast_data.csv
+[MFLOG|0|2024-12-12T19:08:57.120379Z|runtime|7d9e2a36-0a32-4d29-9848-37b3e0425663]2024-12-12 20:08:57,120 [INFO] Loaded dataset with 2500 samples

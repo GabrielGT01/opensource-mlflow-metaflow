@@ -1,0 +1,7 @@
+[MFLOG|0|2024-12-12T10:12:58.820691Z|runtime|955039ed-8ff9-435a-bae3-2747f3095f9b]2024-12-12 11:12:58,820 [INFO] Running prediction on "dailyweather061"...
+[MFLOG|0|2024-12-12T10:12:58.831587Z|runtime|fbd97f59-bc04-4446-8523-e50e9a36e1ca]2024-12-12 11:12:58,830 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+[MFLOG|0|2024-12-12T10:13:00.208078Z|runtime|93192c2b-1c8c-4898-91bd-a3bba50d999e]2024-12-12 11:13:00,198 [INFO] 
+[MFLOG|0|2024-12-12T10:13:00.395702Z|runtime|5f85b1f0-2d9b-4103-992d-e416b2905e3d]  prediction  confidence
+[MFLOG|0|2024-12-12T10:13:00.395846Z|runtime|36ac042b-6693-4084-b4c5-fdf8448a0ffe]0    no rain    0.999921
+[MFLOG|0|2024-12-12T10:13:00.395905Z|runtime|5b76ea02-b0a4-4966-ab75-037d950c4be9]1    no rain    0.998936
+[MFLOG|0|2024-12-12T10:13:00.395947Z|runtime|a8f43a51-5d21-4ab1-8c08-4b8f976e7e4b]2    no rain    0.999832

@@ -1,0 +1,52 @@
+[MFLOG|0|2024-12-07T11:30:15.900489Z|runtime|0e76a4e0-dfe9-4c75-92f2-8f3898fed81b]Downloading artifacts:   0%|          | 0/12 [00:00<?, ?it/s]Downloading artifacts:   8%|▊         | 1/12 [00:00<00:00, 3269.14it/s]Downloading artifacts:  17%|█▋        | 2/12 [00:00<00:00, 2890.63it/s]Downloading artifacts:  25%|██▌       | 3/12 [00:00<00:00, 3668.49it/s]Downloading artifacts:  33%|███▎      | 4/12 [00:00<00:00, 4510.00it/s]Downloading artifacts:  42%|████▏     | 5/12 [00:00<00:00, 5291.83it/s]Downloading artifacts:  50%|█████     | 6/12 [00:00<00:00, 6024.86it/s]Downloading artifacts:  58%|█████▊    | 7/12 [00:00<00:00, 6712.42it/s]Downloading artifacts:  67%|██████▋   | 8/12 [00:00<00:00, 7353.59it/s]Downloading artifacts:  75%|███████▌  | 9/12 [00:00<00:00, 7943.76it/s]Downloading artifacts:  83%|████████▎ | 10/12 [00:00<00:00, 8490.49it/s]Downloading artifacts:  92%|█████████▏| 11/12 [00:00<00:00, 174.38it/s] Downloading artifacts: 100%|██████████| 12/12 [00:00<00:00, 39.85it/s] Downloading artifacts: 100%|██████████| 12/12 [00:00<00:00, 39.85it/s]Downloading artifacts: 100%|██████████| 12/12 [00:00<00:00, 39.73it/s]
+[MFLOG|0|2024-12-07T11:30:17.249538Z|runtime|a3003f1c-121e-4f50-9db9-438cdf457d39]<flow Deployment step deployment> failed:
+[MFLOG|0|2024-12-07T11:30:17.274602Z|runtime|218616fb-57d1-4698-8514-fc4cdefa58f7]    Internal error
+[MFLOG|0|2024-12-07T11:30:17.277919Z|runtime|ad4b7c7d-058c-4abc-a89a-21395dd539c6]Traceback (most recent call last):
+[MFLOG|0|2024-12-07T11:30:17.278052Z|runtime|b01fe554-ce45-48cb-a831-b1d274078fde]  File "/tmp/tmp_uwcfqz_/metaflow/cli.py", line 1166, in main
+[MFLOG|0|2024-12-07T11:30:17.278157Z|runtime|c3949867-9dec-4b91-9caf-4c41d471278e]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-12-07T11:30:17.278210Z|runtime|a5259bbf-8803-44ff-9188-612f11dc931c]  File "/tmp/tmp_uwcfqz_/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-12-07T11:30:17.278272Z|runtime|40c37e76-4140-43a5-bfb2-a1004c956586]    return func(args, kwargs)
+[MFLOG|0|2024-12-07T11:30:17.466681Z|runtime|14990151-12f6-490f-8aa6-246a814f2ee2]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-07T11:30:17.466877Z|runtime|7c50e198-7969-46d4-8341-a55b490abdf5]  File "/tmp/tmp_uwcfqz_/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-12-07T11:30:17.466933Z|runtime|a6403532-c994-41bf-9a92-24c449155738]    return self.main(args, kwargs)
+[MFLOG|0|2024-12-07T11:30:17.466975Z|runtime|97b6ac5e-3ce1-4656-b32b-7062f155d521]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-07T11:30:17.467046Z|runtime|5caa8f5e-4dd5-4b0b-87f8-30730bd04746]  File "/tmp/tmp_uwcfqz_/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-12-07T11:30:17.467087Z|runtime|c635083a-3219-47ef-a730-8bcb16bcc677]    rv = self.invoke(ctx)
+[MFLOG|0|2024-12-07T11:30:17.467121Z|runtime|acf7cb54-efc2-4e50-b26e-8d4826a15356]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-07T11:30:17.467157Z|runtime|290e5ba3-0a31-4fc6-adfc-865a2b517c59]  File "/tmp/tmp_uwcfqz_/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-12-07T11:30:17.467193Z|runtime|21e7fc35-778b-4111-bd99-3245d98f478b]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-12-07T11:30:17.467229Z|runtime|ae72bb7f-f619-4098-818d-5b7eae361676]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-07T11:30:17.467263Z|runtime|686f7828-d7f7-4747-b8c4-941319e1d6ad]  File "/tmp/tmp_uwcfqz_/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-12-07T11:30:17.467298Z|runtime|c185e987-7129-4e1d-bd16-06dbff279352]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-12-07T11:30:17.467329Z|runtime|90f83cbc-a9b2-4dd1-914f-469d6368bb32]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-07T11:30:17.467366Z|runtime|8c5b431d-9e4f-4fa2-90b1-d8586697d0e8]  File "/tmp/tmp_uwcfqz_/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-12-07T11:30:17.467398Z|runtime|28ef269a-c808-473e-b4e3-86518ae8a527]    return callback(args, kwargs)
+[MFLOG|0|2024-12-07T11:30:17.467432Z|runtime|30a01717-3364-4b04-8702-5335e2686f81]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-07T11:30:17.467463Z|runtime|9e2c83ad-61ab-4022-9467-cffe0f4b2d7e]  File "/tmp/tmp_uwcfqz_/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-12-07T11:30:17.467494Z|runtime|46c2cba8-ec8a-4a2a-bb9a-c6a0d8fd2306]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-12-07T11:30:17.467523Z|runtime|ddcad978-c2a5-487d-96ae-986a12543dcd]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-07T11:30:17.467554Z|runtime|7d3b0bc6-0792-4862-a2ca-6e3634aec142]  File "/tmp/tmp_uwcfqz_/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-12-07T11:30:17.467583Z|runtime|b42f9f87-90a7-4bf9-82bc-e2a32328f7ce]    task.run_step(
+[MFLOG|0|2024-12-07T11:30:17.467615Z|runtime|dace1d72-94fb-4370-9ab9-6a6edafbbb31]  File "/tmp/tmp_uwcfqz_/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2024-12-07T11:30:17.467645Z|runtime|2296bc11-e329-47ab-9d24-f831fd18f115]    self._exec_step_function(step_func)
+[MFLOG|0|2024-12-07T11:30:17.467674Z|runtime|eb66df24-d407-463c-9935-02b82f4ad496]  File "/tmp/tmp_uwcfqz_/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-12-07T11:30:17.467720Z|runtime|bb9bf767-09b2-4a03-8eab-d26ccca2ea52]    step_function()
+[MFLOG|0|2024-12-07T11:30:17.467752Z|runtime|6e3d6a6a-0d1b-4cbe-a309-e122df62ce87]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/deployment.py", line 134, in deployment
+[MFLOG|0|2024-12-07T11:30:17.467782Z|runtime|ac17c62c-b795-42f9-a7ff-c4560f9be93e]    self._deploy_to_sagemaker()
+[MFLOG|0|2024-12-07T11:30:17.467812Z|runtime|05185fc5-2727-4d87-932f-e139ad44a699]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/deployment.py", line 248, in _deploy_to_sagemaker
+[MFLOG|0|2024-12-07T11:30:17.467841Z|runtime|b18b978d-5b1f-45ca-8e76-c0683dcce674]    deployment = deployment_client.get_deployment(self.endpoint)
+[MFLOG|0|2024-12-07T11:30:17.467869Z|runtime|4f9bf362-d545-4ef5-b6cd-26336f5239c1]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-07T11:30:17.467898Z|runtime|08a5a51b-4178-4e1d-877f-5262c7c3eb24]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/abeec5193171f93/lib/python3.12/site-packages/mlflow/sagemaker/__init__.py", line 2777, in get_deployment
+[MFLOG|0|2024-12-07T11:30:17.467943Z|runtime|0147a0c7-e556-43f8-95b3-c9f4403d7c1e]    assume_role_credentials = _assume_role_and_get_credentials(
+[MFLOG|0|2024-12-07T11:30:17.467976Z|runtime|d6d369b1-bcd6-4668-99a7-c055c34c8554]                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-07T11:30:17.468005Z|runtime|8ae7a37d-e6a4-49bc-bc05-be754f0dc078]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/abeec5193171f93/lib/python3.12/site-packages/mlflow/sagemaker/__init__.py", line 1250, in _assume_role_and_get_credentials
+[MFLOG|0|2024-12-07T11:30:17.468037Z|runtime|e47d1cc0-c9e7-44cf-b0e1-26d3c520c50c]    sts_response = sts_client.assume_role(
+[MFLOG|0|2024-12-07T11:30:17.468070Z|runtime|02491c3d-2731-4fc9-812c-9f72442936fa]                   ^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-07T11:30:17.468100Z|runtime|bd3f7105-2b79-4451-b61f-cf7ac73bbcfc]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/abeec5193171f93/lib/python3.12/site-packages/botocore/client.py", line 569, in _api_call
+[MFLOG|0|2024-12-07T11:30:17.468137Z|runtime|59402d68-e7cf-43a8-a3ef-59e090e332e4]    return self._make_api_call(operation_name, kwargs)
+[MFLOG|0|2024-12-07T11:30:17.468174Z|runtime|55c6221e-aaaa-4936-a855-a074537758cc]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-07T11:30:17.468212Z|runtime|4356e864-dff9-492a-973a-740152b8d2e5]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/abeec5193171f93/lib/python3.12/site-packages/botocore/client.py", line 1023, in _make_api_call
+[MFLOG|0|2024-12-07T11:30:17.468241Z|runtime|07478065-5833-44f9-aad5-2084cd4a19c8]    raise error_class(parsed_response, operation_name)
+[MFLOG|0|2024-12-07T11:30:17.468291Z|runtime|016a0a23-ef88-4bbb-b875-34535742710a]botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the AssumeRole operation: User: arn:aws:sts::025066244860:assumed-role/mlschool-Role-vFyR6bXdwOqO/botocore-session-1733571016 is not authorized to perform: sts:AssumeRole on resource: arn:aws:iam::025066244860:role/mlschool-Role-vFyR6bXdwOqO
+[MFLOG|0|2024-12-07T11:30:17.468338Z|runtime|0624fc74-d373-4d65-aa05-a78eee75782f]
+[MFLOG|0|2024-12-07T11:30:17.468845Z|runtime|54f4ef88-1a06-43c8-b5b5-ce4d8695bd86]Task failed.

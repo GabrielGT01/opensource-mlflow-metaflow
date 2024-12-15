@@ -1,0 +1,1 @@
+{"flow_id": "Training", "run_number": "1731628497738681", "step_name": "unpack_fold", "task_id": "5", "field_name": "conda_env_prefix", "type": "conda_env_prefix", "value": "metaflow/osx-arm64/697847a36511c70", "tags": ["attempt_id:0"], "user_name": "gabriel", "ts_epoch": 1731628522064}

@@ -1,0 +1,1 @@
+{"run_number": "1734030634364453", "step_name": "test_accuracy_score", "flow_id": "Monitoring", "user_name": "gabriel", "tags": [], "system_tags": ["project_branch:user.gabriel", "runtime:dev", "python_version:3.12.7", "project:weather_report_kaggle", "user:gabriel", "metaflow_version:2.12.28"], "ts_epoch": 1734030648786}

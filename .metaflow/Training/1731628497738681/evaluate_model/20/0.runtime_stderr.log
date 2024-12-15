@@ -1,0 +1,7 @@
+[MFLOG|0|2024-11-14T23:56:03.709663Z|runtime|cb26f76d-6b6b-4698-8ddc-f298e482cf41]<flow Training step evaluate_model> failed:
+[MFLOG|0|2024-11-14T23:56:03.715566Z|runtime|cfb97c1c-4d53-41c3-b663-030b4ec84018]    Unhandled artifacts in merge:
+[MFLOG|0|2024-11-14T23:56:03.715630Z|runtime|f06a3b27-477a-4fed-9c5f-8c1a261a43fc]    Step evaluate_model cannot merge the following artifacts due to them having conflicting values:
+[MFLOG|0|2024-11-14T23:56:03.903646Z|runtime|d562ae34-b4e3-46ef-8f91-30acbbc6bee8]    [loss, loss, accuracy, loss, loss, accuracy].
+[MFLOG|0|2024-11-14T23:56:03.903877Z|runtime|9515fc39-cdd3-48ed-b7b8-9ec75e808919]    To remedy this issue, be sure to explicitly set those artifacts (using self.<artifact_name> = ...) prior to calling merge_artifacts.
+[MFLOG|0|2024-11-14T23:56:03.904003Z|runtime|2bcbca09-5e06-4b9d-9421-0e19fb2b8460]
+[MFLOG|0|2024-11-14T23:56:03.904567Z|runtime|21ae6a03-cdd8-46e0-b89d-c930eb8cc8c1]Task failed.

@@ -1,0 +1,55 @@
+[MFLOG|0|2024-12-12T15:10:26.971567Z|runtime|55b71c0c-7c12-4154-81fa-7d5d05d4cd2c]<flow Monitoring step start> failed:
+[MFLOG|0|2024-12-12T15:10:26.991044Z|runtime|f1b1c7b4-5d31-4da7-abd6-0cb8caa10334]    Internal error
+[MFLOG|0|2024-12-12T15:10:26.992881Z|runtime|f4764873-ecbe-49ea-b3b3-56cdd599a22c]Traceback (most recent call last):
+[MFLOG|0|2024-12-12T15:10:26.992973Z|runtime|a0788ebd-202c-4234-a9b4-760eee942838]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/26cb46e8b996ec7/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+[MFLOG|0|2024-12-12T15:10:26.993042Z|runtime|cd411add-9f7d-49d9-b6f8-1c742316722b]    return self._engine.get_loc(casted_key)
+[MFLOG|0|2024-12-12T15:10:26.993090Z|runtime|2db3409d-c9eb-411a-8ed0-a0ff97c3637d]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T15:10:26.993135Z|runtime|baa656b5-8431-41c0-a995-bdeaec9d5d60]  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+[MFLOG|0|2024-12-12T15:10:26.993192Z|runtime|e6e682ae-b33d-47c8-a482-d225af1866bf]  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+[MFLOG|0|2024-12-12T15:10:26.993240Z|runtime|05efcf16-5633-4d2f-8f46-667a4a8b6408]  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+[MFLOG|0|2024-12-12T15:10:26.993283Z|runtime|61807132-8f42-4c4a-86e9-f1a9e813fe24]  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+[MFLOG|0|2024-12-12T15:10:26.993326Z|runtime|4c5be55e-ec8d-4dd2-9181-43a760d227f1]KeyError: 'rain_status'
+[MFLOG|0|2024-12-12T15:10:26.993367Z|runtime|d48a89e2-41ca-4375-810c-5d1533c1e97c]
+[MFLOG|0|2024-12-12T15:10:26.993407Z|runtime|d9bf10e3-0670-4989-9921-f6b950dfdbea]The above exception was the direct cause of the following exception:
+[MFLOG|0|2024-12-12T15:10:26.993446Z|runtime|3bf09f54-5ead-4d22-8114-158e019f6475]
+[MFLOG|0|2024-12-12T15:10:26.993489Z|runtime|73b82907-5631-4e33-a9dd-0a758f389799]Traceback (most recent call last):
+[MFLOG|0|2024-12-12T15:10:26.993531Z|runtime|1a4fc995-6dd2-417e-beca-6c6c0414827c]  File "/tmp/tmp9y6ee476/metaflow/cli.py", line 1166, in main
+[MFLOG|0|2024-12-12T15:10:26.993573Z|runtime|3c8a9ce7-433a-4cb7-9c83-4daf95ff26b7]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-12-12T15:10:26.993611Z|runtime|04613749-47f5-4652-9e1e-df4f562fc240]  File "/tmp/tmp9y6ee476/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-12-12T15:10:26.993652Z|runtime|60ee87df-1ed7-4ecf-9fba-f0f55363afe5]    return func(args, kwargs)
+[MFLOG|0|2024-12-12T15:10:27.135580Z|runtime|b5aaba1a-b8cf-4c8f-ace9-5449bab81e9f]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T15:10:27.135772Z|runtime|9427866f-60a8-45c4-8eb9-3aa9bb301a16]  File "/tmp/tmp9y6ee476/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-12-12T15:10:27.135822Z|runtime|4e337483-55cd-49b4-9b01-133994b65edf]    return self.main(args, kwargs)
+[MFLOG|0|2024-12-12T15:10:27.135860Z|runtime|72aad9e6-b00f-4180-b1ae-6dec4e4ab648]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T15:10:27.135893Z|runtime|66e34e14-6267-4952-bdc8-e98e54644aa4]  File "/tmp/tmp9y6ee476/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-12-12T15:10:27.135926Z|runtime|ea3150f2-be53-4203-9f4f-1629d6997da7]    rv = self.invoke(ctx)
+[MFLOG|0|2024-12-12T15:10:27.135957Z|runtime|91a12c92-5b70-407e-a0ae-7d183e78effa]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T15:10:27.135991Z|runtime|9c4cb645-67cf-4e3c-93a5-ea986d748cc4]  File "/tmp/tmp9y6ee476/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-12-12T15:10:27.136021Z|runtime|1adb1ce6-b2e4-4cb2-a22a-e03f3dcfdd67]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-12-12T15:10:27.136051Z|runtime|e216fdda-9b22-4bb9-9178-3ebab38cfab5]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T15:10:27.136081Z|runtime|ada4b356-34b0-4b37-83fb-5a3d92300a2b]  File "/tmp/tmp9y6ee476/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-12-12T15:10:27.136110Z|runtime|60b50e8a-e286-4fc7-b4bb-6cf96430fd47]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-12-12T15:10:27.136139Z|runtime|4c97674b-ffad-4b32-9884-4a3fd0214c80]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T15:10:27.136168Z|runtime|b8de539b-2236-41e2-848a-5eccc46b1b6d]  File "/tmp/tmp9y6ee476/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-12-12T15:10:27.136197Z|runtime|a272f5b5-58cd-412c-a802-6b2314e1fa76]    return callback(args, kwargs)
+[MFLOG|0|2024-12-12T15:10:27.136225Z|runtime|ab1bd0d8-9c16-49e8-ab16-3fffa9c55224]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T15:10:27.136254Z|runtime|6ac49eec-2621-4993-973f-9331115c99e7]  File "/tmp/tmp9y6ee476/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-12-12T15:10:27.136283Z|runtime|821b7c3d-0df7-4044-89cc-f827d3bc4073]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-12-12T15:10:27.136311Z|runtime|9ba03608-2ea6-4546-af6b-3d035c8e4f1d]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T15:10:27.136340Z|runtime|c9ecd662-2e49-45cd-94a7-b6ebe2e1880e]  File "/tmp/tmp9y6ee476/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-12-12T15:10:27.136368Z|runtime|9788f778-d380-4020-a7a1-704b9c3c3274]    task.run_step(
+[MFLOG|0|2024-12-12T15:10:27.136396Z|runtime|b7fafbb0-5ace-4f4e-b7cd-b84176b40777]  File "/tmp/tmp9y6ee476/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2024-12-12T15:10:27.136426Z|runtime|95a51b70-8f83-49e1-9a32-7d47e004e066]    self._exec_step_function(step_func)
+[MFLOG|0|2024-12-12T15:10:27.136464Z|runtime|fff51be6-fa1b-4d4e-b5f8-6e51c8224627]  File "/tmp/tmp9y6ee476/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-12-12T15:10:27.136492Z|runtime|462f2a4f-e65b-4c39-8332-5639467ede66]    step_function()
+[MFLOG|0|2024-12-12T15:10:27.136520Z|runtime|f45100c7-4084-43a8-b1ff-5f086911c7c6]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/monitoring.py", line 96, in start
+[MFLOG|0|2024-12-12T15:10:27.136550Z|runtime|e15159fa-9afa-4edb-8c73-7954d116732a]    self.current_data["rain_status"].notna()
+[MFLOG|0|2024-12-12T15:10:27.136579Z|runtime|c6d8c302-4474-449a-ad22-26616123719f]    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T15:10:27.136614Z|runtime|3b6877f5-c90e-44e1-b58c-10bcd0370476]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/26cb46e8b996ec7/lib/python3.12/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+[MFLOG|0|2024-12-12T15:10:27.136644Z|runtime|fef9faf1-377f-4744-8f9d-0c37dbb520e1]    indexer = self.columns.get_loc(key)
+[MFLOG|0|2024-12-12T15:10:27.136673Z|runtime|77e22261-a7eb-4219-969a-83d3ed85886d]              ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T15:10:27.136712Z|runtime|e035d05e-522f-455e-b41e-393d4520b5c2]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/26cb46e8b996ec7/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+[MFLOG|0|2024-12-12T15:10:27.136753Z|runtime|0f28fac1-8cce-4d93-89a7-905b2beea842]    raise KeyError(key) from err
+[MFLOG|0|2024-12-12T15:10:27.136782Z|runtime|2f849ef7-4fe7-4007-9c40-caf54efce549]KeyError: 'rain_status'
+[MFLOG|0|2024-12-12T15:10:27.136813Z|runtime|d9e954ee-ee91-43a3-90f5-a32b4c2fa05a]
+[MFLOG|0|2024-12-12T15:10:27.137333Z|runtime|f2397947-ee43-4e99-b226-6ea7f8a42937]Task failed.

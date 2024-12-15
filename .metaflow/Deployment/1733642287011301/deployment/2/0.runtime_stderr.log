@@ -1,0 +1,88 @@
+[MFLOG|0|2024-12-08T07:18:12.255282Z|runtime|04a73d10-f302-48f9-ab3e-041d757f13ed]Downloading artifacts:   0%|          | 0/12 [00:00<?, ?it/s]Downloading artifacts:   8%|▊         | 1/12 [00:00<00:00, 4136.39it/s]Downloading artifacts:  17%|█▋        | 2/12 [00:00<00:00, 3306.51it/s]Downloading artifacts:  25%|██▌       | 3/12 [00:00<00:00, 4405.78it/s]Downloading artifacts:  33%|███▎      | 4/12 [00:00<00:00, 5422.50it/s]Downloading artifacts:  42%|████▏     | 5/12 [00:00<00:00, 6324.34it/s]Downloading artifacts:  50%|█████     | 6/12 [00:00<00:00, 7127.11it/s]Downloading artifacts:  58%|█████▊    | 7/12 [00:00<00:00, 7867.13it/s]Downloading artifacts:  67%|██████▋   | 8/12 [00:00<00:00, 8529.34it/s]Downloading artifacts:  75%|███████▌  | 9/12 [00:00<00:00, 9148.99it/s]Downloading artifacts:  83%|████████▎ | 10/12 [00:00<00:00, 9720.29it/s]Downloading artifacts:  92%|█████████▏| 11/12 [00:00<00:00, 245.31it/s] Downloading artifacts: 100%|██████████| 12/12 [00:00<00:00, 39.99it/s] Downloading artifacts: 100%|██████████| 12/12 [00:00<00:00, 39.99it/s]Downloading artifacts: 100%|██████████| 12/12 [00:00<00:00, 39.88it/s]
+[MFLOG|0|2024-12-08T07:18:13.723118Z|runtime|f0cc2414-4fde-4289-b080-98fcd733ba2e]2024/12/08 08:18:13 INFO mlflow.sagemaker: Using the python_function flavor for deployment!
+[MFLOG|0|2024-12-08T07:18:16.611403Z|runtime|1bbd1bda-58cf-409e-8a97-324bb8f004e3]2024/12/08 08:18:16 INFO mlflow.sagemaker: No model data bucket specified, using the default bucket
+[MFLOG|0|2024-12-08T07:18:18.745188Z|runtime|ef9f062a-cdc9-44f6-8595-34bb425e158e]2024/12/08 08:18:18 INFO mlflow.sagemaker: Default bucket `mlflow-sagemaker-us-east-1-025066244860` already exists. Skipping creation.
+[MFLOG|0|2024-12-08T07:18:20.567878Z|runtime|1ec03cdc-3ad6-4b7f-b89a-52d0f11e690a]2024/12/08 08:18:20 INFO mlflow.sagemaker: tag response: {'ResponseMetadata': {'RequestId': 'G4TGBQ6GN36JGNBC', 'HostId': 'nKy7hYs+MGcJG0UukkGWoVjfZnFOFAzS5NxQi61tqL2roQiSJpVOBMrAnlYjRVH5kLf1hV4dGg8=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'nKy7hYs+MGcJG0UukkGWoVjfZnFOFAzS5NxQi61tqL2roQiSJpVOBMrAnlYjRVH5kLf1hV4dGg8=', 'x-amz-request-id': 'G4TGBQ6GN36JGNBC', 'date': 'Sun, 08 Dec 2024 07:18:21 GMT', 'content-length': '0', 'server': 'AmazonS3'}, 'RetryAttempts': 0}}
+[MFLOG|0|2024-12-08T07:18:20.573507Z|runtime|08f54225-551a-40db-80ce-7280702782d6]2024/12/08 08:18:20 INFO mlflow.sagemaker: Creating new endpoint with name: dailyweather01 ...
+[MFLOG|0|2024-12-08T07:18:21.251103Z|runtime|52145fb6-ba6b-4284-a2d1-c7424c6955ab]<flow Deployment step deployment> failed:
+[MFLOG|0|2024-12-08T07:18:21.268882Z|runtime|45b58090-4bd2-443f-a013-26bb2678f852]    Internal error
+[MFLOG|0|2024-12-08T07:18:21.272628Z|runtime|b3e72091-b6dc-4925-9d10-0cb825b43846]Traceback (most recent call last):
+[MFLOG|0|2024-12-08T07:18:21.272774Z|runtime|0bac8000-957f-4f51-b406-6d8a38688e07]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/abeec5193171f93/lib/python3.12/site-packages/mlflow/sagemaker/__init__.py", line 2785, in get_deployment
+[MFLOG|0|2024-12-08T07:18:21.272860Z|runtime|78801c1f-cd63-4294-86ce-32f51d426d95]    return sage_client.describe_endpoint(EndpointName=name)
+[MFLOG|0|2024-12-08T07:18:21.272914Z|runtime|b5f9afc1-08c4-4709-8208-b53376eb80b3]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:18:21.272969Z|runtime|5f718e66-eec3-4bf4-bf61-ffc87f2f716a]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/abeec5193171f93/lib/python3.12/site-packages/botocore/client.py", line 569, in _api_call
+[MFLOG|0|2024-12-08T07:18:21.273018Z|runtime|b1c6ba58-56b6-4433-94de-4d47508cb2d3]    return self._make_api_call(operation_name, kwargs)
+[MFLOG|0|2024-12-08T07:18:21.273063Z|runtime|c4af9ff3-e4e1-4226-97da-3ef25db78961]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:18:21.273106Z|runtime|fcef7640-26f4-476e-b56e-7f6786264c7e]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/abeec5193171f93/lib/python3.12/site-packages/botocore/client.py", line 1023, in _make_api_call
+[MFLOG|0|2024-12-08T07:18:21.273150Z|runtime|c822548b-c7fa-4f1a-9bdb-9d7c08e3aa3a]    raise error_class(parsed_response, operation_name)
+[MFLOG|0|2024-12-08T07:18:21.273192Z|runtime|37e06c71-a573-4dab-bd80-660f18f77648]botocore.exceptions.ClientError: An error occurred (ValidationException) when calling the DescribeEndpoint operation: Could not find endpoint "dailyweather01".
+[MFLOG|0|2024-12-08T07:18:21.273236Z|runtime|8564adfc-410d-4a38-9c08-b304c8ea6835]
+[MFLOG|0|2024-12-08T07:18:21.273290Z|runtime|8bb24297-0bdf-4547-b459-149533d94088]During handling of the above exception, another exception occurred:
+[MFLOG|0|2024-12-08T07:18:21.273335Z|runtime|269b13fa-137b-41ed-bc3a-259a4485ae77]
+[MFLOG|0|2024-12-08T07:18:21.273379Z|runtime|f6a142fa-91d0-409d-9279-e9566f658194]Traceback (most recent call last):
+[MFLOG|0|2024-12-08T07:18:21.273425Z|runtime|0b04ae2e-4b3d-4d28-8bcb-ed49602bae6a]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/deployment.py", line 252, in _deploy_to_sagemaker
+[MFLOG|0|2024-12-08T07:18:21.273471Z|runtime|4cd68599-27d5-458b-b130-de24f362f480]    deployment = deployment_client.get_deployment(self.endpoint)
+[MFLOG|0|2024-12-08T07:18:21.273523Z|runtime|fa2e7fef-ee45-450c-b625-cbe07187fec4]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:18:21.273566Z|runtime|db38c124-7456-4509-84dc-8f760b58767b]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/abeec5193171f93/lib/python3.12/site-packages/mlflow/sagemaker/__init__.py", line 2787, in get_deployment
+[MFLOG|0|2024-12-08T07:18:21.273611Z|runtime|89242b67-d3e6-4fc4-8d76-10fe773fc81c]    raise MlflowException(
+[MFLOG|0|2024-12-08T07:18:21.274214Z|runtime|f6e572e2-1815-442e-86b4-1479f8de183b]mlflow.exceptions.MlflowException: There was an error while retrieving the deployment: An error occurred (ValidationException) when calling the DescribeEndpoint operation: Could not find endpoint "dailyweather01".
+[MFLOG|0|2024-12-08T07:18:21.274282Z|runtime|50533b5e-ab21-4e0e-9647-0023a55000a0]
+[MFLOG|0|2024-12-08T07:18:21.274325Z|runtime|9232b3da-04f7-4a0a-8524-0e96beda0625]
+[MFLOG|0|2024-12-08T07:18:21.274367Z|runtime|63315c30-d3d3-4ec4-b7ca-b6dc468a4173]During handling of the above exception, another exception occurred:
+[MFLOG|0|2024-12-08T07:18:21.274409Z|runtime|414757c7-73a2-4c47-b310-7e2e19ee8fed]
+[MFLOG|0|2024-12-08T07:18:21.274454Z|runtime|dcfb2c6e-15aa-40a4-8a2e-a75836b60160]Traceback (most recent call last):
+[MFLOG|0|2024-12-08T07:18:21.274616Z|runtime|7d03a791-6e8a-4aa2-a4bd-4a78b04b7c4a]  File "/tmp/tmp7x1xo7ai/metaflow/cli.py", line 1166, in main
+[MFLOG|0|2024-12-08T07:18:21.274662Z|runtime|25760f2d-d416-4fbb-8e95-7f82cfa765c1]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-12-08T07:18:21.274704Z|runtime|b3dc377a-d18e-4e81-8ebb-21c0b2088cdd]  File "/tmp/tmp7x1xo7ai/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-12-08T07:18:21.274768Z|runtime|f14207d3-9b3e-4abe-b9cf-f42d8dc4d92b]    return func(args, kwargs)
+[MFLOG|0|2024-12-08T07:18:21.562339Z|runtime|9d27ea6c-6be1-473c-9173-fa0437f52880]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:18:21.562519Z|runtime|497d5e39-e411-4389-bc60-ebbea5db3998]  File "/tmp/tmp7x1xo7ai/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-12-08T07:18:21.562570Z|runtime|ee624192-b460-482e-a447-7a1f30df1823]    return self.main(args, kwargs)
+[MFLOG|0|2024-12-08T07:18:21.562608Z|runtime|b63d598d-9816-42a7-94c4-1a24eaf28fef]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:18:21.562640Z|runtime|03cad6a7-83ec-4d56-b608-3ed512add66e]  File "/tmp/tmp7x1xo7ai/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-12-08T07:18:21.562672Z|runtime|bf034c5b-aeda-4158-9e7b-944b7ff761f8]    rv = self.invoke(ctx)
+[MFLOG|0|2024-12-08T07:18:21.562710Z|runtime|d62eb8ca-ec60-4791-83d4-df0f4a966518]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:18:21.562747Z|runtime|af159e68-60eb-481c-9489-04f3ee6f93db]  File "/tmp/tmp7x1xo7ai/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-12-08T07:18:21.562778Z|runtime|33edf66d-674d-449c-99ba-22f1b1dd315c]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-12-08T07:18:21.562808Z|runtime|ea6235af-bf39-4f75-9010-572cf2042bb1]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:18:21.562840Z|runtime|6f643c90-5e84-46d5-a4dd-393f3ebb8459]  File "/tmp/tmp7x1xo7ai/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-12-08T07:18:21.562871Z|runtime|e48efdd5-ee19-4969-a087-34f802a4c8c7]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-12-08T07:18:21.562900Z|runtime|703cfe82-456c-4fba-93c0-9117bf937053]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:18:21.562928Z|runtime|5835ed01-6813-46d7-8623-71c8affe2c3c]  File "/tmp/tmp7x1xo7ai/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-12-08T07:18:21.562957Z|runtime|41a80589-fe83-45d4-b63e-843b59607914]    return callback(args, kwargs)
+[MFLOG|0|2024-12-08T07:18:21.562985Z|runtime|616c6f51-a2c8-4835-b9d8-e6313a11b9b0]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:18:21.563018Z|runtime|a3b130c2-4046-445c-929a-a18157386142]  File "/tmp/tmp7x1xo7ai/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-12-08T07:18:21.563047Z|runtime|2f733e80-47f8-47e6-80d8-a66487ddc391]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-12-08T07:18:21.563076Z|runtime|d45b02f4-45c4-41a7-80bb-247cff9616e9]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:18:21.563109Z|runtime|18657456-8b4e-409a-a9ec-83a9977ce4b0]  File "/tmp/tmp7x1xo7ai/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-12-08T07:18:21.563138Z|runtime|75cadcb5-1b79-40e5-879e-5120954a7eda]    task.run_step(
+[MFLOG|0|2024-12-08T07:18:21.563166Z|runtime|9bad2345-539f-4736-822b-c507c16437c7]  File "/tmp/tmp7x1xo7ai/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2024-12-08T07:18:21.563195Z|runtime|6f981a64-4b19-495c-b90e-34377b4f67bd]    self._exec_step_function(step_func)
+[MFLOG|0|2024-12-08T07:18:21.563224Z|runtime|615a36bd-0e57-472a-8c22-6ffbdd27572a]  File "/tmp/tmp7x1xo7ai/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-12-08T07:18:21.563252Z|runtime|8d9737cb-15d4-4df6-b48d-405c4743ae1e]    step_function()
+[MFLOG|0|2024-12-08T07:18:21.563326Z|runtime|5cee9aec-6193-4171-a320-c9434343deed]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/deployment.py", line 136, in deployment
+[MFLOG|0|2024-12-08T07:18:21.563356Z|runtime|d1e58683-8a37-461c-bcf2-046df1772703]    self._deploy_to_sagemaker()
+[MFLOG|0|2024-12-08T07:18:21.563385Z|runtime|9a7bf69d-f40f-4fd5-a518-8add2f94d078]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/deployment.py", line 272, in _deploy_to_sagemaker
+[MFLOG|0|2024-12-08T07:18:21.563430Z|runtime|ed695f4d-31f0-469c-a568-6f627aabc0f2]    self._create_sagemaker_deployment(
+[MFLOG|0|2024-12-08T07:18:21.563459Z|runtime|987a5c1b-1089-4134-a28d-48fd94e7ad17]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/deployment.py", line 328, in _create_sagemaker_deployment
+[MFLOG|0|2024-12-08T07:18:21.563487Z|runtime|6ea37925-379d-4f0c-8622-c17c7bdba8e0]    deployment_client.create_deployment(
+[MFLOG|0|2024-12-08T07:18:21.563515Z|runtime|866c1661-9564-4713-b9a3-af643270f4e3]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/abeec5193171f93/lib/python3.12/site-packages/mlflow/sagemaker/__init__.py", line 2333, in create_deployment
+[MFLOG|0|2024-12-08T07:18:21.563550Z|runtime|cfdb8bb9-4aba-4934-ada9-2655beeabb63]    app_name, flavor = _deploy(
+[MFLOG|0|2024-12-08T07:18:21.563580Z|runtime|02ae0480-21a6-4902-bd70-8b3cbb62736c]                       ^^^^^^^^
+[MFLOG|0|2024-12-08T07:18:21.563615Z|runtime|cc05492c-ec82-4707-9aea-0bb26c9c298d]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/abeec5193171f93/lib/python3.12/site-packages/mlflow/sagemaker/__init__.py", line 449, in _deploy
+[MFLOG|0|2024-12-08T07:18:21.563645Z|runtime|58a5581d-c540-4f29-a1e5-f1ae1720f9e0]    deployment_operation = _create_sagemaker_endpoint(
+[MFLOG|0|2024-12-08T07:18:21.563678Z|runtime|e2078ec2-c5a3-4c42-a77a-095485047e4b]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:18:21.563707Z|runtime|4ee70d7a-eb9d-4aae-82ed-950f13d077ad]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/abeec5193171f93/lib/python3.12/site-packages/mlflow/sagemaker/__init__.py", line 1603, in _create_sagemaker_endpoint
+[MFLOG|0|2024-12-08T07:18:21.563744Z|runtime|b5cf6ce9-b12d-44c7-936f-075fafc160a4]    model_response = _create_sagemaker_model(
+[MFLOG|0|2024-12-08T07:18:21.563772Z|runtime|83dfab2c-4502-43e6-95c4-9efc2e63f037]                     ^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:18:21.563801Z|runtime|6834d3a1-8f8d-4f23-9a76-5c490c834b7f]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/abeec5193171f93/lib/python3.12/site-packages/mlflow/sagemaker/__init__.py", line 1901, in _create_sagemaker_model
+[MFLOG|0|2024-12-08T07:18:21.563836Z|runtime|0aec53e8-24d6-4acc-842c-23353f2325be]    return sage_client.create_model(create_model_args)
+[MFLOG|0|2024-12-08T07:18:21.563864Z|runtime|69bf4cff-39d2-464c-bd52-7c0c65b60d99]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:18:21.563908Z|runtime|225c6693-b05e-409a-affc-3ddb6db9b8fd]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/abeec5193171f93/lib/python3.12/site-packages/botocore/client.py", line 569, in _api_call
+[MFLOG|0|2024-12-08T07:18:21.563941Z|runtime|629a3853-e592-45d5-9377-7e6cce329bd5]    return self._make_api_call(operation_name, kwargs)
+[MFLOG|0|2024-12-08T07:18:21.563969Z|runtime|45d869be-5cf8-4354-8d2f-ac325bf4d3a4]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:18:21.563997Z|runtime|cf49cc18-36d4-449e-8ce7-1cf0bd7d0582]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/abeec5193171f93/lib/python3.12/site-packages/botocore/client.py", line 1023, in _make_api_call
+[MFLOG|0|2024-12-08T07:18:21.564045Z|runtime|d98ab587-3b81-4fa1-882b-ec0141e99927]    raise error_class(parsed_response, operation_name)
+[MFLOG|0|2024-12-08T07:18:21.564077Z|runtime|3827771f-051d-43ef-9a32-a7ac7c103d6d]botocore.exceptions.ClientError: An error occurred (ValidationException) when calling the CreateModel operation: Requested image 025066244860.dkr.ecr.us-east-1.amazonaws.com/mlflow-pyfunc:2.17.1 not found.
+[MFLOG|0|2024-12-08T07:18:21.564108Z|runtime|b8478051-32bb-46af-a57e-47d529f228ad]
+[MFLOG|0|2024-12-08T07:18:21.565538Z|runtime|e47c3f10-1df8-49bb-b67d-831abc91400a]Task failed.

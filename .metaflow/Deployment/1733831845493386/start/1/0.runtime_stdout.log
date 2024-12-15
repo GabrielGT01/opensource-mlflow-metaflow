@@ -1,0 +1,5 @@
+[MFLOG|0|2024-12-10T11:57:27.761396Z|runtime|87ce41b5-40f4-4d69-b8a0-a3e1835e9597]2024-12-10 12:57:27,760 [INFO] MLflow tracking URI: http://54.164.38.69:5000
+[MFLOG|0|2024-12-10T11:57:27.762001Z|runtime|25d804f6-d7c1-4f6f-a612-fa6b2568ad49]2024-12-10 12:57:27,761 [INFO] Found 1 CSV file(s) in the directory: kaggle_data/
+[MFLOG|0|2024-12-10T11:57:27.767839Z|runtime|ccb47149-d082-4a89-9a33-a43061c99700]2024-12-10 12:57:27,767 [INFO] Loaded 2500 records from file: kaggle_data/weather_forecast_data.csv
+[MFLOG|0|2024-12-10T11:57:27.772948Z|runtime|980a7c29-f428-49f2-ad13-fe2ed30b2f39]2024-12-10 12:57:27,769 [INFO] Loaded dataset with 2500 samples
+[MFLOG|0|2024-12-10T11:57:49.613808Z|runtime|d3b672e4-1de4-49ea-9680-510748cdccba][KILLED BY ORCHESTRATOR]

@@ -1,0 +1,2 @@
+[MFLOG|0|2024-12-05T21:52:20.460995Z|runtime|224a0bb1-61fe-40c7-b0da-d8349098ce5a]2024/12/05 22:52:20 INFO mlflow.tracking._tracking_service.client: 🏃 View run 1733435534097291 at: http://3.83.166.201:5000/#/experiments/0/runs/79b50a52ec7549ceb9f8fdbbc45291de.
+[MFLOG|0|2024-12-05T21:52:20.928158Z|runtime|ece0b365-52a7-4e12-ba63-01c91b468318]2024/12/05 22:52:20 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://3.83.166.201:5000/#/experiments/0.

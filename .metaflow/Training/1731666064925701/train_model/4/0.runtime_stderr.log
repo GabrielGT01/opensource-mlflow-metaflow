@@ -1,0 +1,101 @@
+[MFLOG|0|2024-11-15T10:21:20.253079Z|runtime|17a76aa8-2a26-487c-886f-f3434200e913]2024/11/15 11:21:20 INFO mlflow.tracking.fluent: Autologging successfully enabled for sklearn.
+[MFLOG|0|2024-11-15T10:21:20.333087Z|runtime|c7fd6c63-a7d0-42bf-abcb-ba1b8b1b6dd4]2024/11/15 11:21:20 INFO mlflow.tracking.fluent: Autologging successfully enabled for xgboost.
+[MFLOG|0|2024-11-15T10:21:20.540293Z|runtime|603a368e-1c51-4428-a19d-d5d8f2539010]2024/11/15 11:21:20 INFO mlflow.tracking._tracking_service.client: 🏃 View run 1731666064925701 at: http://127.0.0.1:5000/#/experiments/0/runs/7318a58bfd944cf0bdaa31ae771475db.
+[MFLOG|0|2024-11-15T10:21:20.553297Z|runtime|6aa3f149-d635-415b-8003-d472967b610f]2024/11/15 11:21:20 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://127.0.0.1:5000/#/experiments/0.
+[MFLOG|0|2024-11-15T10:21:20.553559Z|runtime|2a802aa6-7c4d-4b51-9dc1-37bbc8c0080e]<flow Training step train_model> failed:
+[MFLOG|0|2024-11-15T10:21:20.568342Z|runtime|083ffa96-4d18-41df-958e-a0f07d953e1b]    Internal error
+[MFLOG|0|2024-11-15T10:21:20.571912Z|runtime|786e338a-913a-407c-9b5d-33c38817842f]Traceback (most recent call last):
+[MFLOG|0|2024-11-15T10:21:20.571997Z|runtime|cc4f5f73-a6be-4fda-8671-4bfa83a71c30]  File "/tmp/tmpbx8oew9d/metaflow/cli.py", line 1166, in main
+[MFLOG|0|2024-11-15T10:21:20.572058Z|runtime|e68f517b-ca82-40c6-8e49-a2c359bfe515]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-11-15T10:21:20.572111Z|runtime|fe34de14-2527-4941-b925-84cbaa287f85]  File "/tmp/tmpbx8oew9d/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-11-15T10:21:20.572178Z|runtime|42c87d41-2805-4151-8b1e-77537658ffb8]    return func(args, kwargs)
+[MFLOG|0|2024-11-15T10:21:20.867056Z|runtime|38197316-1296-4f5e-bd77-4bf1ba04e217]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.867323Z|runtime|2e766a19-0f27-4de0-a30a-b001c887dd6c]  File "/tmp/tmpbx8oew9d/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-11-15T10:21:20.867381Z|runtime|b1c9683e-5fa3-4326-b247-d7bb383c6f22]    return self.main(args, kwargs)
+[MFLOG|0|2024-11-15T10:21:20.867419Z|runtime|51590ac9-4fc5-4151-b713-631da6a954d2]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.867484Z|runtime|9e7948c6-712a-4ae9-91a5-94402492747e]  File "/tmp/tmpbx8oew9d/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-11-15T10:21:20.867527Z|runtime|c6b609a3-9660-4dfb-bcd6-95328a4540ef]    rv = self.invoke(ctx)
+[MFLOG|0|2024-11-15T10:21:20.867566Z|runtime|75575b40-6eed-410a-ac8e-7ffb555aa778]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.867600Z|runtime|b9ed6f68-724f-41d0-a38f-9fa8c9affb07]  File "/tmp/tmpbx8oew9d/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-11-15T10:21:20.867640Z|runtime|feddc37d-51dc-442b-aa3f-82cea5466a80]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-11-15T10:21:20.867676Z|runtime|5246655a-e4a1-4183-aeac-bdb608cb102b]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.867713Z|runtime|cfb8fd14-2c94-4803-a558-3a71ec8ea4bd]  File "/tmp/tmpbx8oew9d/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-11-15T10:21:20.867758Z|runtime|015f0d2b-00dc-48dd-bf04-3c2a90b19c1d]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-11-15T10:21:20.867794Z|runtime|1215a206-10e0-46dd-9a0b-7e6e5dfc008d]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.867833Z|runtime|0aaaeb66-1ce0-420f-a576-084dfe64744e]  File "/tmp/tmpbx8oew9d/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-11-15T10:21:20.867872Z|runtime|c3d2e4cb-a2f7-44b1-abdf-9fc09653a1fa]    return callback(args, kwargs)
+[MFLOG|0|2024-11-15T10:21:20.867905Z|runtime|4cc17adb-0511-4360-b9e3-fda62362ed33]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.867940Z|runtime|c757b77d-f97e-459f-9f97-9f7aea466c84]  File "/tmp/tmpbx8oew9d/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-11-15T10:21:20.867976Z|runtime|6fd90d56-1f33-40ae-a5b2-b7ddd4bac394]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-11-15T10:21:20.868005Z|runtime|07b99dff-3b35-4c32-a701-a3323f527a29]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.868037Z|runtime|3be9a53d-71f3-4521-bc2f-5482eb85ed70]  File "/tmp/tmpbx8oew9d/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-11-15T10:21:20.868067Z|runtime|0cf0d1b9-4aea-4b65-ad3d-5ef06c3eb3f4]    task.run_step(
+[MFLOG|0|2024-11-15T10:21:20.868099Z|runtime|c9631f5a-1b4e-4b34-a2c1-61e435c68642]  File "/tmp/tmpbx8oew9d/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2024-11-15T10:21:20.868135Z|runtime|bb7af7a3-bf54-4290-a72b-138e1b517e06]    self._exec_step_function(step_func)
+[MFLOG|0|2024-11-15T10:21:20.868182Z|runtime|cf0e7bca-f34e-431d-9162-36666feb96e6]  File "/tmp/tmpbx8oew9d/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-11-15T10:21:20.868238Z|runtime|afb03594-6585-487e-9ca8-2f69a4b56754]    step_function()
+[MFLOG|0|2024-11-15T10:21:20.868271Z|runtime|bcc36c61-d879-4d9a-ae01-ca48296bdbaf]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/training.py", line 503, in train_model
+[MFLOG|0|2024-11-15T10:21:20.868301Z|runtime|3107ca47-2d57-44a7-8efc-4242f975a391]    self.model.fit(
+[MFLOG|0|2024-11-15T10:21:20.868336Z|runtime|3d6b547a-8677-4e44-b120-d668c268c3bd]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/utils/autologging_utils/safety.py", line 580, in safe_patch_function
+[MFLOG|0|2024-11-15T10:21:20.868372Z|runtime|06d8d06d-6980-41ca-b07e-5e2276320540]    patch_function(call_original, args, kwargs)
+[MFLOG|0|2024-11-15T10:21:20.868401Z|runtime|a6181129-f289-48c7-804b-933d8e7555e2]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/utils/autologging_utils/safety.py", line 249, in patch_with_managed_run
+[MFLOG|0|2024-11-15T10:21:20.868445Z|runtime|c59460b0-658c-4184-8bb8-c50933819f2c]    result = patch_function(original, args, kwargs)
+[MFLOG|0|2024-11-15T10:21:20.868479Z|runtime|d8104012-e6e1-4185-9980-82bfc81d5d2c]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.868512Z|runtime|3e21e315-edf0-45ea-a5e0-e59af8bbc3ac]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/sklearn/__init__.py", line 1654, in patched_fit
+[MFLOG|0|2024-11-15T10:21:20.868564Z|runtime|6cff315b-7eb9-4cdc-9074-a5bfb58b9323]    result = fit_impl(original, self, args, kwargs)
+[MFLOG|0|2024-11-15T10:21:20.868597Z|runtime|52cfffc2-a063-4376-be51-dcb1188caa6d]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.868630Z|runtime|58d240bf-6319-4810-8cd0-c373cffa1c1a]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/sklearn/__init__.py", line 1373, in fit_mlflow_xgboost_and_lightgbm
+[MFLOG|0|2024-11-15T10:21:20.868665Z|runtime|0a26b66c-c835-446a-a69d-8ea01e3a6da0]    fit_output = original(self, args, kwargs)
+[MFLOG|0|2024-11-15T10:21:20.868698Z|runtime|8bc2ef31-b8c3-4ce4-9f86-94bef1bbe18d]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.868732Z|runtime|c3ed695d-aea2-4e97-b538-a44f6cb04cb3]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/utils/autologging_utils/safety.py", line 561, in call_original
+[MFLOG|0|2024-11-15T10:21:20.868773Z|runtime|0f1ad841-7fea-4a4b-9b66-bb1a73f55ed7]    return call_original_fn_with_event_logging(_original_fn, og_args, og_kwargs)
+[MFLOG|0|2024-11-15T10:21:20.868806Z|runtime|67ff8714-729e-4e6d-b70c-c51763444de4]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.868842Z|runtime|a87b46c2-789c-4e75-bc2a-15648ea81201]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/utils/autologging_utils/safety.py", line 496, in call_original_fn_with_event_logging
+[MFLOG|0|2024-11-15T10:21:20.868883Z|runtime|9e84e111-033d-4242-8061-90ab80949bff]    original_fn_result = original_fn(og_args, og_kwargs)
+[MFLOG|0|2024-11-15T10:21:20.868912Z|runtime|804af7d1-4507-4668-ac50-4b23ddbd44c6]                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.868945Z|runtime|c42b362e-09ff-449b-86f4-a085744b3769]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/utils/autologging_utils/safety.py", line 558, in _original_fn
+[MFLOG|0|2024-11-15T10:21:20.868981Z|runtime|b95799eb-2492-48db-af36-d5b06126f5d0]    original_result = original(_og_args, _og_kwargs)
+[MFLOG|0|2024-11-15T10:21:20.869010Z|runtime|2ef707e6-43fa-4164-a7f2-e733c04870a9]                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.869039Z|runtime|4f9c0919-0db4-4866-bd04-0b833415875f]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/xgboost/core.py", line 726, in inner_f
+[MFLOG|0|2024-11-15T10:21:20.869074Z|runtime|149f1525-acab-43c9-9385-6da83b10b767]    return func(kwargs)
+[MFLOG|0|2024-11-15T10:21:20.869106Z|runtime|e9aaa3fe-618a-4b71-a3d9-22bacee62c32]           ^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.869141Z|runtime|2db1da50-22a1-4040-aa86-ee00f40dced1]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/xgboost/sklearn.py", line 1531, in fit
+[MFLOG|0|2024-11-15T10:21:20.869172Z|runtime|32d9bc59-ecdd-4f2c-843b-674054cd6bb9]    self._Booster = train(
+[MFLOG|0|2024-11-15T10:21:20.869208Z|runtime|ddfe8d55-94a4-48bf-8f1e-acb9185758a0]                    ^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.869243Z|runtime|ab30158d-1e2b-4434-b215-255539b11497]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/utils/autologging_utils/safety.py", line 580, in safe_patch_function
+[MFLOG|0|2024-11-15T10:21:20.869273Z|runtime|1f872713-116f-4b38-893b-0e010c05a191]    patch_function(call_original, args, kwargs)
+[MFLOG|0|2024-11-15T10:21:20.869310Z|runtime|13dc09c1-3207-4ca9-99f3-3aa13d5f3f81]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/utils/autologging_utils/safety.py", line 249, in patch_with_managed_run
+[MFLOG|0|2024-11-15T10:21:20.869347Z|runtime|be68cf01-6634-474c-9420-2b89b0810ec3]    result = patch_function(original, args, kwargs)
+[MFLOG|0|2024-11-15T10:21:20.869379Z|runtime|a49cea90-55f2-4f28-b58a-a2989a6e6234]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.869409Z|runtime|7ba7bc56-4a06-4fe6-bb1d-605aaea55705]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/xgboost/__init__.py", line 800, in train
+[MFLOG|0|2024-11-15T10:21:20.869444Z|runtime|e696071a-ef29-43ce-a041-234d25334c6b]    return train_impl(_log_models, _log_datasets, original, args, kwargs)
+[MFLOG|0|2024-11-15T10:21:20.869480Z|runtime|934cc787-9c20-4cc7-b504-00707c29f8e6]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.869512Z|runtime|803e244e-c712-49f2-a703-4bdee6da0512]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/xgboost/__init__.py", line 708, in train_impl
+[MFLOG|0|2024-11-15T10:21:20.869547Z|runtime|38010de7-6089-42ae-a7ee-8702ee60081b]    model = original(args, kwargs)
+[MFLOG|0|2024-11-15T10:21:20.869576Z|runtime|386465ca-fc01-431d-8312-ea98f683c686]            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.869608Z|runtime|4c4b69f3-3249-4b61-afff-14cbed79f3f2]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/utils/autologging_utils/safety.py", line 561, in call_original
+[MFLOG|0|2024-11-15T10:21:20.869638Z|runtime|ceaca457-df10-4a3d-a973-f6d296dc02e4]    return call_original_fn_with_event_logging(_original_fn, og_args, og_kwargs)
+[MFLOG|0|2024-11-15T10:21:20.869667Z|runtime|d06555a2-bb31-43bc-a899-f73de6b110ae]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.869696Z|runtime|50ac8795-cf56-4cbd-a6cb-1c913ee128f6]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/utils/autologging_utils/safety.py", line 496, in call_original_fn_with_event_logging
+[MFLOG|0|2024-11-15T10:21:20.869741Z|runtime|35cdec43-3b13-4d5f-b2a4-f051be5a4e8a]    original_fn_result = original_fn(og_args, og_kwargs)
+[MFLOG|0|2024-11-15T10:21:20.869770Z|runtime|9a29b0fe-882d-4630-a784-3405721d50a2]                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.869799Z|runtime|c7179c67-c736-491d-bc8b-ab0b03962cea]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/utils/autologging_utils/safety.py", line 558, in _original_fn
+[MFLOG|0|2024-11-15T10:21:20.869828Z|runtime|8c131d9a-c9af-4108-8cf3-12369a99f2c0]    original_result = original(_og_args, _og_kwargs)
+[MFLOG|0|2024-11-15T10:21:20.869856Z|runtime|3973d79b-2c6d-4c18-a678-e1a2f658dc10]                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.869885Z|runtime|52c57255-afed-412f-86ff-cfec1120d3ae]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/xgboost/core.py", line 726, in inner_f
+[MFLOG|0|2024-11-15T10:21:20.869917Z|runtime|dd3f2265-c273-4bb4-bab4-9b48bb29e799]    return func(kwargs)
+[MFLOG|0|2024-11-15T10:21:20.869945Z|runtime|5a02d0f1-4974-4584-b060-bc36171ae0f7]           ^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.869978Z|runtime|a983fecb-5d4c-4dd1-ac0b-d553be865621]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/xgboost/training.py", line 182, in train
+[MFLOG|0|2024-11-15T10:21:20.870016Z|runtime|de655f02-f7fd-4c0f-b261-6946c293b0cb]    if cb_container.after_iteration(bst, i, dtrain, evals):
+[MFLOG|0|2024-11-15T10:21:20.870053Z|runtime|39bc88f1-d705-4345-838f-cf7cb3c959a7]       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.870087Z|runtime|66086d4e-e3e3-405f-ae9a-44362d954119]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/xgboost/callback.py", line 261, in after_iteration
+[MFLOG|0|2024-11-15T10:21:20.870121Z|runtime|52566e40-092d-416a-9157-41c71fbb7256]    ret = any(c.after_iteration(model, epoch, self.history) for c in self.callbacks)
+[MFLOG|0|2024-11-15T10:21:20.870154Z|runtime|2aab6f23-c172-49bd-8a35-27ef539f90b8]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.870182Z|runtime|1f959540-6752-44ba-af42-244e35cb4353]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/xgboost/callback.py", line 261, in <genexpr>
+[MFLOG|0|2024-11-15T10:21:20.870210Z|runtime|8c7bc32f-2849-44d0-935d-abe99e05b405]    ret = any(c.after_iteration(model, epoch, self.history) for c in self.callbacks)
+[MFLOG|0|2024-11-15T10:21:20.870245Z|runtime|08bd04aa-1145-4770-90b6-622a024e7881]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T10:21:20.870283Z|runtime|0849bda5-552d-4287-aefb-6a03d8afb925]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/xgboost/callback.py", line 446, in after_iteration
+[MFLOG|0|2024-11-15T10:21:20.870316Z|runtime|0f74f753-d76b-460f-8cde-c0c600e3f930]    raise ValueError(msg)
+[MFLOG|0|2024-11-15T10:21:20.870373Z|runtime|cb3a78c0-ca0c-4047-a7a8-4b1ce4237828]ValueError: Must have at least 1 validation dataset for early stopping.
+[MFLOG|0|2024-11-15T10:21:20.870409Z|runtime|cd29c185-4b87-4c05-a02e-ff635f9613c0]
+[MFLOG|0|2024-11-15T10:21:20.871194Z|runtime|c2fed568-afcd-4eb9-ac66-e76b34b52552]Task failed.

@@ -1,0 +1,5 @@
+[MFLOG|0|2024-12-10T13:03:52.031968Z|runtime|8283329c-5e3e-465c-8769-39b229a9a920]2024-12-10 14:03:52,031 [INFO] MLflow tracking URI: http://18.208.160.74:5000
+[MFLOG|0|2024-12-10T13:03:52.032763Z|runtime|d5711740-0fea-49cc-8e2f-4204f94d5868]2024-12-10 14:03:52,032 [INFO] Found 1 CSV file(s) in the directory: kaggle_data/
+[MFLOG|0|2024-12-10T13:03:52.038392Z|runtime|88b41877-37f0-4d70-91cf-d838d86a44d8]2024-12-10 14:03:52,038 [INFO] Loaded 2500 records from file: kaggle_data/weather_forecast_data.csv
+[MFLOG|0|2024-12-10T13:03:52.041943Z|runtime|1d3058f7-445c-40f4-b64b-836b226bb7e5]2024-12-10 14:03:52,041 [INFO] Loaded dataset with 2500 samples
+[MFLOG|0|2024-12-10T13:03:52.272180Z|runtime|f3c2b5a9-9105-41c2-b614-78a922ef579d]2024-12-10 14:03:52,272 [INFO] Model version: 1. Artifacts: mlflow-artifacts:/0/2eefe345843b4532a7c2d0ec46a18ef7/artifacts/model.

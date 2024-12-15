@@ -1,0 +1,5 @@
+[MFLOG|0|2024-11-15T12:12:13.071385Z|runtime|b9c8a8b2-b0b0-484b-908e-756b329183b8]Traceback (most recent call last):
+[MFLOG|0|2024-11-15T12:12:13.188362Z|runtime|fe42a282-1ddc-48e5-827a-9156f405eed0]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/training.py", line 13, in <module>
+[MFLOG|0|2024-11-15T12:12:13.188575Z|runtime|407556c4-f112-4bc5-9858-cd2102db3550]    import psutil
+[MFLOG|0|2024-11-15T12:12:13.188636Z|runtime|2a03d30c-e8b0-409c-8f88-1132facb10c7]ModuleNotFoundError: No module named 'psutil'
+[MFLOG|0|2024-11-15T12:12:13.189207Z|runtime|f1c78671-ce26-4bc9-9d89-b1689206a828]Task failed.

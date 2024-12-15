@@ -1,0 +1,65 @@
+[MFLOG|0|2024-12-15T08:19:39.789137Z|runtime|badaf6b5-7bae-491b-8efc-b5b52b4b6cc7]<flow Training step start> failed:
+[MFLOG|0|2024-12-15T08:19:39.800529Z|runtime|03ca4a9c-44b2-416b-b0d7-302df545b16c]    Internal error
+[MFLOG|0|2024-12-15T08:19:39.802292Z|runtime|b1d39b80-016d-4b51-8fef-20f3dce61461]Traceback (most recent call last):
+[MFLOG|0|2024-12-15T08:19:39.802371Z|runtime|577f6bec-cbdb-4803-94ff-bc4218fc6a75]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/training.py", line 131, in start
+[MFLOG|0|2024-12-15T08:19:39.802426Z|runtime|3dc45868-63ec-4c5d-98da-a15c5950341b]    run = mlflow.start_run(run_name=current.run_id)
+[MFLOG|0|2024-12-15T08:19:39.802476Z|runtime|be1a6b47-9291-484a-b1e9-13287b3ff148]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-15T08:19:39.802522Z|runtime|47dacf3f-7a25-455f-a779-4038d62301ce]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/91ca3aa13e4b9fe/lib/python3.12/site-packages/mlflow/tracking/fluent.py", line 418, in start_run
+[MFLOG|0|2024-12-15T08:19:39.802562Z|runtime|55ac158f-5363-4295-a83f-afce4c4ee90a]    active_run_obj = client.create_run(
+[MFLOG|0|2024-12-15T08:19:39.802601Z|runtime|84410190-fdd0-4164-9b77-ec63193e5ed5]                     ^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-15T08:19:39.802635Z|runtime|5f38ac59-0fcc-4e03-be7b-e44d6c4bda1c]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/91ca3aa13e4b9fe/lib/python3.12/site-packages/mlflow/tracking/client.py", line 393, in create_run
+[MFLOG|0|2024-12-15T08:19:39.802678Z|runtime|abf1f9ef-159e-4527-ad8f-0fec9d3307de]    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+[MFLOG|0|2024-12-15T08:19:39.802722Z|runtime|f54777a0-09c3-47a8-acae-2350d3669560]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-15T08:19:39.802758Z|runtime|ee7d7ca1-3214-4b49-9927-2f156364d9b4]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/91ca3aa13e4b9fe/lib/python3.12/site-packages/mlflow/tracking/_tracking_service/client.py", line 168, in create_run
+[MFLOG|0|2024-12-15T08:19:39.802797Z|runtime|967bb091-6d8b-47f2-bf1a-8f32734ebf76]    return self.store.create_run(
+[MFLOG|0|2024-12-15T08:19:39.802832Z|runtime|ee611d85-a431-4cf6-ab13-528a18da7f7a]           ^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-15T08:19:39.802867Z|runtime|9fed6c9f-eaa8-477b-93f7-b499eaef0ed8]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/91ca3aa13e4b9fe/lib/python3.12/site-packages/mlflow/store/tracking/rest_store.py", line 209, in create_run
+[MFLOG|0|2024-12-15T08:19:39.802900Z|runtime|875604f6-0576-4de6-98b0-41dd4f02c542]    response_proto = self._call_endpoint(CreateRun, req_body)
+[MFLOG|0|2024-12-15T08:19:39.802940Z|runtime|a15f319d-6aad-4fd8-b9cc-ddfee3df0da4]                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-15T08:19:39.802975Z|runtime|14fe5f48-90e0-49d4-9b8b-3c385c90df4a]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/91ca3aa13e4b9fe/lib/python3.12/site-packages/mlflow/store/tracking/rest_store.py", line 82, in _call_endpoint
+[MFLOG|0|2024-12-15T08:19:39.803009Z|runtime|79bbf9f3-e2ea-4af4-8a14-b4da867ed38d]    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+[MFLOG|0|2024-12-15T08:19:39.803051Z|runtime|dd38215a-e8c8-4a72-b6c7-be8a2b34aaf8]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-15T08:19:39.803117Z|runtime|1a754500-c609-4368-85bd-f59465465800]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/91ca3aa13e4b9fe/lib/python3.12/site-packages/mlflow/utils/rest_utils.py", line 370, in call_endpoint
+[MFLOG|0|2024-12-15T08:19:39.803154Z|runtime|581d230e-32c8-4055-a732-73c415705ea3]    response = verify_rest_response(response, endpoint)
+[MFLOG|0|2024-12-15T08:19:39.803192Z|runtime|8cfa8263-23f2-4f56-a607-8645e64393c7]               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-15T08:19:39.803225Z|runtime|fec35e7e-2159-4e9e-9287-5600a184ba5f]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/91ca3aa13e4b9fe/lib/python3.12/site-packages/mlflow/utils/rest_utils.py", line 246, in verify_rest_response
+[MFLOG|0|2024-12-15T08:19:39.803260Z|runtime|5f4790b6-2c89-410f-a4e0-f9d9985e638c]    raise MlflowException(
+[MFLOG|0|2024-12-15T08:19:39.803297Z|runtime|c7df79d7-8407-4473-aa88-275b5aab330e]mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+[MFLOG|0|2024-12-15T08:19:39.803334Z|runtime|35349fca-6003-46f0-a2b0-f7643e4f7d11]
+[MFLOG|0|2024-12-15T08:19:39.803369Z|runtime|6dcfda53-d024-4f65-a4d8-bee9632dd455]The above exception was the direct cause of the following exception:
+[MFLOG|0|2024-12-15T08:19:39.803408Z|runtime|d796e28f-ff03-42dc-8479-2652bea3b608]
+[MFLOG|0|2024-12-15T08:19:39.803445Z|runtime|232ae10b-ed27-45bf-be4e-5dae7572a66e]Traceback (most recent call last):
+[MFLOG|0|2024-12-15T08:19:39.803479Z|runtime|d6c95152-9d50-456e-814a-8cc4fb0c8186]  File "/tmp/tmptygtxe64/metaflow/cli.py", line 1166, in main
+[MFLOG|0|2024-12-15T08:19:39.803516Z|runtime|813221a9-5a6b-42bf-9eca-742ab0ed6000]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-12-15T08:19:39.803549Z|runtime|2c0eeb67-cfe9-4c20-bd3a-50f5f2e54d99]  File "/tmp/tmptygtxe64/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-12-15T08:19:39.803591Z|runtime|200039ca-6187-4a60-8bb0-a39ce326c1f9]    return func(args, kwargs)
+[MFLOG|0|2024-12-15T08:19:40.008676Z|runtime|93d902b0-3d1d-459b-9d91-7110ab1c3db8]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-15T08:19:40.008878Z|runtime|981b9ade-6028-43a6-b1d9-5e852277ac95]  File "/tmp/tmptygtxe64/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-12-15T08:19:40.008928Z|runtime|59774cfd-b133-47a1-b377-e0de175f668c]    return self.main(args, kwargs)
+[MFLOG|0|2024-12-15T08:19:40.008966Z|runtime|09bbb71a-8baf-48b8-a3d5-58a3dcb3fccf]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-15T08:19:40.008999Z|runtime|9b72f2ad-dda8-4d1e-81dc-0e4d0ccd79c6]  File "/tmp/tmptygtxe64/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-12-15T08:19:40.009032Z|runtime|b8ae389f-4a66-467f-924c-00bb5c0d2d33]    rv = self.invoke(ctx)
+[MFLOG|0|2024-12-15T08:19:40.009062Z|runtime|3ecda375-661b-4873-9bdb-5b6dc3183e20]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-15T08:19:40.009092Z|runtime|ae71958c-12bd-4e68-8d92-878e77b72f0a]  File "/tmp/tmptygtxe64/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-12-15T08:19:40.009125Z|runtime|c1dca311-1d98-4519-8941-08911d7bc3df]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-12-15T08:19:40.009155Z|runtime|931f0545-0fa0-4c45-962b-82e33f88552d]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-15T08:19:40.009185Z|runtime|2c63d88b-def4-45c7-a610-2c431665c133]  File "/tmp/tmptygtxe64/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-12-15T08:19:40.009223Z|runtime|b2da1352-2cd3-438b-9d77-2c04081b215f]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-12-15T08:19:40.009255Z|runtime|97aff219-d7c3-4066-9df2-9ecc196fecd1]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-15T08:19:40.009284Z|runtime|a0cd8a3c-7edc-4834-b34e-f605583798b0]  File "/tmp/tmptygtxe64/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-12-15T08:19:40.009314Z|runtime|539936ed-aa2b-4a26-843a-003d7b674c9f]    return callback(args, kwargs)
+[MFLOG|0|2024-12-15T08:19:40.009343Z|runtime|88597ef8-c61a-4d3a-931f-b691ef9dee3b]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-15T08:19:40.009372Z|runtime|c47c2b37-a0e0-4f36-ba0f-c44eb23e7a41]  File "/tmp/tmptygtxe64/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-12-15T08:19:40.009402Z|runtime|c2935e6f-0167-4ca4-9d92-2d3def2ce4a9]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-12-15T08:19:40.009437Z|runtime|4b38cddc-32a9-44b1-adfd-62faa1627264]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-15T08:19:40.009466Z|runtime|6f284baf-0698-454e-bb0e-1bb70e9ab32e]  File "/tmp/tmptygtxe64/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-12-15T08:19:40.009495Z|runtime|cfe9011d-d90a-494c-b11d-89e6ca9eac49]    task.run_step(
+[MFLOG|0|2024-12-15T08:19:40.009524Z|runtime|de1cdfdd-d61d-4387-ba90-a9e5502fe45d]  File "/tmp/tmptygtxe64/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2024-12-15T08:19:40.009553Z|runtime|9d9d0810-08c7-4e1f-82f6-8ba9d90e5558]    self._exec_step_function(step_func)
+[MFLOG|0|2024-12-15T08:19:40.009581Z|runtime|45f21792-eee4-463f-a5b9-f0b43060a13b]  File "/tmp/tmptygtxe64/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-12-15T08:19:40.009610Z|runtime|dc3b11ac-eb77-495f-97b8-51d32c982614]    step_function()
+[MFLOG|0|2024-12-15T08:19:40.009639Z|runtime|18b0cad3-9052-4bcc-af02-34cd2b826799]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/training.py", line 135, in start
+[MFLOG|0|2024-12-15T08:19:40.009675Z|runtime|a4edd1c0-fd05-4088-8fe5-c7862c4ee1ed]    raise RuntimeError(message) from e
+[MFLOG|0|2024-12-15T08:19:40.009704Z|runtime|225be4ef-f6b4-4019-8650-aec97cf4e358]RuntimeError: Failed to connect to MLflow server http://127.0.0.1:5000.
+[MFLOG|0|2024-12-15T08:19:40.009733Z|runtime|5dc90e44-f810-480f-b664-fba2b376e5e3]
+[MFLOG|0|2024-12-15T08:19:40.010308Z|runtime|8bc356b6-df9a-4c0d-a920-9c399f1f650d]Task failed.

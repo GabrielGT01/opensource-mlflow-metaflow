@@ -1,0 +1,6 @@
+[MFLOG|0|2024-11-15T00:22:17.282344Z|runtime|e85c8c6c-2a3a-49ce-95c3-6e6aad55da88]2024-11-15 01:22:17,282 [INFO] MLFLOW_TRACKING_URI http://127.0.0.1:5000
+[MFLOG|0|2024-11-15T00:22:17.291218Z|runtime|5d5138d2-8c43-4db1-845c-8e01281c4634]2024-11-15 01:22:17,282 [INFO] Running flow in development mode.
+[MFLOG|0|2024-11-15T00:22:17.291434Z|runtime|d7bdb5dc-10c2-4d14-a85c-6d9ba11bffa8]2024-11-15 01:22:17,291 [INFO] Loaded dataset with 2500 samples
+[MFLOG|0|2024-11-15T00:22:17.316138Z|runtime|8dc9b778-9a3f-4b4f-ac87-5452afcbf0bb]Training set: 1750 samples
+[MFLOG|0|2024-11-15T00:22:21.556428Z|runtime|8cbdd904-7579-4678-913a-fd1f64688eb5]Validation set: 375 samples
+[MFLOG|0|2024-11-15T00:22:21.556560Z|runtime|107a9e02-eb93-470a-b0b4-ee8bf82e53b2]Test set: 375 samples

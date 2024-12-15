@@ -1,0 +1,1 @@
+{"flow_id": "training_aws", "run_number": "1733654825707532", "step_name": "register_model", "task_id": "21", "field_name": "metaflow_version", "type": "metaflow_version", "value": "2.12.28", "tags": ["attempt_id:0"], "user_name": "gabriel", "ts_epoch": 1733654897922}

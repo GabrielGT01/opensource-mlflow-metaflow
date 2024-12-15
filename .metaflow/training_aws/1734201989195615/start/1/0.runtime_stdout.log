@@ -1,0 +1,8 @@
+[MFLOG|0|2024-12-14T18:46:32.442233Z|runtime|44ab2dc1-5024-4a5c-bdd4-d267996ecafa]2024-12-14 19:46:32,441 [INFO] MLFLOW_TRACKING_URI http://18.208.160.74:5000
+[MFLOG|0|2024-12-14T18:46:32.442451Z|runtime|32e38252-3d84-498f-81bf-cf5c6567a49c]2024-12-14 19:46:32,442 [INFO] Running flow in development mode.
+[MFLOG|0|2024-12-14T18:46:32.442523Z|runtime|5b1ca520-a8a6-4d00-990a-d91e0025efa2]2024-12-14 19:46:32,442 [INFO] Found 1 CSV file(s) in the directory: kaggle_data/
+[MFLOG|0|2024-12-14T18:46:32.448270Z|runtime|8261ce1d-df7b-40c0-94b7-da053bcecc47]2024-12-14 19:46:32,448 [INFO] Loaded 2500 records from file: kaggle_data/weather_forecast_data.csv
+[MFLOG|0|2024-12-14T18:46:32.450359Z|runtime|4dda5b89-bf95-463a-9ea2-6b63ee3c74dc]2024-12-14 19:46:32,450 [INFO] Loaded dataset with 2500 samples
+[MFLOG|0|2024-12-14T18:46:32.471994Z|runtime|9c1494d8-d9ef-4620-8072-5164f34c25d6]Training set: 1750 samples
+[MFLOG|0|2024-12-14T18:46:37.189125Z|runtime|b93e6228-3b6a-472b-ac83-e421d140526a]Validation set: 375 samples
+[MFLOG|0|2024-12-14T18:46:37.189260Z|runtime|db42042b-facd-40f0-86e4-0243d79038c1]Test set: 375 samples

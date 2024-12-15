@@ -1,0 +1,2 @@
+[MFLOG|0|2024-11-30T10:19:55.879057Z|runtime|766e8c78-0f73-4639-82eb-1569367b5951]2024/11/30 11:19:55 INFO mlflow.tracking._tracking_service.client: 🏃 View run cross-validation-fold-0 at: http://54.89.239.64:5000/#/experiments/0/runs/ae97aec86f40479aabc17494a3dc461d.
+[MFLOG|0|2024-11-30T10:20:04.160658Z|runtime|aa6df871-7de0-4763-a035-bc49dc6b7846]2024/11/30 11:19:55 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://54.89.239.64:5000/#/experiments/0.

@@ -1,0 +1,1 @@
+{"flow_id": "training_aws", "run_number": "1733654825707532", "step_name": "train_fold", "task_id": "12", "field_name": "conda_env_prefix", "type": "conda_env_prefix", "value": "metaflow/osx-arm64/91ca3aa13e4b9fe", "tags": ["attempt_id:0"], "user_name": "gabriel", "ts_epoch": 1733654861949}

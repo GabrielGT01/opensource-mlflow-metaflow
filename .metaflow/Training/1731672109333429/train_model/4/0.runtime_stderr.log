@@ -1,0 +1,37 @@
+[MFLOG|0|2024-11-15T12:02:05.181005Z|runtime|271e2443-4fb0-45c3-ad4c-948f1d13fe46]<flow Training step train_model> failed:
+[MFLOG|0|2024-11-15T12:02:05.211985Z|runtime|7ef27aae-603b-478e-b5f8-5060c75662aa]    Internal error
+[MFLOG|0|2024-11-15T12:02:05.217047Z|runtime|87140db8-de57-4586-b196-7999fa3dfb77]Traceback (most recent call last):
+[MFLOG|0|2024-11-15T12:02:05.217553Z|runtime|f047c8df-46a3-4bae-acaa-e8d38a40fd15]  File "/tmp/tmpy7kgeu82/metaflow/cli.py", line 1166, in main
+[MFLOG|0|2024-11-15T12:02:05.217775Z|runtime|e6de97c9-f0c0-411c-86e1-611b2328faa8]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-11-15T12:02:05.217908Z|runtime|817b0b22-9454-4fc2-8d16-7953e8a565a3]  File "/tmp/tmpy7kgeu82/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-11-15T12:02:05.218244Z|runtime|0d9de707-c7bc-45c6-b64e-3301bca39197]    return func(args, kwargs)
+[MFLOG|0|2024-11-15T12:02:05.718389Z|runtime|d8141e84-63d2-4601-a123-dfc955d80981]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T12:02:05.718768Z|runtime|75a2b90a-64fc-48bc-84cc-37ee426d923e]  File "/tmp/tmpy7kgeu82/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-11-15T12:02:05.718861Z|runtime|c9bdbe1b-a9de-4d28-b227-77b69430294f]    return self.main(args, kwargs)
+[MFLOG|0|2024-11-15T12:02:05.718955Z|runtime|f9322c11-0d55-4f8d-b18a-11d34eaaf4d4]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T12:02:05.719042Z|runtime|4c97032e-b8ef-4436-af64-8f43c8e0ed20]  File "/tmp/tmpy7kgeu82/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-11-15T12:02:05.719120Z|runtime|e2b71a37-c533-48d7-b1af-ac9fa400539e]    rv = self.invoke(ctx)
+[MFLOG|0|2024-11-15T12:02:05.719182Z|runtime|26012b4a-47f1-4435-8024-502ac2f00d53]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T12:02:05.719255Z|runtime|d960cb3e-1e22-478e-9108-7f9a6d0960d5]  File "/tmp/tmpy7kgeu82/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-11-15T12:02:05.719313Z|runtime|dbda370f-75de-4f75-ba46-83571f367fe4]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-11-15T12:02:05.719376Z|runtime|0577e7e4-d6dc-4efb-950a-4bb0afd477c5]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T12:02:05.719435Z|runtime|16005449-424f-4e42-9bd1-8707c312b38f]  File "/tmp/tmpy7kgeu82/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-11-15T12:02:05.719510Z|runtime|ff3b8867-90f9-4efd-97e9-49ef88571d9c]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-11-15T12:02:05.719566Z|runtime|146efcda-bda0-4985-abda-9d472de5abb8]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T12:02:05.719721Z|runtime|6966bd49-7213-41cd-8ac3-079530a0ee30]  File "/tmp/tmpy7kgeu82/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-11-15T12:02:05.719890Z|runtime|45183ca2-f701-4db9-9cdb-183384156008]    return callback(args, kwargs)
+[MFLOG|0|2024-11-15T12:02:05.719975Z|runtime|55417d07-8883-40ac-ad58-e5b2d0a8e90c]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T12:02:05.720039Z|runtime|1ba20b17-c220-4627-a8c2-9e4f1db4cd25]  File "/tmp/tmpy7kgeu82/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-11-15T12:02:05.720101Z|runtime|db726346-b1a6-48ea-bf1f-7f1ae93e5535]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-11-15T12:02:05.720158Z|runtime|04c81f97-d4eb-4ced-8b10-8561f55492c7]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-15T12:02:05.720217Z|runtime|c5adc88b-5d19-41ae-9d4b-b229dc7e6881]  File "/tmp/tmpy7kgeu82/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-11-15T12:02:05.720304Z|runtime|eae26ed7-f569-4d24-8a75-49c98b594e47]    task.run_step(
+[MFLOG|0|2024-11-15T12:02:05.720363Z|runtime|f9113fdd-dfaf-474b-b96c-773a964abf3c]  File "/tmp/tmpy7kgeu82/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2024-11-15T12:02:05.720418Z|runtime|ef2f0df6-7aa8-451f-a29a-df425f55cb80]    self._exec_step_function(step_func)
+[MFLOG|0|2024-11-15T12:02:05.720472Z|runtime|cda6230a-d5f6-4c8c-892e-97a702d7ff3d]  File "/tmp/tmpy7kgeu82/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-11-15T12:02:05.720527Z|runtime|b376262c-d750-4069-a6a6-74cc424e7841]    step_function()
+[MFLOG|0|2024-11-15T12:02:05.720583Z|runtime|cfbd33ad-8559-4746-b428-87843fd406cc]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/training.py", line 289, in train_model
+[MFLOG|0|2024-11-15T12:02:05.720638Z|runtime|37f967a5-aa40-4b4e-94fe-6092301d1442]    import psutil
+[MFLOG|0|2024-11-15T12:02:05.720837Z|runtime|39622840-6b2b-4d1c-9032-794543809007]ModuleNotFoundError: No module named 'psutil'
+[MFLOG|0|2024-11-15T12:02:05.721041Z|runtime|97e8ec1f-a82b-43e5-bd89-67c64c9adec8]
+[MFLOG|0|2024-11-15T12:02:05.722056Z|runtime|f2d05661-aa46-4806-aeb2-ec70829c5186]Task failed.

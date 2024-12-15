@@ -1,0 +1,1 @@
+{"flow_id": "Training", "run_number": "1732961941376627", "step_name": "evaluate_model", "task_id": "20", "field_name": "ds-root", "type": "ds-root", "value": "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/.metaflow", "tags": ["attempt_id:0"], "user_name": "gabriel", "ts_epoch": 1732962005839}

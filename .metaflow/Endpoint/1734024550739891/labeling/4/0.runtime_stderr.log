@@ -1,0 +1,61 @@
+[MFLOG|0|2024-12-12T17:29:15.236783Z|runtime|3d2b94c0-9028-43c4-bdcc-186641c63db8]<flow Endpoint step labeling> failed:
+[MFLOG|0|2024-12-12T17:29:15.255745Z|runtime|be62741d-7602-4718-8750-bcd08a3acfa1]    Internal error
+[MFLOG|0|2024-12-12T17:29:15.260642Z|runtime|f7f287bd-6be8-4ddd-b16e-bdca883bc29c]Traceback (most recent call last):
+[MFLOG|0|2024-12-12T17:29:15.260906Z|runtime|e84d70ef-c4dd-4d94-adec-35136307a4dc]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/sagemaker.py", line 65, in process
+[MFLOG|0|2024-12-12T17:29:15.261029Z|runtime|29ebbe16-4761-4874-8d8e-24443d076429]    data = row["groundTruthData"]["rain_status"]
+[MFLOG|0|2024-12-12T17:29:15.261128Z|runtime|f856672c-06fd-48df-8e7d-6b5e44c6a77e]           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T17:29:15.261345Z|runtime|2df22959-a3ef-401f-b221-cb4d8c32b3e8]KeyError: 'rain_status'
+[MFLOG|0|2024-12-12T17:29:15.261552Z|runtime|302b52f2-0fe8-498d-b558-476f223ae4d6]
+[MFLOG|0|2024-12-12T17:29:15.261733Z|runtime|96c950b8-115f-432e-a8bb-08576b0ae5b7]During handling of the above exception, another exception occurred:
+[MFLOG|0|2024-12-12T17:29:15.261955Z|runtime|1e448ae5-da62-4516-bf26-bebbac90347f]
+[MFLOG|0|2024-12-12T17:29:15.262041Z|runtime|566d0e0b-6fa6-4b2b-977d-73831493f5ed]Traceback (most recent call last):
+[MFLOG|0|2024-12-12T17:29:15.262120Z|runtime|6b6463e4-4a39-42b9-9281-7b5552d76000]  File "/tmp/tmppqxt4ovp/metaflow/cli.py", line 1166, in main
+[MFLOG|0|2024-12-12T17:29:15.262178Z|runtime|d6727efd-4dfb-41b6-b0be-14ae373fd7d7]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-12-12T17:29:15.262328Z|runtime|4fee4f73-a7eb-43fe-baa3-772980b2de6a]  File "/tmp/tmppqxt4ovp/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-12-12T17:29:15.262431Z|runtime|0f67a2a9-dc32-4f35-9eb7-6d2c31e31ceb]    return func(args, kwargs)
+[MFLOG|0|2024-12-12T17:29:15.262500Z|runtime|6dcdcb79-0bc3-4dce-ac6a-4710d65d9659]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T17:29:15.262559Z|runtime|ab8bd49b-3b9a-44aa-8bf8-5aecfe569ad4]  File "/tmp/tmppqxt4ovp/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-12-12T17:29:15.262621Z|runtime|759c7e86-b674-4846-9d24-96b525368484]    return self.main(args, kwargs)
+[MFLOG|0|2024-12-12T17:29:15.384092Z|runtime|29ddc24c-df90-4049-8e42-0edbd9f4d603]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T17:29:15.384275Z|runtime|01b337f4-c895-4342-b613-5c05d2112603]  File "/tmp/tmppqxt4ovp/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-12-12T17:29:15.384325Z|runtime|de7380cf-9d9e-4e6b-9132-8d9236131b2f]    rv = self.invoke(ctx)
+[MFLOG|0|2024-12-12T17:29:15.384369Z|runtime|e652bccb-5b2f-4295-9237-0043d4424a62]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T17:29:15.384406Z|runtime|76e03d1b-ce8f-48c3-91e1-2b65b10398e4]  File "/tmp/tmppqxt4ovp/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-12-12T17:29:15.384441Z|runtime|a12db023-352f-4a05-a8b5-88055d9e5f17]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-12-12T17:29:15.384473Z|runtime|fe523bc4-76f5-40b3-8a42-864f981c8529]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T17:29:15.384508Z|runtime|fde6a192-1796-46b8-a342-cc9b8a1e1e0e]  File "/tmp/tmppqxt4ovp/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-12-12T17:29:15.384538Z|runtime|be374474-39e2-4b5e-985c-6f32b3ba7fb2]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-12-12T17:29:15.384569Z|runtime|843e840b-40e2-4689-a383-a81f917ec0a2]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T17:29:15.384598Z|runtime|f1749da0-f3dc-4482-8ee6-eec52fda3649]  File "/tmp/tmppqxt4ovp/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-12-12T17:29:15.384627Z|runtime|b7b779d3-902f-4177-b9e7-6896ff50eae3]    return callback(args, kwargs)
+[MFLOG|0|2024-12-12T17:29:15.384656Z|runtime|2b5dd951-1084-4fd3-9807-5b319ff79eee]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T17:29:15.384686Z|runtime|b74b83ee-f9de-4e67-ab08-69dfe001b1e8]  File "/tmp/tmppqxt4ovp/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-12-12T17:29:15.384716Z|runtime|7556f358-d35e-4ee2-a3b1-03bcd0795ed7]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-12-12T17:29:15.384745Z|runtime|b1f3767d-3b28-4baf-8fe0-ecb8cfab4df8]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T17:29:15.384775Z|runtime|2cc60f49-31af-4186-97d5-221f1e101509]  File "/tmp/tmppqxt4ovp/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-12-12T17:29:15.384804Z|runtime|5747f72d-9357-4bba-ad32-436c45e75578]    task.run_step(
+[MFLOG|0|2024-12-12T17:29:15.384839Z|runtime|892931a3-8b35-49e7-8368-4d35464c5726]  File "/tmp/tmppqxt4ovp/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2024-12-12T17:29:15.384868Z|runtime|0267cfe9-931f-47bc-8e66-bc28098d1fbf]    self._exec_step_function(step_func)
+[MFLOG|0|2024-12-12T17:29:15.384897Z|runtime|d8e32c7d-93fe-445d-8d4e-f46b8f24c895]  File "/tmp/tmppqxt4ovp/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-12-12T17:29:15.384926Z|runtime|db6973ac-3206-47f1-bc15-828437964caf]    step_function()
+[MFLOG|0|2024-12-12T17:29:15.384956Z|runtime|333400f9-cbd6-48a7-93e9-979e4c1c4b57]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/endpoint_aws.py", line 196, in labeling
+[MFLOG|0|2024-12-12T17:29:15.384985Z|runtime|9454a07d-0305-47f6-a8ee-cf99446a67e8]    self.labeled_samples = self._label_sagemaker_data()
+[MFLOG|0|2024-12-12T17:29:15.385014Z|runtime|cb12c5d4-d995-4fbf-83ed-1d162cd5890d]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T17:29:15.385043Z|runtime|f23397f7-b656-4227-8134-cef533533710]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/endpoint_aws.py", line 320, in _label_sagemaker_data
+[MFLOG|0|2024-12-12T17:29:15.385080Z|runtime|fd96b24a-4087-4c28-a409-237244b5ce79]    data = load_unlabeled_data(
+[MFLOG|0|2024-12-12T17:29:15.385109Z|runtime|a327458d-a938-404a-916f-dd92d772a706]           ^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T17:29:15.385142Z|runtime|85dfd413-0f45-43e3-b5d6-ebcc791c1b79]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/sagemaker.py", line 35, in load_unlabeled_data
+[MFLOG|0|2024-12-12T17:29:15.385172Z|runtime|60b1e208-700e-442b-a7bf-2fc53226cebc]    data = _load_collected_data(s3_client, data_uri, ground_truth_uri)
+[MFLOG|0|2024-12-12T17:29:15.385201Z|runtime|8d43dabe-af3b-4607-af50-eaef8662b9db]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T17:29:15.385230Z|runtime|915b2f48-1fa6-430a-8a19-f312e70bdc3b]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/sagemaker.py", line 42, in _load_collected_data
+[MFLOG|0|2024-12-12T17:29:15.385262Z|runtime|0b9844ec-9695-4485-b7d0-3c38dd0ae52d]    ground_truth = _load_ground_truth_files(s3_client, ground_truth_uri)
+[MFLOG|0|2024-12-12T17:29:15.385290Z|runtime|877b0244-9381-45a3-ab1c-1ad432fd62d0]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T17:29:15.385319Z|runtime|2f0a3d39-854c-4955-a50e-4edd9f3bc287]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/sagemaker.py", line 76, in _load_ground_truth_files
+[MFLOG|0|2024-12-12T17:29:15.385347Z|runtime|b493567f-c27e-4a46-b298-645c556c1d03]    processed_dfs = [process(row) for _, row in df.iterrows()]
+[MFLOG|0|2024-12-12T17:29:15.385376Z|runtime|89805f58-817a-4cd1-b2c9-0829d08d72b9]                     ^^^^^^^^^^^^
+[MFLOG|0|2024-12-12T17:29:15.385406Z|runtime|8df1434b-ee49-4724-812e-5228a0e8333f]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/sagemaker.py", line 69, in process
+[MFLOG|0|2024-12-12T17:29:15.385440Z|runtime|3d38f21e-44db-460a-a2ca-2f9f8653ef3d]    logging.error("KeyError in ground truth data: %s", e)
+[MFLOG|0|2024-12-12T17:29:15.385468Z|runtime|9bc223d2-f5fc-4144-b069-8b966295ad4a]    ^^^^^^^
+[MFLOG|0|2024-12-12T17:29:15.385507Z|runtime|dd134de6-d83e-4ad1-8af4-e81d281439c9]NameError: name 'logging' is not defined. Did you forget to import 'logging'
+[MFLOG|0|2024-12-12T17:29:15.385537Z|runtime|95fb18de-54b8-4960-8017-ffdff3227182]
+[MFLOG|0|2024-12-12T17:29:15.386093Z|runtime|9c123b88-ffa2-4857-8a3b-dacc230e17cf]Task failed.

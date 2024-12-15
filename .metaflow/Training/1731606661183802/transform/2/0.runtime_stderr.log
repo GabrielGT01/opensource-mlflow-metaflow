@@ -1,0 +1,58 @@
+[MFLOG|0|2024-11-14T17:51:59.996144Z|runtime|0ccd9bd8-9da1-4d20-be3b-24b0ca4f56a7]<flow Training step transform> failed:
+[MFLOG|0|2024-11-14T17:52:00.009717Z|runtime|8a6c3f24-8ad2-4f93-ac30-ae3eaff914b0]    Internal error
+[MFLOG|0|2024-11-14T17:52:00.013984Z|runtime|898633ef-6639-4707-89eb-6de0eff19470]Traceback (most recent call last):
+[MFLOG|0|2024-11-14T17:52:00.014161Z|runtime|bc4a36ed-02b3-47b6-9003-e5cf899b7be6]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/e472752e21dbe09/lib/python3.12/site-packages/sklearn/utils/_indexing.py", line 338, in _get_column_indices
+[MFLOG|0|2024-11-14T17:52:00.014250Z|runtime|e51c8e69-436b-457c-b173-982b65fe0b33]    all_columns = X.columns
+[MFLOG|0|2024-11-14T17:52:00.014304Z|runtime|f014562a-7c76-46ac-be46-92d4d03ee797]                  ^^^^^^^^^
+[MFLOG|0|2024-11-14T17:52:00.014342Z|runtime|7561b22a-dd1b-4206-b284-8d01685e4c10]AttributeError: 'numpy.ndarray' object has no attribute 'columns'
+[MFLOG|0|2024-11-14T17:52:00.014387Z|runtime|a528f40e-8540-4ab6-b9d8-e3f1fe02455b]
+[MFLOG|0|2024-11-14T17:52:00.014440Z|runtime|03697252-8754-4d5a-82bf-3924f6476f07]During handling of the above exception, another exception occurred:
+[MFLOG|0|2024-11-14T17:52:00.014486Z|runtime|1e2540e4-af3b-4b77-9e94-2e503e83d033]
+[MFLOG|0|2024-11-14T17:52:00.014527Z|runtime|99ff1dbd-9e9c-42d9-9576-fea0577dc16a]Traceback (most recent call last):
+[MFLOG|0|2024-11-14T17:52:00.014562Z|runtime|8eb1ae05-7594-48fb-9e80-f791d7952fed]  File "/tmp/tmp1opnvp0o/metaflow/cli.py", line 1166, in main
+[MFLOG|0|2024-11-14T17:52:00.014597Z|runtime|6c13cdaf-a65d-45c9-9fd4-e8c6adfefee1]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-11-14T17:52:00.014641Z|runtime|93dd914c-9e9b-4cd7-8623-205aa3d104d4]  File "/tmp/tmp1opnvp0o/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-11-14T17:52:00.014683Z|runtime|6e94ef72-0b81-49c7-9dda-fe872cb51613]    return func(args, kwargs)
+[MFLOG|0|2024-11-14T17:52:00.014719Z|runtime|ad69b754-8f6d-4067-9b09-148848273f64]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-14T17:52:00.014755Z|runtime|d83ab41e-2cd2-4a18-8c24-eaf5ba4c98a8]  File "/tmp/tmp1opnvp0o/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-11-14T17:52:00.014792Z|runtime|ca299acb-4e39-4075-af37-72b67379403d]    return self.main(args, kwargs)
+[MFLOG|0|2024-11-14T17:52:00.205380Z|runtime|ae5f9a9c-cee1-40e2-a011-17a3e8b4f4f8]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-14T17:52:00.205610Z|runtime|a2f0fff7-697b-4349-92d0-e37de92cfa9a]  File "/tmp/tmp1opnvp0o/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-11-14T17:52:00.205670Z|runtime|67765289-db8c-4005-ad56-f9743428a2aa]    rv = self.invoke(ctx)
+[MFLOG|0|2024-11-14T17:52:00.205714Z|runtime|aa5e7dc4-5cc8-4771-a421-67643130124a]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-14T17:52:00.205772Z|runtime|b943c815-ec10-42e0-b0cb-188dd3aea388]  File "/tmp/tmp1opnvp0o/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-11-14T17:52:00.205818Z|runtime|5ac7e244-29e1-4c86-b691-556d0a52a6d2]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-11-14T17:52:00.205851Z|runtime|c88ff4b3-6b4b-45f5-b44d-f2a2ccbf9748]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-14T17:52:00.205893Z|runtime|f4aeb7e5-cb0b-4987-b99f-38ffd2342a4d]  File "/tmp/tmp1opnvp0o/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-11-14T17:52:00.205932Z|runtime|fdbf33d6-1f0f-48c7-8e65-19d9e0b29f30]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-11-14T17:52:00.205963Z|runtime|307d8dee-56b3-4e31-8407-979448aecb17]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-14T17:52:00.205997Z|runtime|c1645dc2-3ca4-46ed-83b4-041ba3657fac]  File "/tmp/tmp1opnvp0o/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-11-14T17:52:00.206026Z|runtime|5e2b16f0-4cf8-4a0c-8c24-742dcbc9b5d8]    return callback(args, kwargs)
+[MFLOG|0|2024-11-14T17:52:00.206055Z|runtime|bcbfb0ad-c2a7-490f-9ee6-fb4de18a8afc]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-14T17:52:00.206085Z|runtime|abeb0385-7c4e-4cce-af5c-765c93996cd7]  File "/tmp/tmp1opnvp0o/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-11-14T17:52:00.206114Z|runtime|c956818c-9d84-4b74-bfd6-45465ea0147f]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-11-14T17:52:00.206143Z|runtime|fde136c1-2c01-46cb-bad5-3d3ea7b78b45]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-14T17:52:00.206179Z|runtime|938a4dba-f371-4ee7-8fed-bf6073570363]  File "/tmp/tmp1opnvp0o/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-11-14T17:52:00.206209Z|runtime|583fd5d7-29fc-409d-8a00-008111e0880f]    task.run_step(
+[MFLOG|0|2024-11-14T17:52:00.206252Z|runtime|f17334d8-cff2-4a00-a45d-0dfb58a17feb]  File "/tmp/tmp1opnvp0o/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2024-11-14T17:52:00.206282Z|runtime|d68e12a3-139d-4d77-a35e-4e44c2f8485f]    self._exec_step_function(step_func)
+[MFLOG|0|2024-11-14T17:52:00.206311Z|runtime|7a055332-bc49-4cf2-89d1-dc2464591361]  File "/tmp/tmp1opnvp0o/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-11-14T17:52:00.206340Z|runtime|7619c80d-adf3-48d4-b474-ce443318508b]    step_function()
+[MFLOG|0|2024-11-14T17:52:00.206373Z|runtime|13ccaf56-3e8a-4aad-924c-795809ab3cb5]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/training.py", line 159, in transform
+[MFLOG|0|2024-11-14T17:52:00.206403Z|runtime|f425e357-ed3b-4c6f-9728-70372de459c2]    self.target_transformer.fit_transform(
+[MFLOG|0|2024-11-14T17:52:00.206433Z|runtime|77e974ed-fbd2-4c92-8b4e-53ab415d9054]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/e472752e21dbe09/lib/python3.12/site-packages/sklearn/utils/_set_output.py", line 316, in wrapped
+[MFLOG|0|2024-11-14T17:52:00.206466Z|runtime|d8c3c0f9-933c-47fe-98f8-b0dd4b078f6a]    data_to_wrap = f(self, X, args, kwargs)
+[MFLOG|0|2024-11-14T17:52:00.206500Z|runtime|b37cab8d-88fb-4e26-b54a-56f847ad909f]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-14T17:52:00.206528Z|runtime|bcf09990-043f-4e27-9cbf-4738f65a4c9f]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/e472752e21dbe09/lib/python3.12/site-packages/sklearn/base.py", line 1473, in wrapper
+[MFLOG|0|2024-11-14T17:52:00.206558Z|runtime|7d7c6b3c-15c0-4a36-9e6c-1bfff45b226a]    return fit_method(estimator, args, kwargs)
+[MFLOG|0|2024-11-14T17:52:00.206588Z|runtime|bc8db4ca-787d-457b-935c-714c210513a2]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-14T17:52:00.206617Z|runtime|28a89f7d-fcec-4228-a1a9-5ba714b3816b]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/e472752e21dbe09/lib/python3.12/site-packages/sklearn/compose/_column_transformer.py", line 968, in fit_transform
+[MFLOG|0|2024-11-14T17:52:00.206646Z|runtime|9b24da7e-378a-4ca7-a839-0ae142f611bb]    self._validate_column_callables(X)
+[MFLOG|0|2024-11-14T17:52:00.206675Z|runtime|b40617f2-1dad-43a8-a032-56c0dc7221c8]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/e472752e21dbe09/lib/python3.12/site-packages/sklearn/compose/_column_transformer.py", line 536, in _validate_column_callables
+[MFLOG|0|2024-11-14T17:52:00.206710Z|runtime|0459db11-fb7b-45f9-a4cd-78a527978f61]    transformer_to_input_indices[name] = _get_column_indices(X, columns)
+[MFLOG|0|2024-11-14T17:52:00.206739Z|runtime|a25f5ff6-d672-4950-aa3f-dae89ca8bffb]                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-11-14T17:52:00.206773Z|runtime|d7654b3b-77e9-4675-af47-03aec225b50b]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/e472752e21dbe09/lib/python3.12/site-packages/sklearn/utils/_indexing.py", line 340, in _get_column_indices
+[MFLOG|0|2024-11-14T17:52:00.206808Z|runtime|3d686b5d-ca97-43b1-9d09-98d0fa1a198e]    raise ValueError(
+[MFLOG|0|2024-11-14T17:52:00.206837Z|runtime|bb10828d-5d86-4460-a26c-dcdab88e7f4c]ValueError: Specifying the columns using strings is only supported for dataframes.
+[MFLOG|0|2024-11-14T17:52:00.206866Z|runtime|cf8ddf57-7dc7-4473-a10e-cf164e445cbb]
+[MFLOG|0|2024-11-14T17:52:00.207527Z|runtime|b4d1cf97-d7a2-4e33-adb5-e135916f0087]Task failed.

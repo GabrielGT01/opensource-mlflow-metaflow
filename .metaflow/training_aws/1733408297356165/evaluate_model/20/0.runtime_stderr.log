@@ -1,0 +1,136 @@
+[MFLOG|0|2024-12-05T14:27:49.846211Z|runtime|540bb36d-0e1a-40e9-a1ca-9440f3ab33d8]<flow training_aws step evaluate_model> failed:
+[MFLOG|0|2024-12-05T14:27:49.857548Z|runtime|df2c5219-7db8-4681-a9a9-1b629433f864]    Internal error
+[MFLOG|0|2024-12-05T14:27:49.863558Z|runtime|05e4f54a-d6da-4801-9a0c-180b1743d93e]Traceback (most recent call last):
+[MFLOG|0|2024-12-05T14:27:49.863962Z|runtime|50179ea4-2ceb-4317-862c-a171fac5aea0]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/urllib3/connection.py", line 199, in _new_conn
+[MFLOG|0|2024-12-05T14:27:49.864123Z|runtime|0d18ed92-cc27-405c-bb03-8e8b3edd175c]    sock = connection.create_connection(
+[MFLOG|0|2024-12-05T14:27:49.864217Z|runtime|d0c0201b-1296-4865-9997-1ebca17ce01b]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:49.864283Z|runtime|a50aa1c2-212b-4be7-b46b-ec54d79055ee]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+[MFLOG|0|2024-12-05T14:27:49.864336Z|runtime|32588383-7b04-4a3c-a056-21842f3947bb]    raise err
+[MFLOG|0|2024-12-05T14:27:49.864396Z|runtime|61fffe47-28c9-486a-ba1a-d6c3a20da9c1]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+[MFLOG|0|2024-12-05T14:27:49.864448Z|runtime|d36c70f0-90f4-4b87-a8a6-8e634b5adbc3]    sock.connect(sa)
+[MFLOG|0|2024-12-05T14:27:49.864505Z|runtime|97498e65-55c2-4b5a-9f24-7954f17a8db5]TimeoutError: [Errno 60] Operation timed out
+[MFLOG|0|2024-12-05T14:27:49.864551Z|runtime|07c151de-b027-4d92-aa82-7810a7ad8d46]
+[MFLOG|0|2024-12-05T14:27:49.864595Z|runtime|89920574-30cc-4571-94ae-882ae31f7c4d]The above exception was the direct cause of the following exception:
+[MFLOG|0|2024-12-05T14:27:49.864635Z|runtime|6bdc372a-eab0-4911-9591-6ba82c613a2d]
+[MFLOG|0|2024-12-05T14:27:49.864669Z|runtime|5647553e-af44-427b-b8c0-1a2f5da8acd5]Traceback (most recent call last):
+[MFLOG|0|2024-12-05T14:27:49.864701Z|runtime|17cde52b-8a76-4763-9e44-a75cbce69635]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+[MFLOG|0|2024-12-05T14:27:49.864735Z|runtime|4eb3f16c-dda1-46e9-b573-01ea5d8e9818]    response = self._make_request(
+[MFLOG|0|2024-12-05T14:27:49.864767Z|runtime|2132c0cc-0061-4d72-9037-d5dbd049aa26]               ^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:49.864800Z|runtime|9e620374-f2e5-43e0-b462-ee8fd991fa90]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/urllib3/connectionpool.py", line 495, in _make_request
+[MFLOG|0|2024-12-05T14:27:49.864834Z|runtime|a2091d75-fd77-4bd0-8c24-89f42c9d1e31]    conn.request(
+[MFLOG|0|2024-12-05T14:27:49.864868Z|runtime|926230d5-832d-4f29-8a57-06b993ec10ff]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/urllib3/connection.py", line 441, in request
+[MFLOG|0|2024-12-05T14:27:49.864901Z|runtime|86add4e7-541e-4e0f-8ce3-ab69bd2526d8]    self.endheaders()
+[MFLOG|0|2024-12-05T14:27:49.864934Z|runtime|ccbc5303-6b76-45ff-985a-10710412dc16]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/http/client.py", line 1314, in endheaders
+[MFLOG|0|2024-12-05T14:27:49.864967Z|runtime|656ec36f-4528-4185-ab9f-ea15945a7eb4]    self._send_output(message_body, encode_chunked=encode_chunked)
+[MFLOG|0|2024-12-05T14:27:49.864999Z|runtime|4e042d4b-790c-4b5f-bf9e-7feb0860b331]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/http/client.py", line 1074, in _send_output
+[MFLOG|0|2024-12-05T14:27:49.865033Z|runtime|2037f9c0-9ca1-4b58-937f-c4dc530545c6]    self.send(msg)
+[MFLOG|0|2024-12-05T14:27:49.865075Z|runtime|cc1a1c2e-82d9-4471-a65b-2a7f0331a020]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/http/client.py", line 1018, in send
+[MFLOG|0|2024-12-05T14:27:49.865108Z|runtime|29aa0689-282a-4d99-90fd-99aa81e9ad4c]    self.connect()
+[MFLOG|0|2024-12-05T14:27:49.865141Z|runtime|33f3115b-eced-4386-b8f1-8eeee43f4ef0]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/urllib3/connection.py", line 279, in connect
+[MFLOG|0|2024-12-05T14:27:49.865173Z|runtime|12de54a4-3a28-4a39-86e3-e1b7694097c9]    self.sock = self._new_conn()
+[MFLOG|0|2024-12-05T14:27:49.865206Z|runtime|b3ae41fe-6537-4e7b-b92a-bb01f816f2f0]                ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:49.865238Z|runtime|bf1237ad-a49f-414f-9db1-aaf62e0c29e8]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/urllib3/connection.py", line 208, in _new_conn
+[MFLOG|0|2024-12-05T14:27:49.865275Z|runtime|3eea49f6-92b5-4313-b0a2-b49d2de86801]    raise ConnectTimeoutError(
+[MFLOG|0|2024-12-05T14:27:49.865308Z|runtime|13a7de3c-41d1-44d6-a463-b141e92aa24c]urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPConnection object at 0x17bec9b20>, 'Connection to 54.90.216.156 timed out. (connect timeout=120)')
+[MFLOG|0|2024-12-05T14:27:49.865340Z|runtime|865da7e0-c335-42ee-a9dd-147c5dac9e4d]
+[MFLOG|0|2024-12-05T14:27:49.865376Z|runtime|0f9661c0-2368-4963-af4f-1fa73765eef8]The above exception was the direct cause of the following exception:
+[MFLOG|0|2024-12-05T14:27:49.865408Z|runtime|0aef080c-b017-4181-b81e-9aca17f73520]
+[MFLOG|0|2024-12-05T14:27:49.865439Z|runtime|c744acf2-a6f8-419d-bc84-77c5602e522c]Traceback (most recent call last):
+[MFLOG|0|2024-12-05T14:27:49.865471Z|runtime|11cc9b10-31a2-484c-a95a-c09bc3723c46]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+[MFLOG|0|2024-12-05T14:27:49.865503Z|runtime|f076076e-0783-4a81-9955-282ed80e399c]    resp = conn.urlopen(
+[MFLOG|0|2024-12-05T14:27:49.865535Z|runtime|c37090d0-e60a-48c1-befd-9a8f913db09a]           ^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:49.865568Z|runtime|11605c5c-8740-4a79-abe1-b4662c713288]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/urllib3/connectionpool.py", line 873, in urlopen
+[MFLOG|0|2024-12-05T14:27:49.865600Z|runtime|c754d06d-5503-428c-93fd-84e56ee93e18]    return self.urlopen(
+[MFLOG|0|2024-12-05T14:27:49.865633Z|runtime|1ed1bf4d-b06c-4239-b0a0-a4fed02a9662]           ^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:49.865666Z|runtime|ba4fce6d-d5cd-43b0-87b0-8609bc730f96]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/urllib3/connectionpool.py", line 873, in urlopen
+[MFLOG|0|2024-12-05T14:27:49.865698Z|runtime|4cc93ceb-1f92-4abb-9bd9-af87eb77a681]    return self.urlopen(
+[MFLOG|0|2024-12-05T14:27:49.865731Z|runtime|6ac7bd3b-ad29-4b20-ad15-954ac0f27ddd]           ^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:49.865762Z|runtime|69df08e1-3e86-462b-84a2-0a0ca275a1e3]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/urllib3/connectionpool.py", line 873, in urlopen
+[MFLOG|0|2024-12-05T14:27:49.865796Z|runtime|8160fd7e-4ff9-47ac-b9c8-a1b2fa1bf9ec]    return self.urlopen(
+[MFLOG|0|2024-12-05T14:27:49.865828Z|runtime|6b28c1e9-64cd-4b34-bfff-dab68a08dcad]           ^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:49.865860Z|runtime|4286b6fd-80af-4fc5-abac-981f05cccf3d]  [Previous line repeated 2 more times]
+[MFLOG|0|2024-12-05T14:27:49.865893Z|runtime|f6511994-bde0-44b1-b783-ae7c1c183e41]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+[MFLOG|0|2024-12-05T14:27:49.865925Z|runtime|5ae6306c-3d1f-4c9a-b550-a320ed136625]    retries = retries.increment(
+[MFLOG|0|2024-12-05T14:27:49.865957Z|runtime|e8b43ec3-6916-490d-8a98-8fe83e50b83c]              ^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:49.865989Z|runtime|5387a07f-1def-44a2-94cf-fa996b09ce0d]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+[MFLOG|0|2024-12-05T14:27:49.866020Z|runtime|69b14a77-4a6d-49d4-a8ad-338068851614]    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+[MFLOG|0|2024-12-05T14:27:49.866066Z|runtime|f5569dd5-fd26-41db-8bca-ada3f4f8b118]    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:49.866100Z|runtime|0ec9dd3b-d483-451b-bd3f-ff63920ab57b]urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='54.90.216.156', port=5000): Max retries exceeded with url: /api/2.0/mlflow/runs/get?run_uuid=6b2706f395e446308765bdb419a4b770&run_id=6b2706f395e446308765bdb419a4b770 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x17bec9b20>, 'Connection to 54.90.216.156 timed out. (connect timeout=120)'))
+[MFLOG|0|2024-12-05T14:27:49.866136Z|runtime|a1eafe9e-2093-4e42-9f86-f8685e8460e6]
+[MFLOG|0|2024-12-05T14:27:49.866168Z|runtime|17868eff-8d02-41d5-880a-d56eef2eb220]During handling of the above exception, another exception occurred:
+[MFLOG|0|2024-12-05T14:27:49.866200Z|runtime|5e7f657d-199a-4699-a34d-8744b64c53a3]
+[MFLOG|0|2024-12-05T14:27:49.866232Z|runtime|16ed75f5-0743-480d-917e-8297fed687f3]Traceback (most recent call last):
+[MFLOG|0|2024-12-05T14:27:49.866264Z|runtime|c7d9f9c2-f910-407d-b33e-ecbc0b303c58]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/utils/rest_utils.py", line 189, in http_request
+[MFLOG|0|2024-12-05T14:27:49.866298Z|runtime|2366f6c6-6a77-4b58-b35a-671db9d98e3f]    return _get_http_response_with_retries(
+[MFLOG|0|2024-12-05T14:27:49.866330Z|runtime|d040248b-0cb6-4e1c-a518-ed61bdc353ce]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:49.866361Z|runtime|238d7de8-2024-4bb7-8f5a-3f53b1364acc]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/utils/request_utils.py", line 237, in _get_http_response_with_retries
+[MFLOG|0|2024-12-05T14:27:49.866403Z|runtime|562b9513-bc20-41bb-926e-bf342b1364d8]    return session.request(method, url, allow_redirects=allow_redirects, kwargs)
+[MFLOG|0|2024-12-05T14:27:49.866435Z|runtime|91aa42d6-adcd-41fe-9587-d66de8375855]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:49.866468Z|runtime|e6d2d628-970a-4bde-849c-1d0071393f03]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+[MFLOG|0|2024-12-05T14:27:49.866499Z|runtime|02569005-6d28-4e37-808c-d1afd933bd79]    resp = self.send(prep, send_kwargs)
+[MFLOG|0|2024-12-05T14:27:49.866531Z|runtime|6c246725-e0f0-4b25-913a-a16c0e68af75]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:49.866563Z|runtime|c9a1c9af-5f79-458c-8a28-acb64df6396a]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+[MFLOG|0|2024-12-05T14:27:49.866595Z|runtime|a503e8f5-86e3-437b-99da-74cd3d821d73]    r = adapter.send(request, kwargs)
+[MFLOG|0|2024-12-05T14:27:49.866627Z|runtime|fd14e291-0385-40c7-a13f-85402d3c5ce7]        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:49.866663Z|runtime|4cfb2ca0-e8aa-46cf-a87d-c13590749399]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/requests/adapters.py", line 688, in send
+[MFLOG|0|2024-12-05T14:27:49.866694Z|runtime|50059146-5c9a-47f6-9bc6-75b7f99c8d02]    raise ConnectTimeout(e, request=request)
+[MFLOG|0|2024-12-05T14:27:49.866726Z|runtime|983c3681-c212-4a1d-ba60-e55891aeaf61]requests.exceptions.ConnectTimeout: HTTPConnectionPool(host='54.90.216.156', port=5000): Max retries exceeded with url: /api/2.0/mlflow/runs/get?run_uuid=6b2706f395e446308765bdb419a4b770&run_id=6b2706f395e446308765bdb419a4b770 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x17bec9b20>, 'Connection to 54.90.216.156 timed out. (connect timeout=120)'))
+[MFLOG|0|2024-12-05T14:27:49.866759Z|runtime|1602da9e-bfc2-4812-9ae2-86351eec6e65]
+[MFLOG|0|2024-12-05T14:27:49.866791Z|runtime|4f68f2d4-842f-4f64-b502-2f56974ceb6c]The above exception was the direct cause of the following exception:
+[MFLOG|0|2024-12-05T14:27:49.866823Z|runtime|c045fac2-4171-403f-8ad1-d367dcac53db]
+[MFLOG|0|2024-12-05T14:27:49.866855Z|runtime|9db37a66-6866-4157-9dfc-5f3c7b0d6ac6]Traceback (most recent call last):
+[MFLOG|0|2024-12-05T14:27:49.866887Z|runtime|64e0686c-71ed-4d2e-ab24-9ac60ee3748d]  File "/tmp/tmpm1tuiupg/metaflow/cli.py", line 1166, in main
+[MFLOG|0|2024-12-05T14:27:49.866919Z|runtime|360830b0-2539-44ea-aa16-a2e6b63d8809]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-12-05T14:27:49.866950Z|runtime|b4ebe5c5-c1bc-459b-8b84-b992250b128b]  File "/tmp/tmpm1tuiupg/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-12-05T14:27:49.866984Z|runtime|9373c909-ec85-41aa-ab7c-209b52329a9d]    return func(args, kwargs)
+[MFLOG|0|2024-12-05T14:27:49.867017Z|runtime|d2b5e3e8-dca8-4812-987a-fc1eba3ec9f9]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:49.867050Z|runtime|25864dd2-9b96-4fd5-b6b6-6dfeab0f515f]  File "/tmp/tmpm1tuiupg/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-12-05T14:27:49.867081Z|runtime|ad4a75bf-d29b-4d7c-aa7e-e18689e6d53f]    return self.main(args, kwargs)
+[MFLOG|0|2024-12-05T14:27:49.867113Z|runtime|72f7cf8a-8e30-4720-b35c-e8c9c482c50e]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:49.867144Z|runtime|aaddeb61-1800-4211-bd67-6e99bcb0fdbf]  File "/tmp/tmpm1tuiupg/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-12-05T14:27:49.867176Z|runtime|d1db4b3b-7ff4-4948-9044-2d30c981449e]    rv = self.invoke(ctx)
+[MFLOG|0|2024-12-05T14:27:49.867207Z|runtime|71474ed9-d6e0-41ba-a104-ccf511e4fbcd]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:49.867240Z|runtime|a358cb4c-9923-47f7-89c8-8482d8941e8f]  File "/tmp/tmpm1tuiupg/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-12-05T14:27:49.867271Z|runtime|2694dc1a-6f0c-42c1-a6e3-fd0061b679be]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-12-05T14:27:49.867303Z|runtime|9c0cc2e6-da9a-4c1b-9fa3-1f6e5305a96f]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:49.867335Z|runtime|7eb5e172-548b-4076-b858-9cb9f62ef048]  File "/tmp/tmpm1tuiupg/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-12-05T14:27:49.867367Z|runtime|ab765c2a-8d7b-46fd-979e-f7fd036d5cc8]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-12-05T14:27:49.867400Z|runtime|ec3972a7-02b5-4b98-bf96-080069256146]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:49.867433Z|runtime|a97ec368-0e61-4742-b39b-305fd78e82a8]  File "/tmp/tmpm1tuiupg/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-12-05T14:27:49.867465Z|runtime|051820a3-f1a4-49c9-a001-00fd5f4f4ceb]    return callback(args, kwargs)
+[MFLOG|0|2024-12-05T14:27:49.867496Z|runtime|b43d7dce-d675-4a55-a0d1-c09d9dd6c473]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:49.867527Z|runtime|720bf53c-4116-437a-895d-f30099fa0905]  File "/tmp/tmpm1tuiupg/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-12-05T14:27:49.867565Z|runtime|bfb7810c-4422-4076-91d2-0f835c775a58]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-12-05T14:27:50.149409Z|runtime|5a0af59e-639e-4187-86a5-ad3fa913ccf1]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:50.149726Z|runtime|939db471-6685-4eec-a767-02caf1a1bb1d]  File "/tmp/tmpm1tuiupg/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-12-05T14:27:50.149788Z|runtime|c2585f97-2deb-4661-b289-34afabec59d8]    task.run_step(
+[MFLOG|0|2024-12-05T14:27:50.149826Z|runtime|e5d451c0-400b-4289-ada0-e011d1c44c8f]  File "/tmp/tmpm1tuiupg/metaflow/task.py", line 651, in run_step
+[MFLOG|0|2024-12-05T14:27:50.149859Z|runtime|6aa7091c-5d4b-4d1d-8c93-e19ab145fef8]    self._exec_step_function(step_func, input_obj)
+[MFLOG|0|2024-12-05T14:27:50.149891Z|runtime|33c0022d-de00-44d4-9a91-d3b6010a5901]  File "/tmp/tmpm1tuiupg/metaflow/task.py", line 64, in _exec_step_function
+[MFLOG|0|2024-12-05T14:27:50.149922Z|runtime|5d3add1d-807d-4de3-b4b0-77b8861baee8]    step_function(input_obj)
+[MFLOG|0|2024-12-05T14:27:50.149953Z|runtime|c02381a7-0333-46f1-ab55-a166ca71190f]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/AWStraining.py", line 271, in evaluate_model
+[MFLOG|0|2024-12-05T14:27:50.149983Z|runtime|db15f01b-cbbf-4561-9325-9212916c1d12]    with mlflow.start_run(run_id=self.mlflow_run_id):
+[MFLOG|0|2024-12-05T14:27:50.150012Z|runtime|5606e177-69db-45f2-a71e-633c91027ca1]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:50.150048Z|runtime|ead3953f-affe-408c-bb1d-3edcc20b09e8]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/tracking/fluent.py", line 338, in start_run
+[MFLOG|0|2024-12-05T14:27:50.150079Z|runtime|177c3d40-69fa-463e-ae75-b3f043417669]    active_run_obj = client.get_run(existing_run_id)
+[MFLOG|0|2024-12-05T14:27:50.150107Z|runtime|d4f188f0-01ca-4290-bc66-a56aa1ac608e]                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:50.150136Z|runtime|7d013961-7362-481f-bce8-179b92d98434]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/tracking/client.py", line 226, in get_run
+[MFLOG|0|2024-12-05T14:27:50.150164Z|runtime|1aaaeedc-8a97-4688-b403-c03ccc359c56]    return self._tracking_client.get_run(run_id)
+[MFLOG|0|2024-12-05T14:27:50.150193Z|runtime|12d2bf5a-481e-4b85-9b60-82a208caefe0]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:50.150235Z|runtime|72293016-404f-4e63-b449-bf26ab3d8de1]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/tracking/_tracking_service/client.py", line 105, in get_run
+[MFLOG|0|2024-12-05T14:27:50.150264Z|runtime|81cad41d-20e4-4291-8b66-7d917f29dae6]    return self.store.get_run(run_id)
+[MFLOG|0|2024-12-05T14:27:50.150293Z|runtime|75c425fd-7fc2-42ed-bf12-6ead3dc5b1bf]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:50.150329Z|runtime|52def993-96aa-48d7-a2d2-97e33f9ad4d3]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/store/tracking/rest_store.py", line 166, in get_run
+[MFLOG|0|2024-12-05T14:27:50.150358Z|runtime|03cdd8f1-fcfd-484b-910a-4dae93851b2a]    response_proto = self._call_endpoint(GetRun, req_body)
+[MFLOG|0|2024-12-05T14:27:50.150388Z|runtime|8333e8ad-08c1-4cc5-826c-89d56e05c9fb]                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:50.150416Z|runtime|9cab5ede-40c4-4e4a-8999-9c6dbd45e1bb]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/store/tracking/rest_store.py", line 82, in _call_endpoint
+[MFLOG|0|2024-12-05T14:27:50.150444Z|runtime|d8af4782-09f3-4d2b-85a6-9b1d576f40b5]    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+[MFLOG|0|2024-12-05T14:27:50.150473Z|runtime|3dc4830c-2ddf-4bb1-a317-123b19e2dff9]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:50.150508Z|runtime|1a5818fd-9527-485a-811e-65fea374aefb]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/utils/rest_utils.py", line 365, in call_endpoint
+[MFLOG|0|2024-12-05T14:27:50.150537Z|runtime|e68012cd-83eb-4072-a2ba-5761005c3d38]    response = http_request(call_kwargs)
+[MFLOG|0|2024-12-05T14:27:50.150566Z|runtime|bcb2a5e9-036d-4b5c-a76d-f2d9835fa3bf]               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-05T14:27:50.150595Z|runtime|5237305d-7990-4184-bdd1-2853e32f5dbc]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/utils/rest_utils.py", line 204, in http_request
+[MFLOG|0|2024-12-05T14:27:50.150652Z|runtime|d0fc7635-9286-47e9-942b-90462d91f7e7]    raise MlflowException(
+[MFLOG|0|2024-12-05T14:27:50.150701Z|runtime|a2c81098-f6cf-4d0d-9bed-0e10cb52be61]mlflow.exceptions.MlflowException: API request to http://54.90.216.156:5000/api/2.0/mlflow/runs/get failed with timeout exception HTTPConnectionPool(host='54.90.216.156', port=5000): Max retries exceeded with url: /api/2.0/mlflow/runs/get?run_uuid=6b2706f395e446308765bdb419a4b770&run_id=6b2706f395e446308765bdb419a4b770 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x17bec9b20>, 'Connection to 54.90.216.156 timed out. (connect timeout=120)')). To increase the timeout, set the environment variable MLFLOW_HTTP_REQUEST_TIMEOUT (default: 120, type: int) to a larger value.
+[MFLOG|0|2024-12-05T14:27:50.150830Z|runtime|a0de9138-3d10-43c2-ae28-0b0f1b4944e8]
+[MFLOG|0|2024-12-05T14:27:50.151832Z|runtime|bdb5b142-6ac8-4c11-bcd1-d99fd5c2da0d]Task failed.

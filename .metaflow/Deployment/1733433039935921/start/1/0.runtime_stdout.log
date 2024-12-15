@@ -1,0 +1,6 @@
+[MFLOG|0|2024-12-05T21:10:41.402403Z|runtime|5052278a-eca1-4355-8884-f928689ab392]2024-12-05 22:10:41,401 [INFO] MLflow tracking URI: http://34.201.72.158:5000
+[MFLOG|0|2024-12-05T21:10:41.404414Z|runtime|3988c7d9-eea2-4081-ad80-6abd33839e61]2024-12-05 22:10:41,403 [INFO] Found 1 CSV file(s) in the directory: kaggle_data/
+[MFLOG|0|2024-12-05T21:10:41.412655Z|runtime|97f37856-9907-4181-81ce-1731f8faa87f]2024-12-05 22:10:41,410 [INFO] Loaded 2500 records from file: kaggle_data/weather_forecast_data.csv
+[MFLOG|0|2024-12-05T21:10:41.416273Z|runtime|0660c51e-1f15-4fbc-a64e-e9575eb9e2ef]2024-12-05 22:10:41,414 [INFO] Loaded dataset with 2500 samples
+[MFLOG|0|2024-12-05T21:11:56.434541Z|runtime|d6605cf9-0a52-4201-8522-8f46443fe395]2024-12-05 22:11:56,433 [WARNING] Retrying (Retry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x14b484770>, 'Connection to 34.201.72.158 timed out. (connect timeout=120)')': /api/2.0/mlflow/model-versions/search?filter=name%3D%27raining%27&max_results=1&order_by=last_updated_timestamp+DESC
+[MFLOG|0|2024-12-05T21:13:03.504704Z|runtime|f60f8855-ef7c-449b-950b-754e735973c8][KILLED BY ORCHESTRATOR]

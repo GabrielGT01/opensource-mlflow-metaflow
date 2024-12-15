@@ -1,0 +1,45 @@
+[MFLOG|0|2024-12-08T07:40:13.066719Z|runtime|7b2983fc-6fa6-4abc-81b1-911f9825a232]<flow Deployment step deployment> failed:
+[MFLOG|0|2024-12-08T07:40:13.077743Z|runtime|0b7d315c-ea22-431e-8e66-0b898b177187]    Internal error
+[MFLOG|0|2024-12-08T07:40:13.080592Z|runtime|f8b495f0-a3ed-4491-8333-9527ff26e914]Traceback (most recent call last):
+[MFLOG|0|2024-12-08T07:40:13.081272Z|runtime|998e2cd5-e58d-41fc-afbf-fb4953e4e0c7]  File "/tmp/tmpdh3xbgml/metaflow/cli.py", line 1166, in main
+[MFLOG|0|2024-12-08T07:40:13.081421Z|runtime|fb69d30b-e7b6-4cb3-86ac-c38d89eff866]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-12-08T07:40:13.081530Z|runtime|adb4dcee-ea96-42b1-a920-69163bba93d9]  File "/tmp/tmpdh3xbgml/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-12-08T07:40:13.081646Z|runtime|377e3a99-492d-4614-8381-6af6b1dbfb2b]    return func(args, kwargs)
+[MFLOG|0|2024-12-08T07:40:13.247979Z|runtime|635ff5d7-cc60-4bbe-8164-d86fbb4b5692]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:40:13.248187Z|runtime|57a65766-92c5-4a39-94da-f3bb41a1b707]  File "/tmp/tmpdh3xbgml/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-12-08T07:40:13.248241Z|runtime|05b9cf5a-a3c6-4f40-8f52-467a64bc54a7]    return self.main(args, kwargs)
+[MFLOG|0|2024-12-08T07:40:13.248289Z|runtime|7377036d-1ddb-47e8-9c1b-5a5f4297bbd9]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:40:13.248323Z|runtime|b26fe496-f4c1-4fb8-924b-87fd47bac9e0]  File "/tmp/tmpdh3xbgml/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-12-08T07:40:13.248356Z|runtime|9478d13a-c0b3-4a5c-b90b-db8572540bb1]    rv = self.invoke(ctx)
+[MFLOG|0|2024-12-08T07:40:13.248413Z|runtime|0f3f0ed6-6903-4975-880e-30a402409483]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:40:13.248443Z|runtime|931eb7a0-b1c6-42a7-8c6a-b8e0cf29c7ec]  File "/tmp/tmpdh3xbgml/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-12-08T07:40:13.248477Z|runtime|ab328b8a-b76d-4439-88cc-fd53fb54af36]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-12-08T07:40:13.248509Z|runtime|41df9524-9914-4761-8416-97c6019bd29f]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:40:13.248542Z|runtime|12104656-9e69-4b75-b08b-627530679112]  File "/tmp/tmpdh3xbgml/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-12-08T07:40:13.248576Z|runtime|4777f489-7b97-4912-999d-788bebed95ed]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-12-08T07:40:13.248607Z|runtime|167c6cac-2e9c-42e5-9e4d-72dbb9740b9f]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:40:13.248636Z|runtime|d376214b-1ddf-4f7f-bd58-88445467b146]  File "/tmp/tmpdh3xbgml/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-12-08T07:40:13.248665Z|runtime|a4461c0e-4b32-4dea-8db8-a5481d6912e4]    return callback(args, kwargs)
+[MFLOG|0|2024-12-08T07:40:13.248696Z|runtime|13f7c26a-64ef-4fcb-94ac-7da970f07789]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:40:13.248731Z|runtime|70e5b66d-5c31-45e7-b788-42c5285758e9]  File "/tmp/tmpdh3xbgml/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-12-08T07:40:13.248762Z|runtime|9511c839-5b82-4734-b2da-cf7d2a70a324]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-12-08T07:40:13.248795Z|runtime|e6c28bc9-a806-48be-8e65-3967fcb95e0e]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:40:13.248846Z|runtime|5c690791-7b6a-4662-b1d8-16d7eebfbfd8]  File "/tmp/tmpdh3xbgml/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-12-08T07:40:13.248877Z|runtime|c43b5803-0de9-47b6-9196-b60088280f37]    task.run_step(
+[MFLOG|0|2024-12-08T07:40:13.248926Z|runtime|fb0c6bf2-b39e-49ea-9d76-f238cc69f553]  File "/tmp/tmpdh3xbgml/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2024-12-08T07:40:13.248963Z|runtime|d686d06c-1528-4568-99e6-f627a2e07c1f]    self._exec_step_function(step_func)
+[MFLOG|0|2024-12-08T07:40:13.248992Z|runtime|81a966a5-3616-4f5e-87b7-84f82a5b61d7]  File "/tmp/tmpdh3xbgml/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-12-08T07:40:13.249021Z|runtime|e582119b-7633-445f-956a-b4fd3fba77f3]    step_function()
+[MFLOG|0|2024-12-08T07:40:13.249054Z|runtime|e2f62490-1ad5-430a-b9ef-7ccda3667e96]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/newdeployment.py", line 74, in deployment
+[MFLOG|0|2024-12-08T07:40:13.249087Z|runtime|c7cc6f5f-c214-4a31-8347-e5c046414ea9]    mlflow.artifacts.download_artifacts(
+[MFLOG|0|2024-12-08T07:40:13.249116Z|runtime|15f1abcd-44e4-46a7-b8a6-33003533e709]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/abeec5193171f93/lib/python3.12/site-packages/mlflow/artifacts/__init__.py", line 69, in download_artifacts
+[MFLOG|0|2024-12-08T07:40:13.249164Z|runtime|7462c0fe-5682-408c-8401-3cebac43a770]    artifact_uri = store.get_run(run_id).info.artifact_uri
+[MFLOG|0|2024-12-08T07:40:13.249194Z|runtime|8b0076ce-e100-4d54-a340-e42006355aba]                   ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:40:13.249227Z|runtime|298d0e90-0147-491f-9bf5-3c80b768bf67]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/abeec5193171f93/lib/python3.12/site-packages/mlflow/store/tracking/file_store.py", line 693, in get_run
+[MFLOG|0|2024-12-08T07:40:13.249258Z|runtime|604082e6-24c3-466d-b2d1-b3933d288a67]    run_info = self._get_run_info(run_id)
+[MFLOG|0|2024-12-08T07:40:13.249292Z|runtime|4e69b75a-c2e1-4415-ab0f-7059061e8b3b]               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:40:13.249324Z|runtime|b03662d2-0a69-45e4-9d80-c62e55bacd5f]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/abeec5193171f93/lib/python3.12/site-packages/mlflow/store/tracking/file_store.py", line 718, in _get_run_info
+[MFLOG|0|2024-12-08T07:40:13.249353Z|runtime|cd6ed491-1991-42bc-bcc1-c8f24a9bb23b]    raise MlflowException(
+[MFLOG|0|2024-12-08T07:40:13.249385Z|runtime|102d90c0-cdfc-4c58-a1f1-42c2f8580176]mlflow.exceptions.MlflowException: Run '09ba0481c8b449708d54090889252012' not found
+[MFLOG|0|2024-12-08T07:40:13.249414Z|runtime|bbc3e48e-c533-41f0-bf7b-bf8380ef00ef]
+[MFLOG|0|2024-12-08T07:40:13.249915Z|runtime|aefcb52b-d3cb-4b6d-865e-782bab071ce6]Task failed.

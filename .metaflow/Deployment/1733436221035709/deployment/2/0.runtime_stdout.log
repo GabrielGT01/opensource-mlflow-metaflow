@@ -1,0 +1,3 @@
+[MFLOG|0|2024-12-05T22:03:45.958015Z|runtime|6ff0d3e6-b114-4acb-ac21-c4300b50ee3c]2024-12-05 23:03:45,955 [INFO] Model artifacts downloaded to file:///var/folders/pk/nk0t185511z8g6hmxr_bhkfw0000gn/T/tmpxb4pxbdk/model 
+[MFLOG|0|2024-12-05T22:03:45.987793Z|runtime|bcb81d2d-9ef4-4c02-ad5e-fa659121f98e]2024-12-05 23:03:45,987 [INFO] Deployment target URI: sagemaker:/us-east-1/gabby001
+[MFLOG|0|2024-12-05T22:03:46.126492Z|runtime|33e44fba-da11-40d6-81d7-7402bfe23f7c]2024-12-05 23:03:46,126 [INFO] Found credentials in shared credentials file: ~/.aws/credentials

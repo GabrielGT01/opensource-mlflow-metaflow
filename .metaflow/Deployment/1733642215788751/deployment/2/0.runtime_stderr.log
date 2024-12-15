@@ -1,0 +1,43 @@
+[MFLOG|0|2024-12-08T07:17:00.971135Z|runtime|ff65894b-d996-483a-b130-5b916574631d]Downloading artifacts:   0%|          | 0/12 [00:00<?, ?it/s]Downloading artifacts:   8%|▊         | 1/12 [00:00<00:00, 2841.67it/s]Downloading artifacts:  17%|█▋        | 2/12 [00:00<00:00, 2663.90it/s]Downloading artifacts:  25%|██▌       | 3/12 [00:00<00:00, 3538.50it/s]Downloading artifacts:  33%|███▎      | 4/12 [00:00<00:00, 4357.72it/s]Downloading artifacts:  42%|████▏     | 5/12 [00:00<00:00, 5082.77it/s]Downloading artifacts:  50%|█████     | 6/12 [00:00<00:00, 5753.50it/s]Downloading artifacts:  58%|█████▊    | 7/12 [00:00<00:00, 6359.14it/s]Downloading artifacts:  67%|██████▋   | 8/12 [00:00<00:00, 6909.89it/s]Downloading artifacts:  75%|███████▌  | 9/12 [00:00<00:00, 7420.63it/s]Downloading artifacts:  83%|████████▎ | 10/12 [00:00<00:00, 7881.07it/s]Downloading artifacts:  92%|█████████▏| 11/12 [00:00<00:00, 300.65it/s] Downloading artifacts: 100%|██████████| 12/12 [00:00<00:00, 41.13it/s] Downloading artifacts: 100%|██████████| 12/12 [00:00<00:00, 41.13it/s]Downloading artifacts: 100%|██████████| 12/12 [00:00<00:00, 41.07it/s]
+[MFLOG|0|2024-12-08T07:17:01.002664Z|runtime|fccdf0ea-7d02-47fc-aa05-4e9d70dfb603]<flow Deployment step deployment> failed:
+[MFLOG|0|2024-12-08T07:17:01.020765Z|runtime|06bad6e2-a5c3-4dd9-8cd1-0d5d5743b1d5]    Internal error
+[MFLOG|0|2024-12-08T07:17:01.023091Z|runtime|9d02551d-cc1d-465d-93ff-cf64fd3b6dca]Traceback (most recent call last):
+[MFLOG|0|2024-12-08T07:17:01.023187Z|runtime|72b017ca-0a7c-4bc9-9818-159a8e9d1491]  File "/tmp/tmpxgeyzi49/metaflow/cli.py", line 1166, in main
+[MFLOG|0|2024-12-08T07:17:01.023253Z|runtime|5144d30c-4a0b-4e32-9bb2-a77bb9fded5f]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-12-08T07:17:01.023311Z|runtime|c77adaa5-070b-4042-b2b5-4ad5860750e0]  File "/tmp/tmpxgeyzi49/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-12-08T07:17:01.023364Z|runtime|44fbfc00-675c-404e-941b-19df5044faaf]    return func(args, kwargs)
+[MFLOG|0|2024-12-08T07:17:01.167383Z|runtime|cce60775-90c9-41af-b20b-bdfe4a197a9a]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:17:01.167580Z|runtime|fca8a668-734d-4a72-a00e-1cf03a83a373]  File "/tmp/tmpxgeyzi49/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-12-08T07:17:01.167630Z|runtime|8f44fc94-8034-4f9a-b7ad-57b359a18992]    return self.main(args, kwargs)
+[MFLOG|0|2024-12-08T07:17:01.167674Z|runtime|1e3b3dac-1344-47cf-a885-8bb016dfd123]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:17:01.167708Z|runtime|49f8086f-c0e6-47d0-8332-f1c6b1d41880]  File "/tmp/tmpxgeyzi49/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-12-08T07:17:01.167740Z|runtime|6ae3ea07-7552-4c25-9cf8-279f243704d2]    rv = self.invoke(ctx)
+[MFLOG|0|2024-12-08T07:17:01.167774Z|runtime|dd3f0309-d2ff-47fc-b7bc-ec3dd08e3d1a]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:17:01.167807Z|runtime|29a69395-f4dd-4c3b-b9db-8979f106cafb]  File "/tmp/tmpxgeyzi49/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-12-08T07:17:01.167839Z|runtime|0c0e9829-d9cc-401a-bc04-ab9a2395afea]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-12-08T07:17:01.167876Z|runtime|a0e864c1-98b9-4eff-b445-f12fd90babd1]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:17:01.167907Z|runtime|aadf5925-a2a1-4c43-a504-e2469ed8a6a3]  File "/tmp/tmpxgeyzi49/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-12-08T07:17:01.167937Z|runtime|6b554ce3-f8ec-4565-8304-986850f76f21]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-12-08T07:17:01.167967Z|runtime|2dadff96-e401-43e3-ae38-7c612df4c9a6]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:17:01.168002Z|runtime|2a2e80c7-831e-4fa0-bc8e-30bac2aaa27d]  File "/tmp/tmpxgeyzi49/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-12-08T07:17:01.168036Z|runtime|3b19fbf0-2883-497c-99ee-e9d52f5d05a6]    return callback(args, kwargs)
+[MFLOG|0|2024-12-08T07:17:01.168065Z|runtime|915a8e8d-ac74-4998-be70-f67e30e11d6b]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:17:01.168094Z|runtime|da3cfa6e-170c-43b8-a9db-be2d8211f70e]  File "/tmp/tmpxgeyzi49/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-12-08T07:17:01.168123Z|runtime|056f93ec-efd3-4422-a098-534daad74c6d]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-12-08T07:17:01.168152Z|runtime|6e2b37ad-1b0a-44c8-9148-f4d7c23d370a]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:17:01.168181Z|runtime|fb556e0e-bed3-4218-9d1b-7aa1d7b483f2]  File "/tmp/tmpxgeyzi49/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-12-08T07:17:01.168210Z|runtime|4eb75a93-9959-44e6-b2f6-9cd74efe50ae]    task.run_step(
+[MFLOG|0|2024-12-08T07:17:01.168239Z|runtime|4d5ed6bc-cf92-4a6a-bdbb-1db8bfefbfad]  File "/tmp/tmpxgeyzi49/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2024-12-08T07:17:01.168268Z|runtime|f1fd4b70-c62d-4eed-9b3f-ab3880758b34]    self._exec_step_function(step_func)
+[MFLOG|0|2024-12-08T07:17:01.168296Z|runtime|3001b9d3-7bce-40f4-b1aa-5f9f32c8d9e7]  File "/tmp/tmpxgeyzi49/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-12-08T07:17:01.168324Z|runtime|cad24615-af9d-44f7-a444-0790d7911019]    step_function()
+[MFLOG|0|2024-12-08T07:17:01.168353Z|runtime|a5968d13-5a30-417c-a595-beaa5b8f3c13]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/deployment.py", line 136, in deployment
+[MFLOG|0|2024-12-08T07:17:01.168382Z|runtime|884f72d7-2484-4cc4-ac8a-b962c9a18f5b]    self._deploy_to_sagemaker()
+[MFLOG|0|2024-12-08T07:17:01.168411Z|runtime|22d0c98c-a953-4d31-8613-dddf3f7a7bfe]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/deployment.py", line 206, in _deploy_to_sagemaker
+[MFLOG|0|2024-12-08T07:17:01.168445Z|runtime|6b3e4b45-b02f-4427-a048-b2e207df903d]    "tags": {"version": self.model._version},
+[MFLOG|0|2024-12-08T07:17:01.168473Z|runtime|a76ae324-955d-46e5-a4a2-af9bc7cbbe34]                        ^^^^^^^^^^
+[MFLOG|0|2024-12-08T07:17:01.168503Z|runtime|675fc165-7e25-49e2-98e8-6e55cbe51451]  File "/tmp/tmpxgeyzi49/metaflow/flowspec.py", line 254, in __getattr__
+[MFLOG|0|2024-12-08T07:17:01.168531Z|runtime|4c5ac941-856e-4eeb-847c-879bf7ca8c5a]    raise AttributeError("Flow %s has no attribute '%s'" % (self.name, name))
+[MFLOG|0|2024-12-08T07:17:01.168560Z|runtime|912668b0-bff4-4751-b69d-f930e83f11f1]AttributeError: Flow Deployment has no attribute 'model'
+[MFLOG|0|2024-12-08T07:17:01.168590Z|runtime|5afde0b1-65f0-4277-ac66-5003be31e78b]
+[MFLOG|0|2024-12-08T07:17:01.169121Z|runtime|79aa9dea-dfc6-4d6b-9a7e-6e57889292bc]Task failed.

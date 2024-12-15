@@ -1,0 +1,10 @@
+[MFLOG|0|2024-11-14T23:53:02.322575Z|runtime|ea59b8da-de5d-4ab0-9149-73cd0d493a51]Traceback (most recent call last):
+[MFLOG|0|2024-11-14T23:53:02.323342Z|runtime|eb353e83-de70-4fa7-a98d-3c001c20a6b9]  File "/Users/gabriel/Documents/ML_school/ml.school.opensource/kaggle/code/training.py", line 12, in <module>
+[MFLOG|0|2024-11-14T23:53:02.323418Z|runtime|880331d9-a905-417e-92f4-2cf1a11c592e]    import matplotlib
+[MFLOG|0|2024-11-14T23:53:02.323468Z|runtime|9eb2c5a6-1858-411d-bec9-eae697411b8c]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/matplotlib/__init__.py", line 1270, in <module>
+[MFLOG|0|2024-11-14T23:53:02.323518Z|runtime|ede751b6-45f3-4587-be97-061934b5dd6d]    rcParams['backend'] = os.environ.get('MPLBACKEND')
+[MFLOG|0|2024-11-14T23:53:02.323568Z|runtime|c930b4d1-0148-4473-bff3-12c07c91c453]    ~~~~~~~~^^^^^^^^^^^
+[MFLOG|0|2024-11-14T23:53:02.323604Z|runtime|8b6724b8-9706-4839-a8c8-f6abe81689f3]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/matplotlib/__init__.py", line 738, in __setitem__
+[MFLOG|0|2024-11-14T23:53:02.323641Z|runtime|ffbfd329-7693-4500-9936-285cc5c37c2c]    raise ValueError(f"Key {key}: {ve}") from None
+[MFLOG|0|2024-11-14T23:53:02.438841Z|runtime|be228055-6eed-44f1-a3c7-0a131dbcd57a]ValueError: Key backend: 'module://matplotlib_inline.backend_inline' is not a valid value for backend; supported values are ['gtk3agg', 'gtk3cairo', 'gtk4agg', 'gtk4cairo', 'macosx', 'nbagg', 'notebook', 'qtagg', 'qtcairo', 'qt5agg', 'qt5cairo', 'tkagg', 'tkcairo', 'webagg', 'wx', 'wxagg', 'wxcairo', 'agg', 'cairo', 'pdf', 'pgf', 'ps', 'svg', 'template']
+[MFLOG|0|2024-11-14T23:53:02.439652Z|runtime|2413384a-53eb-4e40-ad2e-abe4aff14c96]Task failed.

@@ -1,0 +1,9 @@
+[MFLOG|0|2024-11-15T10:23:40.741853Z|runtime|14cb53c6-0509-45d1-9520-390d03bde88e]2024/11/15 11:23:40 INFO mlflow.tracking.fluent: Autologging successfully enabled for sklearn.
+[MFLOG|0|2024-11-15T10:23:40.846653Z|runtime|16edeaf2-4367-4065-bba4-45c8c1adae6e]2024/11/15 11:23:40 INFO mlflow.tracking.fluent: Autologging successfully enabled for xgboost.
+[MFLOG|0|2024-11-15T10:23:41.261094Z|runtime|cc40201e-1a9a-4579-8ac6-92bb6f42e589]2024/11/15 11:23:41 INFO mlflow.tracking._tracking_service.client: 🏃 View run 1731666206293074 at: http://127.0.0.1:5000/#/experiments/0/runs/0fbf45815eb54efb886d4e0d30bd2bb1.
+[MFLOG|0|2024-11-15T10:23:41.269261Z|runtime|432e717f-5040-498f-9f2a-c45de7fea2cf]2024/11/15 11:23:41 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://127.0.0.1:5000/#/experiments/0.
+[MFLOG|0|2024-11-15T10:23:41.269414Z|runtime|c1e55346-3c67-4c01-9b32-5f23d184a5e9]<flow Training step train_model> failed:
+[MFLOG|0|2024-11-15T10:23:41.289033Z|runtime|cfd3e3a1-08f9-4f44-bf3b-163b0c3b3c59]    Invalid self.next() transition detected on line 552:
+[MFLOG|0|2024-11-15T10:23:41.289189Z|runtime|29d5c518-7604-4772-8b99-7bdb1fc30ddd]    Multiple self.next() calls detected in step train_model. Call self.next() only once.
+[MFLOG|0|2024-11-15T10:23:41.601102Z|runtime|53f5a6b0-2454-45c6-8fba-1daaa2829943]
+[MFLOG|0|2024-11-15T10:23:41.602043Z|runtime|9fd1eb90-68b7-4147-95e8-4691b5c0c9c3]Task failed.

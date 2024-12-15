@@ -1,0 +1,18 @@
+[MFLOG|0|2024-11-14T23:39:52.566232Z|runtime|4a354866-fcfd-4b4a-a186-e565011fbf36]2024/11/15 00:39:52 INFO mlflow.tracking.fluent: Autologging successfully enabled for sklearn.
+[MFLOG|0|2024-11-14T23:39:52.626614Z|runtime|8d4d49b9-2cbd-4ba6-9703-bb48265585a9]2024/11/15 00:39:52 INFO mlflow.tracking.fluent: Autologging successfully enabled for xgboost.
+[MFLOG|0|2024-11-14T23:39:53.639824Z|runtime|39c622aa-5501-4a29-9c80-b006639da558]2024/11/15 00:39:53 ERROR mlflow.xgboost: Failed to log feature importance plot. XGBoost autologging will ignore the failure and continue. Exception: 
+[MFLOG|0|2024-11-14T23:39:53.793674Z|runtime|e1425454-bd10-4dbd-85fa-5d74ed5f56c4]Traceback (most recent call last):
+[MFLOG|0|2024-11-14T23:39:53.793991Z|runtime|6941615d-45f5-4ac9-8142-4eac28144f6f]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/xgboost/__init__.py", line 738, in train_impl
+[MFLOG|0|2024-11-14T23:39:53.794109Z|runtime|87adbea6-e841-4f5b-96b5-1b31b687e0f9]    log_feature_importance_plot(features, importance, imp_type)
+[MFLOG|0|2024-11-14T23:39:53.794195Z|runtime|07237eda-e103-4b77-b8de-04b2ba0f4265]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/mlflow/xgboost/__init__.py", line 552, in log_feature_importance_plot
+[MFLOG|0|2024-11-14T23:39:53.794589Z|runtime|3f5647ae-4835-49b4-98fc-e8a0efab1f9a]    import matplotlib.pyplot as plt
+[MFLOG|0|2024-11-14T23:39:53.794820Z|runtime|eac984c2-d7c6-4bc3-8ba5-b1eb3b54fedc]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/matplotlib/__init__.py", line 1270, in <module>
+[MFLOG|0|2024-11-14T23:39:53.795125Z|runtime|105f1465-5ed7-4ada-8024-50b3e870bf8e]    rcParams['backend'] = os.environ.get('MPLBACKEND')
+[MFLOG|0|2024-11-14T23:39:53.795245Z|runtime|002325d7-9064-4e77-8bb5-2c9f18eaa5a0]    ~~~~~~~~^^^^^^^^^^^
+[MFLOG|0|2024-11-14T23:39:53.795659Z|runtime|e887f73a-e414-44c5-ab15-9808159f3eda]  File "/Users/gabriel/micromamba/envs/metaflow/osx-arm64/697847a36511c70/lib/python3.12/site-packages/matplotlib/__init__.py", line 738, in __setitem__
+[MFLOG|0|2024-11-14T23:39:53.795833Z|runtime|813c2d94-37f4-4939-87a1-60bc5071bfcd]    raise ValueError(f"Key {key}: {ve}") from None
+[MFLOG|0|2024-11-14T23:39:53.796039Z|runtime|14554e8c-3843-410b-8d60-8a6e187ae76d]ValueError: Key backend: 'module://matplotlib_inline.backend_inline' is not a valid value for backend; supported values are ['gtk3agg', 'gtk3cairo', 'gtk4agg', 'gtk4cairo', 'macosx', 'nbagg', 'notebook', 'qtagg', 'qtcairo', 'qt5agg', 'qt5cairo', 'tkagg', 'tkcairo', 'webagg', 'wx', 'wxagg', 'wxcairo', 'agg', 'cairo', 'pdf', 'pgf', 'ps', 'svg', 'template']
+[MFLOG|0|2024-11-14T23:39:53.796182Z|runtime|12980232-5e4d-4bf3-ab9f-38560b750f5c]2024/11/15 00:39:53 INFO mlflow.tracking._tracking_service.client: 🏃 View run cross-validation-fold-3 at: http://127.0.0.1:5000/#/experiments/0/runs/55cc1283ed4f4ec390347ea87e876d82.
+[MFLOG|0|2024-11-14T23:39:53.843015Z|runtime|568c7760-5181-4881-a679-a5effae503ac]2024/11/15 00:39:53 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://127.0.0.1:5000/#/experiments/0.
+[MFLOG|0|2024-11-14T23:39:53.843401Z|runtime|8c7ca44e-721c-4e44-8bcd-9b3e55e7cadf]2024/11/15 00:39:53 INFO mlflow.tracking._tracking_service.client: 🏃 View run 1731627513037406 at: http://127.0.0.1:5000/#/experiments/0/runs/99d3fac1a80b43b0bde3f7c34e81c59c.
+[MFLOG|0|2024-11-14T23:40:04.376297Z|runtime|5eddc90f-e96f-49ad-9165-02e57c38376f]2024/11/15 00:39:53 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://127.0.0.1:5000/#/experiments/0.

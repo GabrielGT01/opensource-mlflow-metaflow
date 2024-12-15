@@ -1,0 +1,7 @@
+[MFLOG|0|2024-11-15T00:07:36.127827Z|runtime|2a5a36fb-24f4-4598-ad90-474034b84942]<flow Training step evaluate_model> failed:
+[MFLOG|0|2024-11-15T00:07:36.135328Z|runtime|60db95e3-a3b9-4178-845c-57b34ff0c5e8]    Unhandled artifacts in merge:
+[MFLOG|0|2024-11-15T00:07:36.136328Z|runtime|9c243332-df28-4368-b086-6f65c409eaa7]    Step evaluate_model cannot merge the following artifacts due to them having conflicting values:
+[MFLOG|0|2024-11-15T00:07:36.376372Z|runtime|7f0cba43-003d-44cc-837c-fae8c39e858e]    [y_train_fold, y_test_fold, train_indices, test_indices, fold, X_train_fold, X_test_fold, model, mlflow_fold_run_id, eval_result, loss, error, aucpr, accuracy, y_train_fold, y_test_fold, train_indices, test_indices, fold, X_train_fold, X_test_fold, model, mlflow_fold_run_id, eval_result, loss, error, aucpr, accuracy, y_train_fold, y_test_fold, train_indices, test_indices, fold, X_train_fold, X_test_fold, model, mlflow_fold_run_id, eval_result, loss, error, aucpr, accuracy, y_train_fold, y_test_fold, train_indices, test_indices, fold, X_train_fold, X_test_fold, model, mlflow_fold_run_id, eval_result, loss, aucpr].
+[MFLOG|0|2024-11-15T00:07:36.376610Z|runtime|6e5842d3-a1b8-4505-a792-24fdd83eaacb]    To remedy this issue, be sure to explicitly set those artifacts (using self.<artifact_name> = ...) prior to calling merge_artifacts.
+[MFLOG|0|2024-11-15T00:07:36.376670Z|runtime|296feeee-e285-4fdc-9bbf-f1aaf48db11a]
+[MFLOG|0|2024-11-15T00:07:36.377156Z|runtime|90066414-58d0-431d-a092-60803687166b]Task failed.

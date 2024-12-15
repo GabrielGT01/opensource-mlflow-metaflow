@@ -1,0 +1,10 @@
+digest: 0bc3eb72
+name: dataset
+profile: '{"num_rows": 375, "num_elements": 1875}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "Temperature", "required":
+  true}, {"type": "double", "name": "Humidity", "required": true}, {"type": "double",
+  "name": "Wind_Speed", "required": true}, {"type": "double", "name": "Cloud_Cover",
+  "required": true}, {"type": "double", "name": "Pressure", "required": true}]}'
+source: '{"tags": {"mlflow.user": "gabriel", "mlflow.source.name": "code/training.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "d5ca15dc9e89d443a752af9abfab283f9cddb5e7"}}'
+source_type: code
